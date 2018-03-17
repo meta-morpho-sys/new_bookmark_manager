@@ -1,0 +1,6 @@
+@startuml
+
+Controller --> Link: all links
+Link --> Controller: [collection of links]
+
+@enduml
