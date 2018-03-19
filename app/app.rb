@@ -1,0 +1,4 @@
+# Controller
+class BookmarkManager
+
+end
