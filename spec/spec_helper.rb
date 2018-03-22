@@ -2,6 +2,12 @@
 
 ENV['RACK_ENV'] = 'test'
 
+RSpec.configure do |config|
+  config.before(:each) do
+    require_relative './test_database_setup'
+  end
+end
+
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
