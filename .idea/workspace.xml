@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/spec/features/add_links_spec.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/new.erb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change beforePath="$PROJECT_DIR$/views/index.erb" afterPath="$PROJECT_DIR$/views/index.erb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,38 +18,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1521742901740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@Adding_links__new_bookmark_manager.coverage" NAME="Adding links: new_bookmark_manager Coverage Results" MODIFIED="1521811066728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1521749928195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_links_A_user_can_see_links__new_bookmark_manager.coverage" NAME="Viewing links A user can see links: new_bookmark_manager Coverage Results" MODIFIED="1521635586031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link__new_bookmark_manager.coverage" NAME="Link: new_bookmark_manager Coverage Results" MODIFIED="1521636868317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__view_links_spec___new_bookmark_manager.coverage" NAME="Run spec 'view_links_spec': new_bookmark_manager Coverage Results" MODIFIED="1521465654189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view_links_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/features/view_links_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_links_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/features/add_links_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
+            <state relative-caret-position="312">
+              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <file leaf-file-name="link.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/link.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rakefile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -66,21 +83,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.rspec" />
-        <option value="$PROJECT_DIR$/user_stories.puml" />
         <option value="$PROJECT_DIR$/lib/app.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/app.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/features/view_links_spec.rb" />
         <option value="$PROJECT_DIR$/yuliya.rb" />
-        <option value="$PROJECT_DIR$/views/index.erb" />
-        <option value="$PROJECT_DIR$/app.rb" />
-        <option value="$PROJECT_DIR$/models/link.rb" />
         <option value="$PROJECT_DIR$/spec/test_database_setup.rb" />
         <option value="$PROJECT_DIR$/spec/link_spec.rb" />
-        <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/models/link.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/user_stories.puml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/views/add_a_new_link.erb" />
+        <option value="$PROJECT_DIR$/views/new.erb" />
+        <option value="$PROJECT_DIR$/spec/features/add_links_spec.rb" />
+        <option value="$PROJECT_DIR$/views/index.erb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -136,6 +156,11 @@
             <path>
               <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -158,7 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="org.plantuml.idea.lang.settings.PlantUmlSettingsPage" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -182,7 +207,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.All specs in new_bookmark_manager: new_bookmark_manager">
+  <component name="RunManager" selected="RSpec.Adding links: new_bookmark_manager">
+    <configuration name="Adding links: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="new_bookmark_manager" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/add_links_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Adding links" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+    </configuration>
     <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
@@ -332,18 +389,20 @@
       <RACK_CONFIG_SETTINGS_ID NAME="RACK_SERVER_TYPE" VALUE="Default" />
       <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'view_links_spec': new_bookmark_manager" />
       <item index="1" class="java.lang.String" itemvalue="RSpec.Link: new_bookmark_manager" />
       <item index="2" class="java.lang.String" itemvalue="RSpec.Viewing links A user can see links: new_bookmark_manager" />
       <item index="3" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Adding links: new_bookmark_manager" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Link: new_bookmark_manager" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.Viewing links A user can see links: new_bookmark_manager" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'view_links_spec': new_bookmark_manager" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Adding links: new_bookmark_manager" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Link: new_bookmark_manager" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Viewing links A user can see links: new_bookmark_manager" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'view_links_spec': new_bookmark_manager" />
       </list>
     </recent_temporary>
   </component>
@@ -358,44 +417,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521327739529</updated>
-      <workItem from="1521327741000" duration="18564000" />
+      <workItem from="1521327741000" duration="25131000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 09m 26s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 02m 19s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 19m 58s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 05m 17s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 39m 07s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 05m 59s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 39m 43s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 06m 12s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 41m 47s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 07m 13s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 45m 32s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 08m 12s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 45m 50s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 11m 28s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 48m 24s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 15m 19s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 17h 57m 25s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 17m 25s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.22 at 18h 21m 42s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Adding_links__new_bookmark_manager - 2018.03.23 at 13h 17m 47s.xml">
+      <configuration name="Adding links: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18564000" />
+    <option name="totallyTimeSpent" value="25131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="6" />
@@ -452,14 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_stories.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -473,17 +524,6 @@
         <state relative-caret-position="-2183">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -511,22 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/view_links_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/link.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/link_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -535,42 +559,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_stories.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/test_database_setup.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/views/new.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="90">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/link.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/view_links_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/add_links_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding />
         </state>
       </provider>

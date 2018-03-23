@@ -14,6 +14,12 @@ I would like to see a list of links on the homepage`
           │                      │   
           │ [collection of links]│   
           │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─|   
-     ┌────┴─────┐              ┌─┴──┐
-     │Controller│              │Link│
-     └──────────┘              └────┘
+
+
+#### Second user story
+
+`As a user
+ So I can store bookmark data for later retrieval
+ I want to add a link to Bookmark Manager`
+ 
+ 
