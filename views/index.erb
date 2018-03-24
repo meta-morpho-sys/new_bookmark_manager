@@ -4,14 +4,18 @@
 <head></head>
 
 <div>
+  <form action="/create-a-new-link" method="post">
+    <input type="text" name="url" required="required" placeholder="Paste your link here">
+    <input type="submit" name="new_link" value="Add">
+  </form>
+</div>
+
+<div>
   <ul>
     <% @links.each do |link| %>
       <li><%= link %></li>
     <% end %>
   </ul>
 </div>
-
-<a href="add-a-new-link">Add a new link!</a>
-
 
 </html>
