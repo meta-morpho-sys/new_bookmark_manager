@@ -2,6 +2,7 @@
 
 require 'sinatra/base'
 require './models/link'
+require './database_connection_setup.rb'
 
 # Controller
 class BookmarkManager < Sinatra::Base
