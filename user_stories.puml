@@ -1,6 +1,18 @@
 @startuml
 
+class Link {
+    +{static} all()
+    +{static} create()
+}
+
+class DatabaseConnection <<singleton>>  {
+    +{static} connection
+    +{static} setup()
+    +{static} query()
+}
+
 Controller --> Link: all links
 Link --> Controller: [collection of links]
+Link --> DatabaseConnection
 
 @enduml

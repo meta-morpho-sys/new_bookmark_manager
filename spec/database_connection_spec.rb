@@ -8,11 +8,6 @@ describe DatabaseConnection do
       expect(PG).to receive(:connect).with(dbname: 'my_database')
       DatabaseConnection.setup('my_database')
     end
-
-    example 'the connection is persistent' do
-      conn = DatabaseConnection.setup('new_bookmark_manager_test')
-      expect(DatabaseConnection.connection).to eq conn
-    end
   end
 
   describe '.query' do
