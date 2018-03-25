@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 feature 'Viewing links' do
   scenario 'A user can see links' do
     visit '/'
