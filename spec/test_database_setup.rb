@@ -2,13 +2,16 @@
 
 p 'Setting up test database.....'
 
-require 'pg'
+require './lib/database_connection'
 
-connection = PG.connect(dbname: 'new_bookmark_manager_test')
+DatabaseConnection.setup 'new_bookmark_manager_test'
 
-connection.exec('TRUNCATE links;')
+DatabaseConnection.query('TRUNCATE links;')
 
-sql = 'INSERT INTO links VALUES'
-connection.exec("#{sql}""(1, 'https://online.lloydsbank.co.uk');")
-connection.exec("#{sql}""(2, 'https://www.borrowmydoggy.com/search/dogs');")
-connection.exec("#{sql}""(3, 'http://vogliadicucina.blogspot.co.uk');")
+def insert(num, url)
+  DatabaseConnection.query("INSERT INTO links VALUES(#{num}, '#{url}');")
+end
+
+insert(1, 'https://online.lloydsbank.co.uk')
+insert(2, 'https://www.borrowmydoggy.com/search/dogs')
+insert(3, 'http://vogliadicucina.blogspot.co.uk')

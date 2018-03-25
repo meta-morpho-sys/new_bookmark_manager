@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/user_stories.puml" afterPath="$PROJECT_DIR$/user_stories.puml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/models/link.rb" afterPath="$PROJECT_DIR$/models/link.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,15 +14,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Adding_links__new_bookmark_manager.coverage" NAME="Adding links: new_bookmark_manager Coverage Results" MODIFIED="1521811274700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_all__new_bookmark_manager.coverage" NAME="Link.all: new_bookmark_manager Coverage Results" MODIFIED="1521980969132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1521993891507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@DatabaseConnection__new_bookmark_manager.coverage" NAME="DatabaseConnection: new_bookmark_manager Coverage Results" MODIFIED="1521979595172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_all__new_bookmark_manager.coverage" NAME="Link.all: new_bookmark_manager Coverage Results" MODIFIED="1522004771837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1522004171247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@DatabaseConnection__new_bookmark_manager.coverage" NAME="DatabaseConnection: new_bookmark_manager Coverage Results" MODIFIED="1522004222368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_links_A_user_can_see_links__new_bookmark_manager.coverage" NAME="Viewing links A user can see links: new_bookmark_manager Coverage Results" MODIFIED="1521635586031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link__new_bookmark_manager.coverage" NAME="Link: new_bookmark_manager Coverage Results" MODIFIED="1521812276477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__database_connection_spec___new_bookmark_manager.coverage" NAME="Run spec 'database_connection_spec': new_bookmark_manager Coverage Results" MODIFIED="1521981230349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@DatabaseConnection_setup_the_connection_is_persistent__new_bookmark_manager.coverage" NAME="DatabaseConnection.setup the connection is persistent: new_bookmark_manager Coverage Results" MODIFIED="1521924408829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@DatabaseConnection_query__new_bookmark_manager.coverage" NAME="DatabaseConnection.query: new_bookmark_manager Coverage Results" MODIFIED="1521981226629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_create__new_bookmark_manager.coverage" NAME="Link.create: new_bookmark_manager Coverage Results" MODIFIED="1521981013895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_create__new_bookmark_manager.coverage" NAME="Link.create: new_bookmark_manager Coverage Results" MODIFIED="1522004778786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__view_links_spec___new_bookmark_manager.coverage" NAME="Run spec 'view_links_spec': new_bookmark_manager Coverage Results" MODIFIED="1521465654189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@DatabaseConnection_setup_sets_up_a_connection_to_the_database_through_PG__new_bookmark_manager.coverage" NAME="DatabaseConnection.setup sets up a connection to the database through PG: new_bookmark_manager Coverage Results" MODIFIED="1521923872099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
   </component>
@@ -30,8 +31,8 @@
       <file leaf-file-name="link.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/link.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+            <state relative-caret-position="135">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -41,17 +42,27 @@
         <entry file="file://$PROJECT_DIR$/lib/database_connection.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database_connection_spec.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/database_connection_spec.rb">
+      <file leaf-file-name="database_connection_setup.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database_connection_setup.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="link_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/link_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -90,15 +101,15 @@
         <option value="$PROJECT_DIR$/lib/database_connection_setup.rb" />
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/database_connection_setup.rb" />
-        <option value="$PROJECT_DIR$/models/link.rb" />
         <option value="$PROJECT_DIR$/spec/features/view_links_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/database_connection.rb" />
-        <option value="$PROJECT_DIR$/spec/database_connection_spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/test_database_setup.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/user_stories.puml" />
+        <option value="$PROJECT_DIR$/lib/database_connection.rb" />
+        <option value="$PROJECT_DIR$/spec/database_connection_spec.rb" />
+        <option value="$PROJECT_DIR$/models/link.rb" />
       </list>
     </option>
   </component>
@@ -211,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.All specs in new_bookmark_manager: new_bookmark_manager">
+  <component name="RunManager" selected="RSpec.Link.create: new_bookmark_manager">
     <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
@@ -244,7 +255,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
     </configuration>
-    <configuration name="DatabaseConnection.query: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="DatabaseConnection: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -266,7 +277,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/database_connection_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="DatabaseConnection.query" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="DatabaseConnection" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -394,19 +405,19 @@
       <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.DatabaseConnection.query: new_bookmark_manager" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Link.all: new_bookmark_manager" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.Link.create: new_bookmark_manager" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'database_connection_spec': new_bookmark_manager" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'database_connection_spec': new_bookmark_manager" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.DatabaseConnection: new_bookmark_manager" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Link.all: new_bookmark_manager" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Link.create: new_bookmark_manager" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'database_connection_spec': new_bookmark_manager" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.DatabaseConnection.query: new_bookmark_manager" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Link.create: new_bookmark_manager" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Link.all: new_bookmark_manager" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Link.create: new_bookmark_manager" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Link.all: new_bookmark_manager" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.DatabaseConnection: new_bookmark_manager" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'database_connection_spec': new_bookmark_manager" />
       </list>
     </recent_temporary>
   </component>
@@ -421,26 +432,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521327739529</updated>
-      <workItem from="1521327741000" duration="39570000" />
+      <workItem from="1521327741000" duration="40429000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 17h 01m 45s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 17h 02m 27s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 17h 02m 56s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 17h 03m 06s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 17h 03m 24s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 17h 03m 32s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -456,9 +452,24 @@
     <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 17h 04m 52s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.03.25 at 19h 56m 12s.xml">
+      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DatabaseConnection__new_bookmark_manager - 2018.03.25 at 19h 57m 03s.xml">
+      <configuration name="DatabaseConnection: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Link_all__new_bookmark_manager - 2018.03.25 at 20h 04m 23s.xml">
+      <configuration name="Link.all: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Link_all__new_bookmark_manager - 2018.03.25 at 20h 06m 12s.xml">
+      <configuration name="Link.all: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Link_create__new_bookmark_manager - 2018.03.25 at 20h 06m 19s.xml">
+      <configuration name="Link.create: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39570000" />
+    <option name="totallyTimeSpent" value="40429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="6" />
@@ -468,7 +479,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21711366" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -590,22 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/link_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database_connection_setup.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/test_database_setup.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -654,14 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/link.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/add_links_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -670,18 +657,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/database_connection.rb">
+    <entry file="file://$PROJECT_DIR$/spec/database_connection_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/database_connection_spec.rb">
+    <entry file="file://$PROJECT_DIR$/models/link.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/database_connection.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/link_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_connection_setup.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
