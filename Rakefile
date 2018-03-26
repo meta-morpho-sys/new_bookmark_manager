@@ -1,16 +1,12 @@
-# frozen_string_literal: true
-
-p 'Setting up test database.....'
-
 require './lib/database_connection'
 
+p 'Setting up test database.....'
 task :test_database_setup do
-
   DatabaseConnection.setup 'new_bookmark_manager_test'
 
   DatabaseConnection.query('TRUNCATE links;')
 
-    def insert(num, url)
+  def insert(num, url)
     DatabaseConnection.query("INSERT INTO links VALUES(#{num}, '#{url}');")
   end
 
