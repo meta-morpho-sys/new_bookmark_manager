@@ -4,14 +4,17 @@ p 'Setting up test database.....'
 
 require './lib/database_connection'
 
-DatabaseConnection.setup 'new_bookmark_manager_test'
+task :test_database_setup do
 
-DatabaseConnection.query('TRUNCATE links;')
+  DatabaseConnection.setup 'new_bookmark_manager_test'
 
-def insert(num, url)
-  DatabaseConnection.query("INSERT INTO links VALUES(#{num}, '#{url}');")
+  DatabaseConnection.query('TRUNCATE links;')
+
+    def insert(num, url)
+    DatabaseConnection.query("INSERT INTO links VALUES(#{num}, '#{url}');")
+  end
+
+  insert(1, 'https://online.lloydsbank.co.uk')
+  insert(2, 'https://www.borrowmydoggy.com/search/dogs')
+  insert(3, 'http://vogliadicucina.blogspot.co.uk')
 end
-
-insert(1, 'https://online.lloydsbank.co.uk')
-insert(2, 'https://www.borrowmydoggy.com/search/dogs')
-insert(3, 'http://vogliadicucina.blogspot.co.uk')
