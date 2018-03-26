@@ -10,7 +10,6 @@ class DatabaseConnection
   end
 
   def self.query(sql)
-    puts sql
     @connection.exec(sql)
   end
 end
