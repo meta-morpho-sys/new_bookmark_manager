@@ -5,7 +5,7 @@ class Link {
     +{static} create()
 }
 
-class DatabaseConnection <<singleton>>  {
+class DatabaseConnection <<Singleton>>  {
     +{static} connection
     +{static} setup()
     +{static} query()

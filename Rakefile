@@ -1,7 +1,17 @@
 # frozen_string_literal: true
 
-require 'rspec/core/rake_task'
+p 'Setting up test database.....'
 
-RSpec::Core::RakeTask.new :spec
+require './lib/database_connection'
 
-task default: [:spec]
+DatabaseConnection.setup 'new_bookmark_manager_test'
+
+DatabaseConnection.query('TRUNCATE links;')
+
+def insert(num, url)
+  DatabaseConnection.query("INSERT INTO links VALUES(#{num}, '#{url}');")
+end
+
+insert(1, 'https://online.lloydsbank.co.uk')
+insert(2, 'https://www.borrowmydoggy.com/search/dogs')
+insert(3, 'http://vogliadicucina.blogspot.co.uk')
