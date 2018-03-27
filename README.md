@@ -1,5 +1,23 @@
 # Bookmark Manager
 
+### Prerequisites
+
+The PostgreSQL database management system should be installed on your system.
+
+### Getting started
+
++To get started with Bookmark Manager:
+ 
+ ```
+ git clone https://github.com/meta-morpho-sys/new_bookmark_manager
+ cd new_bookmark_manager
+ bundle install
+ rake setup
+ rspec
+ ```
+
+This will give you the application, and set up two databases: `new_bookmark_manager` for the development environment, and `new_bookmark_manager_test` for the test environment.
+
 #### Domain model for the first user story
 
 `As a time-pressed user
