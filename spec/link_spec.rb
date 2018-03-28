@@ -19,4 +19,11 @@ describe Link do
       expect(links).to include 'www.new-test-link.com'
     end
   end
+
+  describe '.delete' do
+    it 'deletes a link' do
+      Link.delete 'https://online.lloydsbank.co.uk'
+      expect(links).not_to include 'https://online.lloydsbank.co.uk'
+    end
+  end
 end

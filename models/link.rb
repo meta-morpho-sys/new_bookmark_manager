@@ -13,4 +13,8 @@ class Link
   def self.create(url)
     DatabaseConnection.query("INSERT INTO links (url) VALUES('#{url}')")
   end
+
+  def self.delete(url)
+    DatabaseConnection.query("DELETE FROM links WHERE url='#{url}'")
+  end
 end
