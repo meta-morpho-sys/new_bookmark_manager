@@ -12,7 +12,7 @@ The PostgreSQL database management system should be installed on your system.
  git clone https://github.com/meta-morpho-sys/new_bookmark_manager
  cd new_bookmark_manager
  bundle install
- rake setup
+ rake create_databases
  rspec
  ```
 
