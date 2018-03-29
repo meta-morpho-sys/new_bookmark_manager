@@ -3,7 +3,7 @@
 require './lib/database_connection'
 
 task :test_database_setup do
-  p 'Setting up test database.....'
+  puts 'Setting up test database...'
   DatabaseConnection.setup 'new_bookmark_manager_test'
   DatabaseConnection.query('TRUNCATE links')
 
