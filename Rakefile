@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require './lib/database_connection'
+require './lib/db_connector'
 
 task :test_database_setup do
   puts 'Setting up test database...'
-  DatabaseConnection.setup 'new_bookmark_manager_test'
-  DatabaseConnection.query('TRUNCATE links')
+  DbConnector.setup 'new_bookmark_manager_test'
+  DbConnector.query('TRUNCATE links')
 
   def insert(num, url)
-    DatabaseConnection.query("INSERT INTO links VALUES(#{num}, '#{url}')")
+    DbConnector.query("INSERT INTO links VALUES(#{num}, '#{url}')")
   end
 
   insert(1, 'https://online.lloydsbank.co.uk')
@@ -24,7 +24,7 @@ task :create_databases do
     create_if_needed(db_name)
     connection = PG.connect(dbname: db_name)
     connection.exec('CREATE TABLE IF NOT EXISTS links (id SERIAL PRIMARY KEY,
-                    url varchar(60))')
+                    url varchar(1000))')
   end
 end
 

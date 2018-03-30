@@ -4,7 +4,7 @@ require 'pg'
 
 # Connects to the correct database for the current environment
 # when the app starts
-class DatabaseConnection
+class DbConnector
   def self.setup(db_name)
     @connection = PG.connect(dbname: db_name)
   end

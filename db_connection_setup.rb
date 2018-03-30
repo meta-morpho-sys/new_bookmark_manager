@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require './lib/database_connection'
+require './lib/db_connector'
 
 db_name = 'new_bookmark_manager'
 db_name += '_test' if ENV['RACK_ENV'] == 'test'
 
-DatabaseConnection.setup(db_name)
+DbConnector.setup(db_name)
