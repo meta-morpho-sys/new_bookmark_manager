@@ -14,9 +14,14 @@ describe Link do
 
   describe '.create' do
     it 'adds a new link' do
-      link = Link.create 'www.new-test-link.com'
+      link = Link.create 'http://www.new-test-link.com'
       links << link
-      expect(links).to include 'www.new-test-link.com'
+      expect(links).to include 'http://www.new-test-link.com'
+    end
+
+    it 'does not add a new link if it is not valid' do
+      Link.create 'not a real link'
+      expect(Link.all).not_to include 'not a real link'
     end
   end
 
