@@ -5,21 +5,22 @@ require './lib/db_connector'
 # Connects to the DB via DatabaseConnection
 # Makes queries to create and fetch the links from the DB.
 class Link
-  attr_reader :id, :url
+  attr_reader :id, :url, :title
 
-  def initialize(id, url)
+  def initialize(id, url, title)
     @id = id
     @url = url
+    @title = title
   end
 
   def self.all
     result = DbConnector.query 'SELECT * FROM links'
-    result.map { |link| Link.new(link['id'], link['url']) }
+    result.map { |link| Link.new(link['id'], link['url'], link['title']) }
   end
 
-  def self.create(url)
+  def self.create(url, title)
     return false unless a_url?(url)
-    DbConnector.query("INSERT INTO links (url) VALUES('#{url}')")
+    DbConnector.query("INSERT INTO links (url,title) VALUES('#{url}','#{title}')")
   end
 
   def self.delete(url)

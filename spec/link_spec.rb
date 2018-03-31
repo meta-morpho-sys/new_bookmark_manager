@@ -15,7 +15,7 @@ describe Link do
 
   describe '.create' do
     it 'adds a new link' do
-      Link.create 'http://www.new-test-link.com'
+      Link.create 'http://www.new-test-link.com', 'Test title'
       urls = links.map(&:url)
       expect(urls).to include('http://www.new-test-link.com')
     end
