@@ -11,8 +11,8 @@ task :test_database_setup do
     DbConnector.query("INSERT INTO links VALUES(#{num}, '#{url}', '#{title}')")
   end
 
-  insert(1, 'https://online.lloydsbank.co.uk', 'Lloyds')
-  insert(2, 'https://www.borrowmydoggy.com/', 'Doggy')
+  insert(1, 'https://www.borrowmydoggy.com/', 'Doggy')
+  insert(2, 'https://online.lloydsbank.co.uk', 'Lloyds')
   insert(3, 'http://vogliadicucina.blogspot.co.uk', 'Recipes')
 end
 

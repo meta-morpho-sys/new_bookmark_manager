@@ -2,7 +2,7 @@
 
 class Link {
     +{static} all()
-    +{static} create()
+    +{static} create(url, title)
 }
 
 class DatabaseConnection <<Singleton>>  {

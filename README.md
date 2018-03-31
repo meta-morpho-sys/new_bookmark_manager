@@ -22,7 +22,8 @@ This will give you the application, and set up two databases: `new_bookmark_mana
 
 `As a time-pressed user
 So that I can quickly go to web sites I regularly visit
-I would like to see a list of links on the homepage`
+I would like to see a list of links on the homepage
+`
 
      ┌──────────┐              ┌────┐
      │Controller│              │Link│
@@ -38,6 +39,12 @@ I would like to see a list of links on the homepage`
 
 `As a user
  So I can store bookmark data for later retrieval
- I want to add a link to Bookmark Manager`
- 
- 
+ I want to add a link to Bookmark Manager
+ `                    
+                                        
+#### Third user story
+
+`As a user
+ So I can remove my link from Bookmark Manager
+ I want to delete a link
+ `

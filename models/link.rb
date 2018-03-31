@@ -23,8 +23,8 @@ class Link
     DbConnector.query("INSERT INTO links (url,title) VALUES('#{url}','#{title}')")
   end
 
-  def self.delete(url)
-    DbConnector.query("DELETE FROM links WHERE url='#{url}'")
+  def self.delete(id)
+    DbConnector.query("DELETE FROM links WHERE id='#{id}'")
   end
 
   def self.a_url?(url_string)

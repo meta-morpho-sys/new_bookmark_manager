@@ -33,7 +33,7 @@ describe Link do
 
   describe '.delete' do
     it 'deletes a link' do
-      Link.delete 'https://online.lloydsbank.co.uk'
+      Link.delete '1'
       expect(links).not_to include 'https://online.lloydsbank.co.uk'
     end
   end

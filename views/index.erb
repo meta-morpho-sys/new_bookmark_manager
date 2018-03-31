@@ -6,7 +6,7 @@
 <div>
   <form action="/create-new-link" method="post">
     <input type="text" name="url" required="required" size="35" maxlength="1000" placeholder="Paste your link here [max 1000 char]">
-    <input type="text" name="title" size="50" maxlength="100" placeholder="Give a title to your link [max 100 char]">
+    <input type="text" name="title" required="required" size="50" maxlength="100" placeholder="Give a title to your link [max 100 char]">
     <input type="submit" name="new_link" value="Add">
   </form>
 </div>
@@ -21,6 +21,10 @@
           <%= link.url if link.title.nil? %>
           <%= link.title %>
         </a>
+        <form action="delete_link" method="post">
+          <input type="hidden" name="id" value="<%= link.id %>">
+          <input type="submit" value="Delete">
+        </form>
       </li>
     <% end %>
   </ul>
