@@ -6,7 +6,7 @@
 <div>
   <form action="/create-new-link" method="post">
     <input type="text" name="url" required="required" size="35" maxlength="1000" placeholder="Paste your link here [max 1000 char]">
-    <input type="text" name="title" required="required" size="100" maxlength="100" placeholder="Give a title to your link [max 100 char]">
+    <input type="text" name="title" size="50" maxlength="100" placeholder="Give a title to your link [max 100 char]">
     <input type="submit" name="new_link" value="Add">
   </form>
 </div>
@@ -16,12 +16,14 @@
 <div>
   <ul>
     <% @links.each do |link| %>
-      <li id="link-<%= link.id %>"><%= link.url %>
-        <%= link.title %>
+      <li id="link-<%= link.id %>">
+        <a href="<%= link.url %>" target="_blank">
+          <%= link.url if link.title.nil? %>
+          <%= link.title %>
+        </a>
       </li>
     <% end %>
   </ul>
 </div>
-
 
 </html>

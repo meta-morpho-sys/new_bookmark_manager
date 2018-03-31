@@ -17,10 +17,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/create-new-link' do
-    flash[:notice] = 'You must submit a valid URL' unless Link.create(
-      params['url'],
-      params['title']
-    )
+    link = Link.create(params['url'], params['title'])
+    flash[:notice] = 'You must submit a valid URL' unless link
     redirect '/'
   end
 
