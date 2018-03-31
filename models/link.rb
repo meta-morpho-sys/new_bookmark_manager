@@ -5,12 +5,15 @@ require './lib/db_connector'
 # Connects to the DB via DatabaseConnection
 # Makes queries to create and fetch the links from the DB.
 class Link
-  # TODO :Use a 'max_length' CONSTANT to reference link length in the app
-  # LINK_MAX_LENGTH = 1000
+  attr_reader :url
+
+  def initialize(url)
+    @url = url
+  end
 
   def self.all
     result = DbConnector.query 'SELECT * FROM links'
-    result.map { |link| link['url'] }
+    result.map { |link| Link.new(link['url']) }
   end
 
   # TODO : Raise Exception if user tries to save the same link more than once.
@@ -27,4 +30,6 @@ class Link
     url_string.match?(/\A#{URI.regexp(%w[http https])}\z/)
   end
 
+  # TODO :Use a 'max_length' CONSTANT to reference link length in the app
+  # LINK_MAX_LENGTH = 1000
 end

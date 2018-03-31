@@ -5,23 +5,29 @@ require_relative '../models/link'
 describe Link do
   let(:links) { Link.all }
   describe '.all' do
-    it 'has all links' do
-      expect(links).to include 'https://online.lloydsbank.co.uk'
-      expect(links).to include 'https://www.borrowmydoggy.com/search/dogs'
-      expect(links).to include 'http://vogliadicucina.blogspot.co.uk'
+    it 'returns all links wrapped in links instances' do
+
+      urls = links.map(&:url)
+
+      expect(urls).to include('https://online.lloydsbank.co.uk')
+      expect(urls).to include('https://www.borrowmydoggy.com/')
+      expect(urls).to include('http://vogliadicucina.blogspot.co.uk')
     end
   end
 
   describe '.create' do
     it 'adds a new link' do
-      link = Link.create 'http://www.new-test-link.com'
-      links << link
-      expect(links).to include 'http://www.new-test-link.com'
+      Link.create 'http://www.new-test-link.com'
+      urls = links.map(&:url)
+      expect(urls).to include('http://www.new-test-link.com')
     end
 
     it 'does not add a new link if it is not valid' do
       Link.create 'not a real link'
-      expect(Link.all).not_to include 'not a real link'
+
+      urls = links.map(&:url)
+
+      expect(urls).not_to include 'not a real link'
     end
   end
 

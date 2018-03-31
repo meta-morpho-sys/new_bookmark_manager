@@ -12,7 +12,7 @@ task :test_database_setup do
   end
 
   insert(1, 'https://online.lloydsbank.co.uk')
-  insert(2, 'https://www.borrowmydoggy.com/search/dogs')
+  insert(2, 'https://www.borrowmydoggy.com/')
   insert(3, 'http://vogliadicucina.blogspot.co.uk')
 end
 
