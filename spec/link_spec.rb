@@ -17,12 +17,16 @@ describe Link do
     it 'adds a new link' do
       Link.create 'http://www.new-test-link.com', 'Test title'
       urls = links.map(&:url)
+      titles = links.map(&:title)
+      expect(titles).to include 'Test title'
       expect(urls).to include('http://www.new-test-link.com')
     end
 
     it 'does not add a new link if it is not valid' do
-      Link.create 'not a real link'
+      Link.create 'not a real link', 'Not real title hehehe'
       urls = links.map(&:url)
+      titles = links.map(&:title)
+      expect(titles).not_to include 'Not real title hehehe'
       expect(urls).not_to include 'not a real link'
     end
   end
