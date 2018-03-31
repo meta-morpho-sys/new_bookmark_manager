@@ -16,7 +16,6 @@ class Link
     result.map { |link| Link.new(link['url']) }
   end
 
-  # TODO : Raise Exception if user tries to save the same link more than once.
   def self.create(url)
     return false unless a_url?(url)
     DbConnector.query("INSERT INTO links (url) VALUES('#{url}')")
@@ -29,7 +28,7 @@ class Link
   def self.a_url?(url_string)
     url_string.match?(/\A#{URI.regexp(%w[http https])}\z/)
   end
-
-  # TODO :Use a 'max_length' CONSTANT to reference link length in the app
-  # LINK_MAX_LENGTH = 1000
 end
+# TODO : Raise Exception if user tries to save the same link more than once.
+# TODO : Use a 'max_length' CONSTANT to reference link length in the app
+# LINK_MAX_LENGTH = 1000
