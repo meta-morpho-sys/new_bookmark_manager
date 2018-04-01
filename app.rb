@@ -23,8 +23,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/delete_link' do
-    connection = PG.connect(dbname: 'new_bookmark_manager_test')
-    connection.exec("DELETE FROM links WHERE id = #{params['id']}")
+    Link.delete(params['id'])
+    flash[:notice] = "Link #{params['title']} was successfully deleted!"
     redirect '/'
   end
 

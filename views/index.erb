@@ -23,6 +23,7 @@
         </a>
         <form action="delete_link" method="post">
           <input type="hidden" name="id" value="<%= link.id %>">
+          <input type="hidden" name="title" value="<%= link.title %>">
           <input type="submit" value="Delete">
         </form>
       </li>
