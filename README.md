@@ -48,3 +48,8 @@ I would like to see a list of links on the homepage
  So I can remove my link from Bookmark Manager
  I want to delete a link
  `
+ 
+ #### Fourth user story
+ `As a user
+  So I can change a link in Bookmark Manager
+  I want to update a link`

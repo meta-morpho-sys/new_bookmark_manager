@@ -27,8 +27,8 @@ class Link
     DbConnector.query("DELETE FROM links WHERE id='#{id}'")
   end
 
-  def self.a_url?(url_string)
-    url_string.match?(/\A#{URI.regexp(%w[http https])}\z/)
+  def self.a_url?(string)
+    string.match?(/\A#{URI.regexp(%w[http https])}\z/)
   end
 end
 # TODO : Raise Exception if user tries to save the same link more than once.

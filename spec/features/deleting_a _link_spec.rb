@@ -5,6 +5,6 @@ feature 'Deleting a link' do
       click_button 'Delete'
     end
     expect(current_path).to eq '/'
-    expect(page).not_to have_content 'Doggy'
+    expect(page).to have_content 'Link Doggy was successfully deleted!'
   end
 end

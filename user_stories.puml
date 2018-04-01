@@ -3,6 +3,8 @@
 class Link {
     +{static} all()
     +{static} create(url, title)
+    +{static} delete(id)
+    +{static} a_url?(string)
 }
 
 class DatabaseConnection <<Singleton>>  {
@@ -12,6 +14,7 @@ class DatabaseConnection <<Singleton>>  {
 }
 
 Controller --> Link: all links
+Controller --> Index
 Link --> Controller: [collection of links]
 Link --> DatabaseConnection
 
