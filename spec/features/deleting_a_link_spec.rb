@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 feature 'Deleting a link' do
   scenario 'user can delete a link' do
     visit '/'

@@ -23,12 +23,16 @@ class Link
     DbConnector.query("INSERT INTO links (url,title) VALUES('#{url}','#{title}')")
   end
 
+  def self.a_url?(string)
+    string.match?(/\A#{URI.regexp(%w[http https])}\z/)
+  end
+
   def self.delete(id)
     DbConnector.query("DELETE FROM links WHERE id='#{id}'")
   end
 
-  def self.a_url?(string)
-    string.match?(/\A#{URI.regexp(%w[http https])}\z/)
+  def self.update(id, url, title)
+    DbConnector.query("UPDATE links SET Title = '#{title}', url = '#{url}' WHERE id = #{id}")
   end
 end
 # TODO : Raise Exception if user tries to save the same link more than once.

@@ -35,4 +35,12 @@ describe Link do
       expect(links).not_to include 'https://online.lloydsbank.co.uk'
     end
   end
+
+  describe '.update' do
+    it 'updates the title' do
+      Link.update '2', 'https://online.lloydsbank.co.uk', 'Lloyds account'
+      expect(titles).not_to include 'Lloyds'
+      expect(titles).to include 'Lloyds account'
+    end
+  end
 end
