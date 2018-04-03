@@ -23,10 +23,6 @@ class Link
     DbConnector.query("INSERT INTO links (url,title) VALUES('#{url}','#{title}')")
   end
 
-  def self.a_url?(string)
-    string.match?(/\A#{URI.regexp(%w[http https])}\z/)
-  end
-
   def self.delete(id)
     DbConnector.query("DELETE FROM links WHERE id='#{id}'")
   end
@@ -35,7 +31,15 @@ class Link
     return false unless a_url?(url)
     DbConnector.query("UPDATE links SET Title = '#{title}', url = '#{url}' WHERE id = #{id}")
   end
+
+  def self.a_url?(string)
+    string.match?(/\A#{URI.regexp(%w[http https])}\z/)
+  end
 end
-# TODO : Raise Exception if user tries to save the same link more than once.
+
+
 # TODO : Use a 'max_length' CONSTANT to reference link length in the app
+# TODO : .create - Raise Exception if user tries to save the same link more than once.
+# TODO : .update - If no new title or url are provided, keep the old one
+# TODO : .delete - Add a request to confirm deletion before deleting.
 # LINK_MAX_LENGTH = 1000
