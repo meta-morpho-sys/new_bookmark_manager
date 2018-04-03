@@ -34,7 +34,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/update_link' do
-    Link.update(params['id'], params['url'], params['title'])
+    link = Link.update(params['id'], params['url'], params['title'])
+    flash[:notice] = 'You must submit a valid URL' unless link
     redirect '/'
   end
 
