@@ -21,10 +21,17 @@
           <%= link.url if link.title.nil? %>
           <%= link.title %>
         </a>
-        <form action="delete_link" method="post">
+        <form action="/delete_link" method="post">
           <input type="hidden" name="id" value="<%= link.id %>">
           <input type="hidden" name="title" value="<%= link.title %>">
           <input type="submit" value="Delete">
+        </form>
+
+        <form action="/update_link" method="get">
+          <input type="hidden" name="id" value="<%= link.id %>">
+          <input type="hidden" name="title" value="<%= link.title %>">
+          <input type="hidden" name="title" value="<%= link.url %>">
+          <input type="submit" value="Update">
         </form>
       </li>
     <% end %>
