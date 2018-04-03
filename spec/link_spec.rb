@@ -42,5 +42,11 @@ describe Link do
       expect(titles).not_to include 'Lloyds'
       expect(titles).to include 'Lloyds account'
     end
+
+    it 'does not update a link if it is not valid' do
+      Link.update '3', 'not a real link', 'Not real title hehehe'
+      expect(titles).not_to include 'Not real title hehehe'
+      expect(urls).not_to include 'not a real link'
+    end
   end
 end

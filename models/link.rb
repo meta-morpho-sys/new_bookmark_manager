@@ -32,6 +32,7 @@ class Link
   end
 
   def self.update(id, url, title)
+    return false unless a_url?(url)
     DbConnector.query("UPDATE links SET Title = '#{title}', url = '#{url}' WHERE id = #{id}")
   end
 end
