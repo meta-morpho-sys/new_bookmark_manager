@@ -3,7 +3,7 @@
 require './lib/db_connector'
 
 # Connects to the DB via DatabaseConnection
-# Makes queries to create and fetch the links from the DB.
+# Makes queries to execute the CRUD actions on the links in the DB.
 class Link
   attr_reader :id, :url, :title
 
@@ -20,7 +20,12 @@ class Link
 
   def self.create(url, title)
     return false unless a_url?(url)
-    DbConnector.query("INSERT INTO links (url,title) VALUES('#{url}','#{title}')")
+    begin
+      DbConnector.query("INSERT INTO links (url, title)
+                                  VALUES ('#{url}', '#{title}')")
+    rescue StandardError
+      raise "Title *#{title}* already exists"
+    end
   end
 
   def self.delete(id)
@@ -29,7 +34,18 @@ class Link
 
   def self.update(id, url, title)
     return false unless a_url?(url)
-    DbConnector.query("UPDATE links SET Title = '#{title}', url = '#{url}' WHERE id = #{id}")
+    DbConnector.query("UPDATE
+                                links
+                            SET
+                                Title = '#{title}',
+                                url = '#{url}'
+                            WHERE
+                                id = #{id}")
+  end
+
+  def self.find(id)
+    result = DbConnector.query("SELECT * FROM links WHERE id='#{id}'")
+    result.map { |link| Link.new(link['id'], link['url'], link['title']) }.first
   end
 
   def self.a_url?(string)
@@ -37,9 +53,7 @@ class Link
   end
 end
 
-
 # TODO : Use a 'max_length' CONSTANT to reference link length in the app
-# TODO : .create - Raise Exception if user tries to save the same link more than once.
+# LINK_MAX_LENGTH = 1000
 # TODO : .update - If no new title or url are provided, keep the old one
 # TODO : .delete - Add a request to confirm deletion before deleting.
-# LINK_MAX_LENGTH = 1000
