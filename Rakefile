@@ -23,8 +23,11 @@ task :create_databases do
   db_names.each do |db_name|
     create_if_needed(db_name)
     connection = PG.connect(dbname: db_name)
-    connection.exec('CREATE TABLE IF NOT EXISTS links (id SERIAL PRIMARY KEY,
-                    url VARCHAR(1000), title VARCHAR(100))')
+    connection.exec('CREATE TABLE IF NOT EXISTS links (
+                              id SERIAL PRIMARY KEY,
+                              url VARCHAR(1000) NOT NULL,
+                              title VARCHAR(100) NOT NULL UNIQUE
+                              )')
   end
 end
 
