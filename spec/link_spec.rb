@@ -71,7 +71,6 @@ describe Link do
   describe '.find' do
     it 'finds a specific link' do
       link = Link.find 2
-      p link
       expect(link.url).to eq 'https://online.lloydsbank.co.uk'
       expect(link.title).to eq 'Lloyds'
     end
