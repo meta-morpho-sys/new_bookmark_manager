@@ -4,7 +4,7 @@
 <head></head>
 
 <div>
-  <form action="/create-new-link" method="post">
+  <form action="/links/new" method="post">
     <label>URL</label>
     <input type="text" name="url" required="required" size="50" maxlength="1000" placeholder="Paste your link here [max 1000 char]">
     <label>Title</label>
@@ -24,14 +24,14 @@
           <%= link.title %>
         </a>
 
-        <form action="/update_link" method="get">
+        <form action="/links/edit" method="get">
           <input type="hidden" name="id" value="<%= link.id %>">
           <input type="hidden" name="title" value="<%= link.title %>">
           <input type="hidden" name="url" value="<%= link.url %>">
           <input type="submit" value="Edit">
         </form>
 
-        <form action="/delete_link" method="post">
+        <form action="/links/delete" method="post">
           <input type="hidden" name="id" value="<%= link.id %>">
           <input type="hidden" name="title" value="<%= link.title %>">
           <input type="submit" value="Delete">

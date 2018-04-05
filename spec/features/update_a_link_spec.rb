@@ -8,7 +8,7 @@ feature 'Updating a link' do
       click_button 'Edit'
     end
 
-    expect(current_path).to eq '/update_link'
+    expect(current_path).to eq '/links/edit'
     fill_in 'new_url', with: 'https://www.google.co.uk'
     fill_in 'new_title', with: 'Google'
     click_button 'Confirm the edit'

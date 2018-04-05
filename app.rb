@@ -12,11 +12,15 @@ class BookmarkManager < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
-    @links = Link.all
-    erb :index
+    redirect '/links'
   end
 
-  post '/create-new-link' do
+  get '/links' do
+    @links = Link.all
+    erb :'links/index'
+  end
+
+  post '/links/new' do
     begin
       link = Link.create(params['url'], params['title'])
       flash[:notice] = 'You must submit a valid URL.' unless link
@@ -26,23 +30,30 @@ class BookmarkManager < Sinatra::Base
       flash[:notice] = 'Something went wrong with the database. \
                         This sometimes happens, please try again.'
     end
-    redirect '/'
+    redirect '/links'
   end
 
-  post '/delete_link' do
+  post '/links/delete' do
     Link.delete(params['id'])
     flash[:notice] = "Link #{params['title']} was successfully deleted!"
-    redirect '/'
+    redirect '/links'
   end
 
-  get '/update_link' do
+  get '/links/edit' do
     @link = Link.find(params['id'])
-    erb :update_link
+    erb :'links/edit'
   end
 
-  post '/update_link' do
-    link = Link.update(params['id'], params['new_url'], params['new_title'])
-    flash[:notice] = 'You must submit a valid URL' unless link
+  post '/links/update' do
+    begin
+      link = Link.update(params['id'], params['new_url'], params['new_title'])
+      flash[:notice] = 'You must submit a valid URL' unless link
+    rescue PG::UniqueViolation
+      flash[:notice] = 'That title is already taken, choose another.'
+    rescue StandardError
+      flash[:notice] = 'Something went wrong with the database. \
+                        This sometimes happens, please try again.'
+    end
     redirect '/'
   end
 

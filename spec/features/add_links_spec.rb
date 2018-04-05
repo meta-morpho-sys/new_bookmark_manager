@@ -11,7 +11,7 @@ feature 'Adding links' do
 
     scenario 'title duplications are not allowed' do
       fill_in_and_add
-      expect(current_path).to eq '/'
+      expect(current_path).to eq '/links'
 
       fill_in_and_add
       expect(page).to have_content 'That title is already taken, choose another.'
