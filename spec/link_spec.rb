@@ -26,12 +26,6 @@ describe Link do
       expect(titles).not_to include 'Not real title hehehe'
       expect(urls).not_to include 'not a real link'
     end
-
-    it 'raises an exception if a title is duplicated' do
-      Link.create 'http://www.new-test-link.com', 'Test title'
-      expect { Link.create 'http://www.doubled-title.com', 'Test title' }
-        .to raise_error 'Title *Test title* already exists'
-    end
   end
 
   describe '.delete' do
@@ -60,11 +54,6 @@ describe Link do
     it 'returns previously submitted url if no new url is provided' do
       Link.update '2', '', 'Lloyds account'
       expect(urls).to include 'https://online.lloydsbank.co.uk'
-    end
-
-    xit 'returns previously submitted title if no new title is provided' do
-      Link.update '2', 'https://test-online.lloydsbank.co.uk', ''
-      expect(titles).to include 'Lloyds'
     end
   end
 

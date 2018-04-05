@@ -17,8 +17,14 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/create-new-link' do
-    link = Link.create(params['url'], params['title'])
-    flash[:notice] = 'You must submit a valid URL' unless link
+    begin
+      link = Link.create(params['url'], params['title'])
+      flash[:notice] = 'You must submit a valid URL.' unless link
+    rescue PG::UniqueViolation
+      flash[:notice] = 'That title is already taken, choose another.'
+    rescue StandardError
+      flash[:notice] = 'Something went wrong with the database. This sometimes happens, please try again.'
+    end
     redirect '/'
   end
 
@@ -29,12 +35,12 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/update_link' do
-    @link_id = params['id']
+    @link = Link.find(params['id'])
     erb :update_link
   end
 
   post '/update_link' do
-    link = Link.update(params['id'], params['url'], params['title'])
+    link = Link.update(params['id'], params['new_url'], params['new_title'])
     flash[:notice] = 'You must submit a valid URL' unless link
     redirect '/'
   end

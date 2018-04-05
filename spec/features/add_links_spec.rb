@@ -19,4 +19,18 @@ feature 'Adding links' do
     expect(page).not_to have_link 'not a real link'
     expect(page).to have_content 'You must submit a valid URL'
   end
+
+  scenario 'title duplications are not allowed' do
+    visit '/'
+
+    fill_in 'url', with: 'https://www.testlink.com'
+    fill_in 'title', with: 'Test title'
+    click_button 'Add'
+    expect(current_path).to eq '/'
+
+    fill_in 'url', with: 'https://www.new_testlink.com'
+    fill_in 'title', with: 'Test title'
+    click_button 'Add'
+    expect(page).to have_content 'That title is already taken, choose another.'
+  end
 end

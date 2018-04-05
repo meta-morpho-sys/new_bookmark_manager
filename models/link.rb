@@ -20,12 +20,8 @@ class Link
 
   def self.create(url, title)
     return false unless a_url?(url)
-    begin
-      DbConnector.query("INSERT INTO links (url, title)
-                                  VALUES ('#{url}', '#{title}')")
-    rescue StandardError
-      raise "Title *#{title}* already exists"
-    end
+    DbConnector.query("INSERT INTO links (url, title)
+                                VALUES ('#{url}', '#{title}')")
   end
 
   def self.delete(id)
