@@ -23,7 +23,8 @@ class BookmarkManager < Sinatra::Base
     rescue PG::UniqueViolation
       flash[:notice] = 'That title is already taken, choose another.'
     rescue StandardError
-      flash[:notice] = 'Something went wrong with the database. This sometimes happens, please try again.'
+      flash[:notice] = 'Something went wrong with the database. \
+                        This sometimes happens, please try again.'
     end
     redirect '/'
   end
