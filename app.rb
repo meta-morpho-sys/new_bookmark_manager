@@ -4,6 +4,7 @@ require 'sinatra/base'
 require 'sinatra/flash'
 require 'uri'
 require './models/link'
+require './models/comment'
 require './db_connection_setup.rb'
 
 # Controller
@@ -58,7 +59,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/links/comments' do
-    p 'Great link', 'Very useful'
+    @comments = Comment.all
+    erb :'comments/index'
   end
   run! if app_file == $PROGRAM_NAME
 end

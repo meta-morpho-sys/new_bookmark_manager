@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Comments</title>
 </head>
 <body>
-$END$
+
+<div>
+  <ul>
+    <% @comments.each do |comment| %>
+      <li>
+        <%= comment.text %>
+      </li>
+    <% end %>
+  </ul>
+
+  <a href="/">Cool, go back to links!</a>
+</div>
+
 </body>
 </html>
