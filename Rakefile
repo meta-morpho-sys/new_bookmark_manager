@@ -14,6 +14,13 @@ task :test_database_setup do
   insert(1, 'https://www.borrowmydoggy.com/', 'Doggy')
   insert(2, 'https://online.lloydsbank.co.uk', 'Lloyds')
   insert(3, 'http://vogliadicucina.blogspot.co.uk', 'Recipes')
+
+  def insert_comment(num, text, link_id)
+    DbConnector.query("INSERT INTO comments VALUES(#{num},'#{text}',#{link_id})")
+  end
+
+  insert_comment(1,'Great link', 1)
+  insert_comment(2,'Very useful', 1)
 end
 
 task :create_databases do
@@ -31,7 +38,7 @@ task :create_databases do
     connection.exec('CREATE TABLE IF NOT EXISTS comments (
                               id SERIAL PRIMARY KEY,
                               text VARCHAR(240) NOT NULL,
-                              link_id INTEGER REFERENCES links (id)
+                              link_id INTEGER REFERENCES links (id) ON DELETE CASCADE
                               )')
   end
 end
