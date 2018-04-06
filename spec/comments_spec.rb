@@ -1,11 +1,15 @@
 # frozen_string_literal: true
 
-require 'rspec'
+require_relative '../models/comment.rb'
 
-describe 'Viewing comments' do
+describe Comment do
+  let(:comments) { Comment.all }
+  let(:text) { comments.map(&:text) }
 
-  it 'should display all comments' do
-
-    true.should == false
+  describe '.all' do
+    it 'returns all comments wrapped in comments instances' do
+      expect(text).to include 'Great link'
+      expect(text).to include 'Very useful'
+    end
   end
 end
