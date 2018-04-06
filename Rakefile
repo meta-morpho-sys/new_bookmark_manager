@@ -1,26 +1,19 @@
 # frozen_string_literal: true
 
 require './lib/db_connector'
+require_relative 'db_helpers'
 
 task :test_database_setup do
   puts 'Setting up test database...'
   DbConnector.setup 'new_bookmark_manager_test'
-  DbConnector.query('TRUNCATE links CASCADE')
+  DbConnector.query('TRUNCATE comments, links')
 
-  def insert(num, url, title)
-    DbConnector.query("INSERT INTO links VALUES(#{num}, '#{url}', '#{title}')")
-  end
+  insert_link(1, 'https://www.borrowmydoggy.com/', 'Doggy')
+  insert_link(2, 'https://online.lloydsbank.co.uk', 'Lloyds')
+  insert_link(3, 'http://vogliadicucina.blogspot.co.uk', 'Recipes')
 
-  insert(1, 'https://www.borrowmydoggy.com/', 'Doggy')
-  insert(2, 'https://online.lloydsbank.co.uk', 'Lloyds')
-  insert(3, 'http://vogliadicucina.blogspot.co.uk', 'Recipes')
-
-  def insert_comment(num, text, link_id)
-    DbConnector.query("INSERT INTO comments VALUES(#{num},'#{text}',#{link_id})")
-  end
-
-  insert_comment(1,'Great link', 1)
-  insert_comment(2,'Very useful', 1)
+  insert_comment(1, 'Great link', 1)
+  insert_comment(2, 'Very useful', 1)
 end
 
 task :create_databases do
@@ -43,18 +36,13 @@ task :create_databases do
   end
 end
 
-def create_if_needed(db_name)
-  if db_exists?(db_name)
-    puts "NOTICE:  database \"#{db_name}\" already exists, skipping"
-  else
-    connection.exec("CREATE DATABASE #{db_name}")
-  end
-end
 
-def db_exists?(db_name)
-  conn = PG.connect
-  res = conn.exec(
-    "SELECT count(*) FROM pg_database WHERE datname ='#{db_name}'"
-  )
-  res.cmd_tuples == 1
+task :teardown do
+  puts "Tearing down databases...\n\n"
+  db_names = %w[new_bookmark_manager new_bookmark_manager_test]
+
+  db_names.each do |db_name|
+    connection = PG.connect(dbname: db_name)
+    connection.exec("DROP DATABASE #{db_name}")
+  end
 end
