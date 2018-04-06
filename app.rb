@@ -57,5 +57,8 @@ class BookmarkManager < Sinatra::Base
     redirect '/'
   end
 
+  get '/links/comments' do
+    p 'Great link', 'Very useful'
+  end
   run! if app_file == $PROGRAM_NAME
 end

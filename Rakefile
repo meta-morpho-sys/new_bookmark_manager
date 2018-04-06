@@ -5,7 +5,7 @@ require './lib/db_connector'
 task :test_database_setup do
   puts 'Setting up test database...'
   DbConnector.setup 'new_bookmark_manager_test'
-  DbConnector.query('TRUNCATE links')
+  DbConnector.query('TRUNCATE links CASCADE')
 
   def insert(num, url, title)
     DbConnector.query("INSERT INTO links VALUES(#{num}, '#{url}', '#{title}')")
@@ -27,6 +27,11 @@ task :create_databases do
                               id SERIAL PRIMARY KEY,
                               url VARCHAR(1000) NOT NULL,
                               title VARCHAR(100) NOT NULL UNIQUE
+                              )')
+    connection.exec('CREATE TABLE IF NOT EXISTS comments (
+                              id SERIAL PRIMARY KEY,
+                              text VARCHAR(240) NOT NULL,
+                              link_id INTEGER REFERENCES links (id)
                               )')
   end
 end

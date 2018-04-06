@@ -36,6 +36,13 @@
           <input type="hidden" name="title" value="<%= link.title %>">
           <input type="submit" value="Delete">
         </form>
+
+        <form action="/links/comments" method="get">
+          <input type="hidden" name="id" value="<%= link.id %>">
+          <!--<input type="hidden" name="title" value="<%= link.title %>">-->
+          <!--<input type="hidden" name="url" value="<%= link.url %>">-->
+          <input type="submit" value="View comments">
+        </form>
       </li>
     <% end %>
   </ul>
