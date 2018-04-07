@@ -32,7 +32,7 @@ describe Bookmark do
     it 'deletes a bookmark' do
       Bookmark.delete '2'
       expect(titles).not_to include 'Lloyds'
-      expect(bookmarks).not_to include 'https://online.lloydsbank.co.uk'
+      expect(urls).not_to include 'https://online.lloydsbank.co.uk'
     end
   end
 
@@ -62,6 +62,14 @@ describe Bookmark do
       bookmark = Bookmark.find 2
       expect(bookmark.url).to eq 'https://online.lloydsbank.co.uk'
       expect(bookmark.title).to eq 'Lloyds'
+    end
+  end
+
+  describe '#==' do
+    example 'two Bookmarks are equal if their IDs match' do
+      bookmark1 = Bookmark.new(1, 'https://test.com', 'test 1')
+      bookmark2 = Bookmark.new 1, 'https://test.com', 'test 1'
+      expect(bookmark1).to eq bookmark2
     end
   end
 end

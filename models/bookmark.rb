@@ -13,6 +13,10 @@ class Bookmark
     @title = title
   end
 
+  def ==(other)
+    @id == other.id
+  end
+
   def self.all
     result = DbConnector.query 'SELECT * FROM bookmarks'
     result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }
