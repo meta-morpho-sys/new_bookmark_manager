@@ -21,7 +21,7 @@ class Comment
     result = DbConnector.query("INSERT INTO comments (text, bookmark_id)
                                         VALUES ('#{text}', '#{bookmark_id}')
                                     RETURNING
-                                        id, text, bookmark_id")
+                                        id, text, bookmark_id, created_at")
     Comment.new(result[0]['id'], result[0]['text'], result[0]['bookmark.id'])
   end
 end

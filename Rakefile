@@ -32,6 +32,7 @@ task :create_databases do
                               id SERIAL PRIMARY KEY,
                               text VARCHAR(240) NOT NULL,
                               bookmark_id INTEGER REFERENCES bookmarks (id) ON DELETE CASCADE
+                              created_at TIMESTAMP DEFAULT now()
                               )')
   end
 end
