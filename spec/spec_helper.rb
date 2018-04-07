@@ -15,12 +15,18 @@ end
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require 'selenium-webdriver'
 require 'simplecov'
 require 'simplecov-console'
 require 'features/web_helpers'
 
 # require our Sinatra app file
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
+
+# Setting up driver to communicate with HTML forms with  RESTful routes.
+Capybara.register_driver :rack_test do |app|
+  Capybara::RackTest::Driver.new(Rack::MethodOverride.new(app))
+end
 
 Capybara.app = BookmarkManager
 
