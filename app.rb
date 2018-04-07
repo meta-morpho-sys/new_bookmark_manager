@@ -34,7 +34,7 @@ class BookmarkManager < Sinatra::Base
     redirect '/links'
   end
 
-  post '/links/delete' do
+  delete '/links/delete' do
     Link.delete(params['id'])
     flash[:notice] = "Link #{params['title']} was successfully deleted!"
     redirect '/links'
@@ -45,7 +45,8 @@ class BookmarkManager < Sinatra::Base
     erb :'links/edit'
   end
 
-  post '/links/update' do
+  patch '/links/update' do
+    # p params
     begin
       link = Link.update(params['id'], params['new_url'], params['new_title'])
       flash[:notice] = 'You must submit a valid URL' unless link

@@ -32,6 +32,7 @@
         </form>
 
         <form action="/links/delete" method="post">
+          <input type="hidden" name="_method" value="DELETE">
           <input type="hidden" name="id" value="<%= link.id %>">
           <input type="hidden" name="title" value="<%= link.title %>">
           <input type="submit" value="Delete">
@@ -39,8 +40,6 @@
 
         <form action="/links/comments" method="get">
           <input type="hidden" name="id" value="<%= link.id %>">
-          <!--<input type="hidden" name="title" value="<%= link.title %>">-->
-          <!--<input type="hidden" name="url" value="<%= link.url %>">-->
           <input type="submit" value="View comments">
         </form>
       </li>
