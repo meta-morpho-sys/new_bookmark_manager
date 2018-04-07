@@ -12,4 +12,12 @@ describe Comment do
       expect(text).to include 'Very useful'
     end
   end
+
+  describe '.create' do
+    it 'adds a new comment' do
+      bookmark = Bookmark.new(3, 'http://www.testlink.com', 'test')
+      comment = Comment.create('My comment', bookmark.id)
+      expect(comment.id).not_to be_nil
+    end
+  end
 end
