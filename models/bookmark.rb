@@ -3,8 +3,8 @@
 require './lib/db_connector'
 
 # Connects to the DB via DatabaseConnection
-# Makes queries to execute the CRUD actions on the links in the DB.
-class Link
+# Makes queries to execute the CRUD actions on the bookmarks in the DB.
+class Bookmark
   attr_reader :id, :url, :title
 
   def initialize(id, url, title)
@@ -14,24 +14,24 @@ class Link
   end
 
   def self.all
-    result = DbConnector.query 'SELECT * FROM links'
-    result.map { |link| Link.new(link['id'], link['url'], link['title']) }
+    result = DbConnector.query 'SELECT * FROM bookmarks'
+    result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }
   end
 
   def self.create(url, title)
     return false unless a_url?(url)
-    DbConnector.query("INSERT INTO links (url, title)
+    DbConnector.query("INSERT INTO bookmarks (url, title)
                                 VALUES ('#{url}', '#{title}')")
   end
 
   def self.delete(id)
-    DbConnector.query("DELETE FROM links WHERE id='#{id}'")
+    DbConnector.query("DELETE FROM bookmarks WHERE id='#{id}'")
   end
 
   def self.update(id, url, title)
     return false unless a_url?(url)
     DbConnector.query("UPDATE
-                                links
+                                bookmarks
                             SET
                                 Title = '#{title}',
                                 url = '#{url}'
@@ -40,8 +40,8 @@ class Link
   end
 
   def self.find(id)
-    result = DbConnector.query("SELECT * FROM links WHERE id='#{id}'")
-    result.map { |link| Link.new(link['id'], link['url'], link['title']) }.first
+    result = DbConnector.query("SELECT * FROM bookmarks WHERE id='#{id}'")
+    result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }.first
   end
 
   def self.a_url?(string)
@@ -49,7 +49,7 @@ class Link
   end
 end
 
-# TODO : Use a 'max_length' CONSTANT to reference link length in the app
-# LINK_MAX_LENGTH = 1000
+# TODO : Use a 'max_length' CONSTANT to reference bookmark length in the app
+# BOOKMARKS_MAX_LENGTH = 1000
 # TODO : .update - If no new title or url are provided, keep the old one
 # TODO : .delete - Add a request to confirm deletion before deleting.

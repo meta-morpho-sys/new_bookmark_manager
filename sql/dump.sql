@@ -1,4 +1,4 @@
 SELECT
-  'INSERT INTO LINKS (URL, TITLE) VALUES (''' || url || ''', ''' || title ||
+  'INSERT INTO bookmarkS (URL, TITLE) VALUES (''' || url || ''', ''' || title ||
   ''');'
-FROM LINKS;
+FROM BOOKMARKSS;

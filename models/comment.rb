@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
 class Comment
-  attr_reader :id, :text, :link_id
+  attr_reader :id, :text, :bookmark_id
 
-  def initialize(id, text, link_id)
+  def initialize(id, text, bookmark_id)
     @id = id
     @text = text
-    @link_id = link_id
+    @bookmark_id = bookmark_id
   end
 
   def self.all
     result = DbConnector.query 'SELECT * FROM comments'
-    result.map { |comm| Comment.new(comm['id'], comm['text'], comm['link_id']) }
+    result.map { |comm| Comment.new(comm['id'], comm['text'], comm['bookmark_id']) }
   end
 end

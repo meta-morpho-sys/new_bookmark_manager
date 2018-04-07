@@ -1,17 +1,16 @@
 # frozen_string_literal: true
 
-feature 'Adding links' do
+feature 'Adding bookmarks' do
   before { visit '/' }
-  context 'adding real links' do
-    scenario 'the user can add a link to Bookmark Manager' do
+  context 'adding real bookmarks' do
+    scenario 'the user can add a bookmark to Bookmark Manager' do
       fill_in_and_add
-      expect(page).to have_link(href: 'https://www.testlink.com')
       expect(page).to have_content 'Test title'
     end
 
     scenario 'title duplications are not allowed' do
       fill_in_and_add
-      expect(current_path).to eq '/links'
+      expect(current_path).to eq '/bookmarks'
 
       fill_in_and_add
       expect(page).to have_content 'That title is already taken, choose another.'
@@ -19,11 +18,11 @@ feature 'Adding links' do
   end
 
   scenario 'only valid urls can be added' do
-    fill_in 'url', with: 'not a real link'
-    fill_in 'title', with: 'not a real link'
+    fill_in 'url', with: 'not a real bookmark'
+    fill_in 'title', with: 'not a real bookmark'
     click_button 'Add'
 
-    expect(page).not_to have_link 'not a real link'
+    expect(page).not_to have_content 'not a real bookmark'
     expect(page).to have_content 'You must submit a valid URL'
   end
 end

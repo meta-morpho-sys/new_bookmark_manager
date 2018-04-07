@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-feature 'Viewing links' do
-  scenario 'A user can see links' do
+feature 'Viewing bookmarks' do
+  scenario 'A user can see bookmarks' do
     visit '/'
     expect(page).to have_content 'Lloyds'
     expect(page).to have_content 'Doggy'

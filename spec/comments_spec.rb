@@ -8,7 +8,7 @@ describe Comment do
 
   describe '.all' do
     it 'returns all comments wrapped in comments instances' do
-      expect(text).to include 'Great link'
+      expect(text).to include 'Great bookmark'
       expect(text).to include 'Very useful'
     end
   end

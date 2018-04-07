@@ -5,14 +5,14 @@
 
 <div>
 
-  <form action="/links/update" method="post">
+  <form action="/bookmarks/update" method="post">
     <input type="hidden" name="_method" value="PATCH">
-    <input type="hidden" name="id" value="<%= @link.id %>">
+    <input type="hidden" name="id" value="<%= @bookmark.id %>">
     <label>New title</label>
-    <input type="text" name="new_title" size="50" value="<%= @link.title %>">
+    <input type="text" name="new_title" size="50" value="<%= @bookmark.title %>">
     <label>New URL</label>
 
-    <input type="text" name="new_url"  size="50" value="<%= @link.url %>">
+    <input type="text" name="new_url"  size="50" value="<%= @bookmark.url %>">
     <input type="submit" value="Confirm the edit">
   </form>
 

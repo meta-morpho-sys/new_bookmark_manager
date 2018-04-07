@@ -13,8 +13,8 @@ describe DbConnector do
   describe '.query' do
     it 'makes a query through PG' do
       connection = DbConnector.setup 'new_bookmark_manager_test'
-      expect(connection).to receive(:exec).with('SELECT * FROM links;')
-      DbConnector.query('SELECT * FROM links;')
+      expect(connection).to receive(:exec).with('SELECT * FROM bookmarks;')
+      DbConnector.query('SELECT * FROM bookmarks;')
     end
   end
 end

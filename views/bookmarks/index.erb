@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head></head>
+
+<div>
+  <form action="/bookmarks/new" method="post">
+    <label>URL</label>
+    <input type="text" name="url" required="required" size="50" maxlength="1000" placeholder="Paste your bookmark here [max 1000 char]">
+    <label>Title</label>
+    <input type="text" name="title" required="required" size="50" maxlength="100" placeholder="Give a title to your bookmark [max 100 char]">
+    <input type="submit" name="new_bookmark" value="Add">
+  </form>
+</div>
+
+<%= flash[:notice] %>
+
+<div>
+  <ul>
+    <% @bookmarks.each do |bookmark| %>
+      <li id="bookmark-<%= bookmark.id %>">
+        <a href="<%= bookmark.url %>" target="_blank">
+          <%= bookmark.url if bookmark.title.nil? %>
+          <%= bookmark.title %>
+        </a>
+
+        <form action="/bookmarks/edit" method="get">
+          <input type="hidden" name="id" value="<%= bookmark.id %>">
+          <input type="hidden" name="title" value="<%= bookmark.title %>">
+          <input type="hidden" name="url" value="<%= bookmark.url %>">
+          <input type="submit" value="Edit">
+        </form>
+
+        <form action="/bookmarks/delete" method="post">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="hidden" name="id" value="<%= bookmark.id %>">
+          <input type="hidden" name="title" value="<%= bookmark.title %>">
+          <input type="submit" value="Delete">
+        </form>
+
+        <form action="/bookmarks/comments" method="get">
+          <input type="hidden" name="id" value="<%= bookmark.id %>">
+          <input type="submit" value="View comments">
+        </form>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+</html>

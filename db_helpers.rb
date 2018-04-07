@@ -16,10 +16,10 @@ def db_exists?(db_name)
   res.cmd_tuples == 1
 end
 
-def insert_link(num, url, title)
-  DbConnector.query("INSERT INTO links VALUES(#{num}, '#{url}', '#{title}')")
+def insert_bookmark(num, url, title)
+  DbConnector.query("INSERT INTO bookmarks VALUES(#{num}, '#{url}', '#{title}')")
 end
 
-def insert_comment(num, text, link_id)
-  DbConnector.query("INSERT INTO comments VALUES(#{num},'#{text}',#{link_id})")
+def insert_comment(num, text, bookmark_id)
+  DbConnector.query("INSERT INTO comments VALUES(#{num},'#{text}',#{bookmark_id})")
 end

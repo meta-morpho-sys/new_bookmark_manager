@@ -2,15 +2,15 @@
 
 require 'pry'
 
-feature 'Updating a link' do
-  scenario 'a user can modify the title and the url of an existing link' do
+feature 'Updating a bookmark' do
+  scenario 'a user can modify the title and the url of an existing bookmark' do
     visit '/'
 
-    within '#link-3' do
+    within '#bookmark-3' do
       click_button 'Edit'
     end
 
-    expect(current_path).to eq '/links/edit'
+    expect(current_path).to eq '/bookmarks/edit'
 
     fill_in 'new_url', with: 'https://www.google.co.uk'
     fill_in 'new_title', with: 'Google'
@@ -19,7 +19,7 @@ feature 'Updating a link' do
     click_button 'Confirm the edit'
 
 
-    expect(current_path).to eq '/links'
+    expect(current_path).to eq '/bookmarks'
     expect(page).not_to have_content 'Recipes'
     expect(page).to have_content 'Google'
   end

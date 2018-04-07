@@ -6,7 +6,7 @@ The PostgreSQL database management system should be installed on your system.
 
 ### Getting started
 
-+To get started with Bookmark Manager:
+To get started with Bookmark Manager:
  
  ```
  git clone https://github.com/meta-morpho-sys/new_bookmark_manager
@@ -16,40 +16,20 @@ The PostgreSQL database management system should be installed on your system.
  rspec
  ```
 
-This will give you the application, and set up two databases: `new_bookmark_manager` for the development environment, and `new_bookmark_manager_test` for the test environment.
+This will give you the application, and set up two databases: `new_bookmark_manager` for the development environment, 
+and `new_bookmark_manager_test` for the test environment.
 
-#### Domain model for the first user story
+#### What you can do with this app.
 
-`As a time-pressed user
-So that I can quickly go to web sites I regularly visit
-I would like to see a list of links on the homepage
+`You can see a list of bookmarks on the homepage
 `
 
-     ┌──────────┐              ┌────┐
-     │Controller│              │Link│
-     └────┬─────┘              └─┬──┘
-          │       all links      │   
-          │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ >|   
-          │                      │   
-          │ [collection of links]│   
-          │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─|   
+`Add a bookmark to your Bookmark Manager
+ `                                                    
 
-
-#### Second user story
-
-`As a user
- So I can store bookmark data for later retrieval
- I want to add a link to Bookmark Manager
- `                    
-                                        
-#### Third user story
-
-`As a user
- So I can remove my link from Bookmark Manager
- I want to delete a link
+`Remove your bookmarks
  `
  
- #### Fourth user story
- `As a user
-  So I can change a link in Bookmark Manager
-  I want to update a link`
+ `Update your bookmarks`
+ 
+ `Leave comments or brief notes`

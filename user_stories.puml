@@ -1,6 +1,6 @@
 @startuml
 
-class Link {
+class bookmark {
     +{static} all()
     +{static} create(url, title)
     +{static} delete(id)
@@ -13,9 +13,9 @@ class DatabaseConnection <<Singleton>>  {
     +{static} query()
 }
 
-Controller --> Link: all links
+Controller --> bookmark: all bookmarks
 Controller --> Index
-Link --> Controller: [collection of links]
-Link --> DatabaseConnection
+bookmark --> Controller: [collection of bookmarks]
+bookmark --> DatabaseConnection
 
 @enduml
