@@ -11,7 +11,7 @@ feature 'Commenting on a bookmark' do
     fill_in(:text, with: 'This is a test comment')
     click_button 'Submit'
 
-    expect(current_path).to eq '/bookmarks'
+    visit '/bookmark/comments'
 
     within '#bookmark-1' do
       expect(page).to have_content 'This is a test comment'

@@ -43,11 +43,11 @@
           <input type="submit" value="Comment">
         </form>
 
-        <ul>
-          <% bookmark.comments.each do |comment| %>
-          <li> <%= comment.text %></li>
-          <% end %>
-        </ul>
+        <form action="/bookmark/comments" method="get">
+          <input type="hidden" name="id" value="<%= bookmark.id %>">
+          <input type="submit" value="View comments">
+        </form>
+
       </li>
     <% end %>
   </ul>

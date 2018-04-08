@@ -8,7 +8,7 @@ feature 'Viewing comments' do
       click_button 'View comments'
     end
 
-    expect(current_path).to eq '/bookmarks/comments'
+    expect(current_path).to eq '/bookmark/comments'
     expect(page).to have_content 'Great bookmark'
     expect(page).to have_content 'Very useful'
   end
