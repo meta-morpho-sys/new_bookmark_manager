@@ -64,9 +64,8 @@ class BookmarkManager < Sinatra::Base
     erb :'comments/new'
   end
 
-  post 'bookmarks/comments' do
-    comment = Comment.create(params['text'], params['id'])
-    p comment
+  post '/bookmarks/comments' do
+    Comment.create(params['text'], params['id'])
     redirect '/'
   end
 
