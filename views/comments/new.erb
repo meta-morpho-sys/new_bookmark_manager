@@ -2,18 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Comments</title>
+  <title>New comment</title>
 </head>
 <body>
 
 <div>
-  <ul>
-    <% @comments.each do |comment| %>
-      <li>
-        <%= comment.text %>
-      </li>
-    <% end %>
-  </ul>
+  <form action="bookmarks/comments" method="post">
+    <input type="hidden" name="id" value="<%= @bookmark.id %>">
+    <textarea name="text" placeholder="Leave your comment."></textarea>
+    <input type="submit" value="Submit">
+  </form>
 
   <a href="/">Cool, go back to bookmarks!</a>
 </div>
