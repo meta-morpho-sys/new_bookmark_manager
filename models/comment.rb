@@ -12,6 +12,12 @@ class Comment
     @bookmark_id = bookmark_id
   end
 
+  def self.comments(bm_id = nil)
+    where_clause = bm_id.nil? ? '' : "WHERE bookmark_id=#{bm_id}"
+    result = DbConnector.query("SELECT * FROM comments #{where_clause}")
+    result.map { |comm| Comment.new(comm['id'], comm['text'], comm['bookmark_id']) }
+  end
+
   def self.all
     result = DbConnector.query 'SELECT * FROM comments'
     result.map { |comm| Comment.new(comm['id'], comm['text'], comm['bookmark_id']) }

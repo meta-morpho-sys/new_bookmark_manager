@@ -20,4 +20,12 @@ describe Comment do
       expect(comment.id).not_to be_nil
     end
   end
+
+  describe '.comments' do
+    it 'returns all comments with a bookmark_id equal to this BM ID' do
+      bookmark = Bookmark.create('https://test_for_comments.com', 'test 1')
+      comment = Comment.create('I am the comment for this BM ID', bookmark.id)
+      expect(Comment.comments.map(&:id)).to include comment.id
+    end
+  end
 end
