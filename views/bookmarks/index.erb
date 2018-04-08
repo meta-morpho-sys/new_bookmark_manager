@@ -38,10 +38,16 @@
           <input type="submit" value="Delete">
         </form>
 
-        <form action="/bookmarks/comments" method="get">
+        <form action="/bookmarks/comments/new" method="get">
           <input type="hidden" name="id" value="<%= bookmark.id %>">
-          <input type="submit" value="View comments">
+          <input type="submit" value="Comment">
         </form>
+
+        <ul>
+          <% bookmark.comments.each do |comment| %>
+          <li> <%= comment.text %></li>
+          <% end %>
+        </ul>
       </li>
     <% end %>
   </ul>
