@@ -10,6 +10,11 @@
 <ul>
   <% if @comments.empty? %>
     No comments here yet, would you like to leave one?
+    <form action="/bookmarks/comments" method="post">
+      <input type="hidden" name="id" value="<%= params[:id] %>">
+      <textarea name="text" placeholder="Leave your comment."></textarea>
+      <input type="submit" value="Submit">
+    </form>
   <% else %>
     <% @comments.each do |comment| %>
       <li> <%= comment.text %></li>
@@ -17,7 +22,7 @@
   <% end %>
 </ul>
 
-<a href="/">Cool, go back to bookmarks!</a>
+<a href="/">Back to bookmarks!</a>
 
 </body>
 </html>

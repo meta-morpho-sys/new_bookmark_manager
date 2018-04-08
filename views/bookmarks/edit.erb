@@ -8,11 +8,10 @@
   <form action="/bookmarks/update" method="post">
     <input type="hidden" name="_method" value="PATCH">
     <input type="hidden" name="id" value="<%= @bookmark.id %>">
+    <label>New URL</label>
+    <input type="text" name="new_url"  size="50" value="<%= @bookmark.url %>">
     <label>New title</label>
     <input type="text" name="new_title" size="50" value="<%= @bookmark.title %>">
-    <label>New URL</label>
-
-    <input type="text" name="new_url"  size="50" value="<%= @bookmark.url %>">
     <input type="submit" value="Confirm the edit">
   </form>
 
