@@ -36,7 +36,7 @@ class BookmarkManager < Sinatra::Base
 
   delete '/bookmarks/delete' do
     Bookmark.delete(params[:id])
-    flash[:notice] = "bookmark #{params[:title]} was successfully deleted!"
+    flash[:notice] = "Bookmark '#{params[:title]}' was successfully deleted!"
     redirect '/bookmarks'
   end
 

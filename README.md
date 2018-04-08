@@ -32,4 +32,4 @@ and `new_bookmark_manager_test` for the test environment.
  
  `Update your bookmarks`
  
- `Leave comments or brief notes`
+ `Leave and view comments or brief notes`

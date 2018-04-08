@@ -1,10 +1,25 @@
 @startuml
 
-class bookmark {
+class Bookmark {
+    +id
+    +url
+    +title
     +{static} all()
     +{static} create(url, title)
     +{static} delete(id)
+    +{static} update(id, url, title)
+    +{static} find(id)
     +{static} a_url?(string)
+    +comments()
+}
+
+class Comment {
+    +id
+    +text
+    +bookmark_id
+    +{static} comments(bm_id =nil)
+    +{static} create(text, bookmark_id)
+
 }
 
 class DatabaseConnection <<Singleton>>  {
