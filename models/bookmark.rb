@@ -24,8 +24,11 @@ class Bookmark
 
   def self.create(url, title)
     return false unless a_url?(url)
-    DbConnector.query("INSERT INTO bookmarks (url, title)
-                                VALUES ('#{url}', '#{title}')")
+    result = DbConnector.query("INSERT INTO bookmarks (url, title)
+                                VALUES ('#{url}', '#{title}')
+                            RETURNING
+                                 id, url, title")
+    Bookmark.new(result[0]['id'], result[0]['url'], result[0]['title'])
   end
 
   def self.delete(id)
@@ -50,6 +53,11 @@ class Bookmark
 
   def self.a_url?(string)
     string.match?(/\A#{URI.regexp(%w[http https])}\z/)
+  end
+
+  def comments
+    result = DbConnector.query("SELECT * FROM comments WHERE bookmark_id=#{@id}")
+    result.map { |comm| Comment.new(comm['id'], comm['text'], comm['bookmark_id']) }
   end
 end
 
