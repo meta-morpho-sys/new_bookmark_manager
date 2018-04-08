@@ -2,7 +2,6 @@
 
 require_relative '../models/bookmark'
 
-
 describe Bookmark do
   let(:bookmarks) { Bookmark.all }
   let(:urls) { bookmarks.map(&:url) }
@@ -76,10 +75,12 @@ describe Bookmark do
   end
 
   describe '#comments' do
-    it 'returns all comments with a bookmark_id equal to this BM ID' do
-      bookmark = Bookmark.create('https://test_for_comments.com', 'test 1')
-      comment = Comment.create('I am the comment for this BM ID', bookmark.id)
-      expect(bookmark.comments.map(&:id)).to include comment.id
+    it 'returns all the comments for that particular bookmark ID' do
+      bm = Bookmark.create('https://test_comments.com', 'BM with comments')
+
+      comment1 = Comment.create('I am comment1 for this BM ID', bm.id)
+      comment2 = Comment.create('I am comment2 for this BM ID', bm.id)
+      expect(bm.comments).to include comment1, comment2
     end
   end
 end

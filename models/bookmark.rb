@@ -17,6 +17,10 @@ class Bookmark
     @id == other.id
   end
 
+  def comments
+    Comment.comments @id
+  end
+
   def self.all
     result = DbConnector.query 'SELECT * FROM bookmarks'
     result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }
@@ -55,13 +59,8 @@ class Bookmark
     string.match?(/\A#{URI.regexp(%w[http https])}\z/)
   end
 
-  def comments
-    result = DbConnector.query("SELECT * FROM comments WHERE bookmark_id=#{@id}")
-    result.map { |comm| Comment.new(comm['id'], comm['text'], comm['bookmark_id']) }
-  end
 end
 
 # TODO : Use a 'max_length' CONSTANT to reference bookmark length in the app
 # BOOKMARKS_MAX_LENGTH = 1000
-# TODO : .update - If no new title or url are provided, keep the old one
 # TODO : .delete - Add a request to confirm deletion before deleting.
