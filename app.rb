@@ -23,7 +23,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks/new' do
     begin
-      bookmark = Bookmark.create(params['url'], params['title'])
+      bookmark = Bookmark.create(params[:url], params[:title])
       flash[:notice] = 'You must submit a valid URL.' unless bookmark
     rescue PG::UniqueViolation
       flash[:notice] = 'That title is already taken, choose another.'
@@ -35,20 +35,20 @@ class BookmarkManager < Sinatra::Base
   end
 
   delete '/bookmarks/delete' do
-    Bookmark.delete(params['id'])
-    flash[:notice] = "bookmark #{params['title']} was successfully deleted!"
+    Bookmark.delete(params[:id])
+    flash[:notice] = "bookmark #{params[:title]} was successfully deleted!"
     redirect '/bookmarks'
   end
 
   get '/bookmarks/edit' do
-    @bookmark = Bookmark.find(params['id'])
+    @bookmark = Bookmark.find(params[:id])
     erb :'bookmarks/edit'
   end
 
   patch '/bookmarks/update' do
     # p params
     begin
-      bookmark = Bookmark.update(params['id'], params['new_url'], params['new_title'])
+      bookmark = Bookmark.update(params[:id], params['new_url'], params['new_title'])
       flash[:notice] = 'You must submit a valid URL' unless bookmark
     rescue PG::UniqueViolation
       flash[:notice] = 'That title is already taken, choose another.'
@@ -65,7 +65,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/comments' do
-    Comment.create(params['text'], params['id'])
+    Comment.create(params[:text], params[:id])
     redirect '/'
   end
 
