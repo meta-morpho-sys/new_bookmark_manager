@@ -12,4 +12,8 @@ class DbConnector
   def self.query(sql)
     @connection.exec(sql)
   end
+
+  def self.query_params(sql, data)
+    @connection.exec_params(sql, data)
+  end
 end

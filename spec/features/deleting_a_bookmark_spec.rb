@@ -7,6 +7,6 @@ feature 'Deleting a bookmark' do
       click_button 'Delete'
     end
     expect(current_path).to eq '/bookmarks'
-    expect(page).to have_content 'bookmark Doggy was successfully deleted!'
+    expect(page).to have_content "Bookmark 'Doggy' was successfully deleted!"
   end
 end

@@ -28,15 +28,21 @@ class Bookmark
 
   def self.create(url, title)
     return false unless a_url?(url)
-    result = DbConnector.query("INSERT INTO bookmarks (url, title)
-                                VALUES ('#{url}', '#{title}')
+    # result = DbConnector.query("INSERT INTO bookmarks (url, title)
+    #                             VALUES ('#{url}', '#{title}')
+    #                         RETURNING
+    #                              id, url, title")
+    result = DbConnector.query_params('INSERT INTO bookmarks (url, title)
+                                VALUES ($1, $2)
                             RETURNING
-                                 id, url, title")
+                                 id, url, title',
+                                        [url, title])
     Bookmark.new(result[0]['id'], result[0]['url'], result[0]['title'])
   end
 
   def self.delete(id)
-    DbConnector.query("DELETE FROM bookmarks WHERE id='#{id}'")
+    # DbConnector.query("DELETE FROM bookmarks WHERE id='#{id}'")
+    DbConnector.query_params('DELETE FROM bookmarks WHERE id=$1', [id])
   end
 
   def self.update(id, url, title)
