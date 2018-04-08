@@ -12,6 +12,10 @@ class Comment
     @bookmark_id = bookmark_id
   end
 
+  def ==(other)
+    @id == other.id
+  end
+
   def self.comments(bm_id = nil)
     where_clause = bm_id.nil? ? '' : "WHERE bookmark_id=#{bm_id}"
     result = DbConnector.query("SELECT * FROM comments #{where_clause}")
@@ -27,7 +31,7 @@ class Comment
     result = DbConnector.query("INSERT INTO comments (text, bookmark_id)
                                         VALUES ('#{text}', '#{bookmark_id}')
                                     RETURNING
-                                        id, text, bookmark_id, created_at")
-    Comment.new(result[0]['id'], result[0]['text'], result[0]['bookmark.id'])
+                                        id, text")
+    Comment.new(result[0]['id'], result[0]['text'], bookmark_id)
   end
 end

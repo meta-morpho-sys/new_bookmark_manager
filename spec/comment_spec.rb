@@ -24,8 +24,17 @@ describe Comment do
   describe '.comments' do
     it 'returns all comments with a bookmark_id equal to this BM ID' do
       bookmark = Bookmark.create('https://test_for_comments.com', 'test 1')
-      comment = Comment.create('I am the comment for this BM ID', bookmark.id)
-      expect(Comment.comments.map(&:id)).to include comment.id
+      comment1 = Comment.create('I am comment1 for this BM ID', bookmark.id)
+      comment2 = Comment.create('I am comment2 for this BM ID', bookmark.id)
+      expect(Comment.comments.map(&:id)).to include comment1.id, comment2.id
+    end
+  end
+
+  describe '#==' do
+    example 'two Comments are equal if their IDs match' do
+      comment1 = Comment.new(1, 'https://test.com', 'test 1')
+      comment2 = Comment.new 1, 'https://test.com', 'test 1'
+      expect(comment1).to eq comment2
     end
   end
 end
