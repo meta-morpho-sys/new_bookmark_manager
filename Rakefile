@@ -4,16 +4,9 @@ require './lib/db_connector'
 require_relative 'db_helpers'
 
 task :test_database_setup do
-  puts 'Setting up test database...'
+  puts 'Cleaning database...'
   DbConnector.setup 'new_bookmark_manager_test'
   DbConnector.query('TRUNCATE comments, bookmarks')
-
-  insert_bookmark(1, 'https://www.borrowmydoggy.com/', 'Doggy')
-  insert_bookmark(2, 'https://online.lloydsbank.co.uk', 'Lloyds')
-  insert_bookmark(3, 'http://vogliadicucina.blogspot.co.uk', 'Recipes')
-
-  insert_comment(1, 'Great bookmark', 1)
-  insert_comment(2, 'Very useful', 1)
 end
 
 task :create_databases do

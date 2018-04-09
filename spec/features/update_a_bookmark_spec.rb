@@ -4,9 +4,10 @@ require 'pry'
 
 feature 'Updating a bookmark' do
   scenario 'a user can modify the title and the url of an existing bookmark' do
+    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
     visit '/'
 
-    within '#bookmark-3' do
+    within "#bookmark-#{bm.id}" do
       click_button 'Edit'
     end
 
@@ -20,7 +21,7 @@ feature 'Updating a bookmark' do
 
 
     expect(current_path).to eq '/bookmarks'
-    expect(page).not_to have_content 'Recipes'
+    expect(page).not_to have_content 'Lloyds'
     expect(page).to have_content 'Google'
   end
 end

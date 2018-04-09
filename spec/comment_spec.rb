@@ -3,21 +3,24 @@
 require_relative '../models/comment.rb'
 
 describe Comment do
+  before(:each) do
+    @bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy')
+    @comm = Comment.create('My comment', @bm.id)
+  end
+
   let(:comments) { Comment.all }
   let(:text) { comments.map(&:text) }
 
   describe '.all' do
     it 'returns all comments wrapped in comments instances' do
-      expect(text).to include 'Great bookmark'
-      expect(text).to include 'Very useful'
+      Comment.create('Very useful', @bm.id)
+      expect(text).to include 'My comment', 'Very useful'
     end
   end
 
   describe '.create' do
     it 'adds a new comment' do
-      bookmark = Bookmark.new(3, 'http://www.testlink.com', 'test')
-      comment = Comment.create('My comment', bookmark.id)
-      expect(comment.id).not_to be_nil
+      expect(@comm.id).not_to be_nil
     end
   end
 

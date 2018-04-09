@@ -2,9 +2,13 @@
 
 feature 'Viewing comments' do
   scenario 'A user can see comments to a bookmark' do
+    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
+    Comment.create('Great bookmark', bm.id)
+    Comment.create('Very useful', bm.id)
+
     visit '/bookmarks'
 
-    within '#bookmark-1' do
+    within "#bookmark-#{bm.id}" do
       click_button 'View comments'
     end
 
