@@ -3,23 +3,27 @@
 require_relative '../models/bookmark'
 
 describe Bookmark do
+  before(:each) do
+    @bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
+  end
+
   let(:bookmarks) { Bookmark.all }
   let(:urls) { bookmarks.map(&:url) }
   let(:titles) { bookmarks.map(&:title) }
 
   describe '.all' do
     it 'returns all bookmarks wrapped in bookmarks instances' do
-      expect(titles).to include 'Lloyds'
-      expect(titles).to include 'Doggy'
-      expect(titles).to include 'Recipes'
+    expect(titles).to include 'Lloyds'
+    expect(urls).to include 'https://online.lloydsbank.co.uk'
     end
   end
 
   describe '.create' do
     it 'adds a new bookmark' do
-      Bookmark.create 'http://www.new-test-bookmark.com', 'Test title'
-      expect(titles).to include 'Test title'
-      expect(urls).to include('http://www.new-test-bookmark.com')
+      # Bookmark.create 'http://www.new-test-bookmark.com', 'Test title'
+      expect(@bm.title).to eq 'Lloyds'
+      expect(@bm.url).to eq 'https://online.lloydsbank.co.uk'
+      expect(@bm.id).not_to be_nil
     end
 
     it 'does not add a new bookmark if it is not a valid url' do
@@ -31,7 +35,7 @@ describe Bookmark do
 
   describe '.delete' do
     it 'deletes a bookmark' do
-      Bookmark.delete '2'
+      Bookmark.delete(@bm.id)
       expect(titles).not_to include 'Lloyds'
       expect(urls).not_to include 'https://online.lloydsbank.co.uk'
     end
@@ -39,7 +43,7 @@ describe Bookmark do
 
   describe '.update' do
     it 'updates the title' do
-      Bookmark.update '2', 'https://test-online.lloydsbank.co.uk', 'Lloyds account'
+      Bookmark.update @bm.id, 'https://test-online.lloydsbank.co.uk', 'Lloyds account'
       expect(urls).not_to include 'https://online.lloydsbank.co.uk'
       expect(urls).to include 'https://test-online.lloydsbank.co.uk'
       expect(titles).not_to include 'Lloyds'
@@ -47,20 +51,15 @@ describe Bookmark do
     end
 
     it 'does not update a bookmark if it is not valid' do
-      Bookmark.update '3', 'not a real bookmark', 'Not real title hehehe'
-      expect(titles).not_to include 'Not real title hehehe'
+      Bookmark.update @bm.id, 'not a real bookmark', 'Not real title hehe'
+      expect(titles).not_to include 'Not real title hehe'
       expect(urls).not_to include 'not a real bookmark'
-    end
-
-    it 'returns previously submitted url if no new url is provided' do
-      Bookmark.update '2', '', 'Lloyds account'
-      expect(urls).to include 'https://online.lloydsbank.co.uk'
     end
   end
 
   describe '.find' do
     it 'finds a specific bookmark' do
-      bookmark = Bookmark.find 2
+      bookmark = Bookmark.find @bm.id
       expect(bookmark.url).to eq 'https://online.lloydsbank.co.uk'
       expect(bookmark.title).to eq 'Lloyds'
     end
