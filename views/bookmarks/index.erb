@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 
 <html>
-<head></head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div>
-  <form action="/bookmarks/new" method="post">
-    <label>URL</label>
-    <input type="text" name="url" required="required" size="50" maxlength="1000" placeholder="Paste your link here [max 1000 char]">
-    <label>Title</label>
-    <input type="text" name="title" required="required" size="50" maxlength="100" placeholder="Give a title to your bookmark [max 100 char]">
-    <input type="submit" name="new_bookmark" value="Add">
-  </form>
-</div>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+
+  <div class="intro">
+    <form action="/bookmarks/new" method="post">
+      <label>URL</label>
+      <input type="text" name="url" required="required" size="50" maxlength="1000" placeholder="Paste your link here">
+      <label>Title</label>
+      <input type="text" name="title" required="required" size="50" maxlength="100" placeholder="Give a title to your bookmark">
+      <input type="submit" name="new_bookmark" value="Add">
+    </form>
+  </div>
+
+<div class="intro">
 
 <%= flash[:notice] %>
+</div>
 
-<div>
+<div class="bookmarks">
   <ul>
     <% @bookmarks.each do |bookmark| %>
-      <li id="bookmark-<%= bookmark.id %>">
+      <li class="col-3" id="bookmark-<%= bookmark.id %>">
         <a href="<%= bookmark.url %>" target="_blank">
           <%= bookmark.url if bookmark.title.nil? %>
           <%= bookmark.title %>

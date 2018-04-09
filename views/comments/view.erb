@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comments view</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 
-
 <ul>
   <% if @comments.empty? %>
-    No comments here yet, would you like to leave one?
-    <form action="/bookmarks/comments" method="post">
+    <p>No comments here yet, would you like to leave one?</p>
+    <form class="intro" action="/bookmarks/comments" method="post">
       <input type="hidden" name="id" value="<%= params[:id] %>">
-      <textarea name="text" placeholder="Leave your comment."></textarea>
+      <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
       <input type="submit" value="Submit">
     </form>
   <% else %>
@@ -20,9 +21,9 @@
       <li> <%= comment.text %></li>
     <% end %>
   <% end %>
+    <a class="intro" href="/">Back to bookmarks!</a>
 </ul>
 
-<a href="/">Back to bookmarks!</a>
 
 </body>
 </html>

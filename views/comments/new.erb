@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New comment</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 
-<div>
+<div class="intro">
   <form action="/bookmarks/comments" method="post">
     <input type="hidden" name="id" value="<%= @bookmark.id %>">
-    <textarea name="text" placeholder="Leave your comment."></textarea>
+    <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
     <input type="submit" value="Submit">
   </form>
 
