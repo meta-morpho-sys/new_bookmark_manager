@@ -2,16 +2,17 @@
 
 feature 'Commenting on a bookmark' do
   scenario 'anyone can comment on a bookmark' do
+    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
     visit '/bookmarks'
 
-    within '#bookmark-1' do
+    within "#bookmark-#{bm.id}" do
       click_button 'Comment'
     end
 
     fill_in(:text, with: 'This is a test comment')
     click_button 'Submit'
 
-    within '#bookmark-1' do
+    within "#bookmark-#{bm.id}" do
       click_button 'View comments'
     end
     expect(page).to have_content 'This is a test comment'
