@@ -28,10 +28,10 @@ class Comment
   end
 
   def self.create(text, bookmark_id)
-    result = DbConnector.query("INSERT INTO comments (text, bookmark_id)
-                                        VALUES ('#{text}', '#{bookmark_id}')
-                                    RETURNING
-                                        id, text")
+    result = DbConnector.query_params('INSERT INTO comments (text, bookmark_id)
+                                                VALUES ($1, $2)
+                                            RETURNING
+                                                id, text', [text, bookmark_id])
     Comment.new(result[0]['id'], result[0]['text'], bookmark_id)
   end
 end

@@ -23,7 +23,7 @@ class Bookmark
 
   def self.all
     result = DbConnector.query 'SELECT * FROM bookmarks'
-    result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }
+    result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
   end
 
   def self.create(url, title)
@@ -54,13 +54,12 @@ class Bookmark
 
   def self.find(id)
     result = DbConnector.query("SELECT * FROM bookmarks WHERE id='#{id}'")
-    result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }.first
+    result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }.first
   end
 
   def self.a_url?(string)
     string.match?(/\A#{URI.regexp(%w[http https])}\z/)
   end
-
 end
 
 # TODO : Use a 'max_length' CONSTANT to reference bookmark length in the app

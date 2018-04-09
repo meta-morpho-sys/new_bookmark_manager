@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/models/bookmark.rb" afterPath="$PROJECT_DIR$/models/bookmark.rb" />
-      <change beforePath="$PROJECT_DIR$/views/bookmarks/index.erb" afterPath="$PROJECT_DIR$/views/bookmarks/index.erb" />
+      <change beforePath="$PROJECT_DIR$/models/comment.rb" afterPath="$PROJECT_DIR$/models/comment.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +48,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@test_database_setup.coverage" NAME="test_database_setup Coverage Results" MODIFIED="1522006112196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@comment.coverage" NAME="comment Coverage Results" MODIFIED="1523131887834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_comments__new_bookmark_manager.coverage" NAME="Bookmark#comments: new_bookmark_manager Coverage Results" MODIFIED="1523218559514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1523269829413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1523270514569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_update_does_not_pass__empty__updates__new_bookmark_manager.coverage" NAME="Link.update does not pass &quot;empty&quot; updates: new_bookmark_manager Coverage Results" MODIFIED="1522788507613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_update_returns_previously_submitted_title_if_no_new_title_is_provided__new_bookmark_manager.coverage" NAME="Link.update returns previously submitted title if no new title is provided: new_bookmark_manager Coverage Results" MODIFIED="1522853694197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_delete__new_bookmark_manager.coverage" NAME="Link.delete: new_bookmark_manager Coverage Results" MODIFIED="1522535004746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -87,41 +87,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bookmark.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/bookmark.rb">
+      <file leaf-file-name="comment.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/comment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="55" column="35" lean-forward="false" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+            <state relative-caret-position="302">
+              <caret line="41" column="48" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="41" selection-end-column="48" />
               <folding>
-                <element signature="e#227#310#0" expanded="false" />
-                <element signature="e#314#353#0" expanded="false" />
-                <element signature="e#357#400#0" expanded="false" />
-                <element signature="e#404#574#0" expanded="false" />
-                <element signature="e#1033#1130#0" expanded="false" />
-                <element signature="e#194#2167#1" expanded="false" />
-                <element signature="e#1880#2079#0" expanded="false" />
-                <element signature="e#2083#2167#0" expanded="false" />
+                <element signature="e#168#272#0" expanded="false" />
+                <element signature="e#276#315#0" expanded="false" />
+                <element signature="e#319#579#0" expanded="false" />
+                <element signature="e#583#742#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleting_a_bookmark_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/deleting_a_bookmark_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_bookmarks_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/add_bookmarks_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,6 +143,7 @@
       <find>'url'</find>
       <find>exec_params</find>
       <find>exec</find>
+      <find>result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -180,6 +157,7 @@
       <replace>:text</replace>
       <replace>:title</replace>
       <replace>:url</replace>
+      <replace>result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/views/comments</dir>
@@ -230,7 +208,6 @@
         <option value="$PROJECT_DIR$/spec/features/add_bookmarks_spec.rb" />
         <option value="$PROJECT_DIR$/spec/comments_spec.rb" />
         <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/models/comment.rb" />
         <option value="$PROJECT_DIR$/spec/comment_spec.rb" />
         <option value="$PROJECT_DIR$/spec/bookmark_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/view_comments_spec.rb" />
@@ -245,6 +222,7 @@
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/views/bookmarks/index.erb" />
         <option value="$PROJECT_DIR$/models/bookmark.rb" />
+        <option value="$PROJECT_DIR$/models/comment.rb" />
       </list>
     </option>
   </component>
@@ -597,7 +575,7 @@
       <workItem from="1523058988268" duration="6713000" />
       <workItem from="1523107180970" duration="9129000" />
       <workItem from="1523131656561" duration="17342000" />
-      <workItem from="1523220570821" duration="11103000" />
+      <workItem from="1523220570821" duration="11800000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored controller - delete feature logic moved to the model.">
       <created>1522606644961</created>
@@ -610,24 +588,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.08 at 23h 34m 04s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.08 at 23h 49m 38s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.08 at 23h 50m 58s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 00h 41m 18s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 00h 41m 49s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 00h 41m 58s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 00h 46m 34s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -640,9 +600,27 @@
     <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 11h 30m 31s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 11h 34m 47s.xml">
+      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 11h 35m 20s.xml">
+      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 11h 35m 42s.xml">
+      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 11h 36m 08s.xml">
+      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 11h 37m 27s.xml">
+      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.09 at 11h 41m 56s.xml">
+      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219714000" />
+    <option name="totallyTimeSpent" value="220411000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -715,7 +693,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -949,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#168#272#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/dump.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1023,36 +991,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/deleting_a_bookmark_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/comments/view.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="31" column="6" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <element signature="e#1189#1661#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/add_bookmarks_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1075,17 +1017,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/bookmark.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="55" column="35" lean-forward="false" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        <state relative-caret-position="150">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#227#310#0" expanded="false" />
             <element signature="e#314#353#0" expanded="false" />
-            <element signature="e#357#400#0" expanded="false" />
-            <element signature="e#404#574#0" expanded="false" />
-            <element signature="e#1033#1130#0" expanded="false" />
-            <element signature="e#194#2167#1" expanded="false" />
-            <element signature="e#1880#2079#0" expanded="false" />
-            <element signature="e#2083#2167#0" expanded="false" />
+            <element signature="e#1110#1473#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/add_bookmarks_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/deleting_a_bookmark_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="31" column="6" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="31" selection-end-column="6" />
+          <folding>
+            <element signature="e#1189#1661#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="41" column="48" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="41" selection-end-column="48" />
+          <folding>
+            <element signature="e#168#272#0" expanded="false" />
+            <element signature="e#276#315#0" expanded="false" />
+            <element signature="e#319#579#0" expanded="false" />
+            <element signature="e#583#742#0" expanded="false" />
           </folding>
         </state>
       </provider>
