@@ -8,22 +8,33 @@
 </head>
 <body>
 
-<ul>
-  <% if @comments.empty? %>
-    <p>No comments here yet, would you like to leave one?</p>
-    <form class="intro" action="/bookmarks/comments" method="post">
-      <input type="hidden" name="id" value="<%= params[:id] %>">
-      <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
-      <input type="submit" value="Submit">
-    </form>
-  <% else %>
-    <% @comments.each do |comment| %>
-      <li> <%= comment.text %></li>
-    <% end %>
-  <% end %>
-    <a class="intro" href="/">Back to bookmarks!</a>
-</ul>
+<table>
+    <tr>
+      <% if @comments.empty? %>
+          <p>No comments here yet, would you like to leave one?</p>
+          <form class="intro" action="/bookmarks/comments" method="post">
+            <input type="hidden" name="id" value="<%= params[:id] %>">
+            <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
+            <input type="submit" value="Submit">
+          </form>
+    </tr>
+      <% else %>
 
+      <tr>
+        <th>Your comments</th>
+      </tr>
+
+        <% @comments.each do |comment| %>
+      <tr <%= comment.id %>>
+        <td style="text-align: left" >
+            <%= comment.text %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+</table>
+
+  <a class="intro" href="/">Back to bookmarks!</a>
 
 </body>
 </html>
