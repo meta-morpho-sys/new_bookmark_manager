@@ -6,21 +6,20 @@ describe Bookmark do
   before(:each) do
     @bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
   end
-
+  # let(:bm) { Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds') }
   let(:bookmarks) { Bookmark.all }
   let(:urls) { bookmarks.map(&:url) }
   let(:titles) { bookmarks.map(&:title) }
 
   describe '.all' do
     it 'returns all bookmarks wrapped in bookmarks instances' do
-    expect(titles).to include 'Lloyds'
-    expect(urls).to include 'https://online.lloydsbank.co.uk'
+      expect(titles).to include 'Lloyds'
+      expect(urls).to include 'https://online.lloydsbank.co.uk'
     end
   end
 
   describe '.create' do
     it 'adds a new bookmark' do
-      # Bookmark.create 'http://www.new-test-bookmark.com', 'Test title'
       expect(@bm.title).to eq 'Lloyds'
       expect(@bm.url).to eq 'https://online.lloydsbank.co.uk'
       expect(@bm.id).not_to be_nil
