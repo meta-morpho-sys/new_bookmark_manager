@@ -27,9 +27,23 @@ task :create_databases do
                               bookmark_id INTEGER REFERENCES bookmarks (id) ON DELETE CASCADE,
                               created_at TIMESTAMP DEFAULT now()
                               )')
+    connection.exec('CREATE TABLE IF NOT EXISTS tags (
+                              tag_id SERIAL PRIMARY KEY,
+                              content VARCHAR(250) NOT NULL)
+                               ')
+    connection.exec('CREATE TABLE IF NOT EXISTS bookmarks_tags (
+                              bt_id SERIAL PRIMARY KEY,
+                              bm_id int REFERENCES bookmarks (id),
+                              tg_id int REFERENCES tags (tag_id)
+                              )')
   end
 end
 
+
+# Create a join table for Tags and Links, called link_tags. The columns are:
+# an auto-incrementing primary key, id
+# a foreign key, link_id, which REFERENCES the link table.
+#     a foreign key, tag_id, which REFERENCES the tag table.
 
 task :teardown do
   puts "Tearing down databases...\n\n"
