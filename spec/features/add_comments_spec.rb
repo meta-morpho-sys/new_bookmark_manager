@@ -13,7 +13,7 @@ feature 'Commenting on a bookmark' do
     click_button 'Submit'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'View comments'
+      click_button 'View'
     end
     expect(page).to have_content 'This is a test comment'
   end

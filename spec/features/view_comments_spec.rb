@@ -9,7 +9,7 @@ feature 'Viewing comments' do
     visit '/bookmarks'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'View comments'
+      click_button 'View'
     end
 
     expect(current_path).to eq '/bookmark/comments'

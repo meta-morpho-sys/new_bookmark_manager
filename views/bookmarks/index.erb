@@ -33,7 +33,7 @@
   </tr>
 
     <% @bookmarks.each do |bookmark| %>
-    <tr>
+    <tr  id="bookmark-<%= bookmark.id %>">
       <td>
         <form action="/bookmarks/edit" method="get">
           <input type="hidden" name="id" value="<%= bookmark.id %>">
@@ -50,7 +50,7 @@
       </form>
       </td>
 
-      <td id="bookmark-><%= bookmark.id %>">
+      <td>
         <a href="<%= bookmark.url %>" target="_blank">
           <%= bookmark.url if bookmark.title.nil? %>
           <%= bookmark.title %>
@@ -66,7 +66,7 @@
       <td>
         <form action="/bookmark/comments" method="get">
           <input type="hidden" name="id" value="<%= bookmark.id %>">
-          <input type="submit" value="View comments">
+          <input type="submit" value="View">
         </form>
       </td>
     </tr>
