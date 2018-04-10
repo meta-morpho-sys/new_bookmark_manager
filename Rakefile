@@ -6,7 +6,7 @@ require_relative 'db_helpers'
 task :test_database_setup do
   puts 'Cleaning database...'
   DbConnector.setup 'new_bookmark_manager_test'
-  DbConnector.query('TRUNCATE comments, bookmarks')
+  DbConnector.query('TRUNCATE comments, tags, bookmarks_tags, bookmarks')
 end
 
 task :create_databases do
