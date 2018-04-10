@@ -24,7 +24,7 @@ task :create_databases do
     connection.exec('CREATE TABLE IF NOT EXISTS comments (
                               id SERIAL PRIMARY KEY,
                               text VARCHAR(240) NOT NULL,
-                              bookmark_id INTEGER REFERENCES bookmarks (id) ON DELETE CASCADE
+                              bookmark_id INTEGER REFERENCES bookmarks (id) ON DELETE CASCADE,
                               created_at TIMESTAMP DEFAULT now()
                               )')
   end
