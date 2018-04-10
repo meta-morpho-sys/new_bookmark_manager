@@ -22,7 +22,7 @@ p {
 
 a:link {
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: underline;
 	color: #555753;
 	}
 a:visited {
@@ -67,7 +67,7 @@ th, td {
 .bookmarks input {
 	cursor:pointer;
 	border-width: thin;
-	border-radius: 65%;
+	border-radius: 30%;
 	border-color: #ffeaf3;
 	/*color: rgba(0, 0, 0, 0);*/
 	/*width: 30px;*/
@@ -85,6 +85,6 @@ th, td {
 .intro input, textarea {
 	margin:	20px;
 	text-align: center;
-	border-radius: 70%;
+	border-radius: 30%;
 	border-color: #ffeaf3;
 }
