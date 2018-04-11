@@ -39,14 +39,15 @@ task :create_databases do
   end
 end
 
-
-# Create a join table for Tags and Links, called link_tags. The columns are:
-# an auto-incrementing primary key, id
-# a foreign key, link_id, which REFERENCES the link table.
-#     a foreign key, tag_id, which REFERENCES the tag table.
-
 task :teardown do
-  puts "Tearing down databases...\n\n"
+  puts "*** Destroying databases ***.\n\n"
+  puts "    Press 'y' to confirm you want to delete the Bookmark Manager database.\n\n"
+  puts '*** Attention! All data will be lost! ***'
+  print '>>'
+
+  confirm = STDIN.gets.chomp.downcase
+  return unless confirm == 'y'
+
   db_names = %w[new_bookmark_manager new_bookmark_manager_test]
 
   db_names.each do |db_name|
