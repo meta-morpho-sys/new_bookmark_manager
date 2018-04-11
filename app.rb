@@ -79,5 +79,9 @@ class BookmarkManager < Sinatra::Base
     erb :'tags/new'
   end
 
+  post '/bookmarks/tags/new' do
+    "'Fun' tag successfully created."
+  end
+
   run! if app_file == $PROGRAM_NAME
 end

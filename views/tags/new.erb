@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New tag</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+
+<table>
+  <tr>
+    <td> Bookmark:
+      <a href="<%= @bookmark.title %>">
+        <%= @bookmark.url if @bookmark.title.nil? %>
+        <%= @bookmark.title %>
+      </a>
+    </td>
+      </tr>
+ </table>
+
+  <div class="intro">
+    <form action="/bookmarks/tags/new" method="post">
+      <input type="hidden" name="id" value="<%= @bookmark.id %>">
+      <textarea name="content" rows="5" cols="50" placeholder="Tag"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+
+    <a href="/">Changed my mind. Back to bookmarks!</a>
+  </div>
+</body>
+</html>
