@@ -9,6 +9,17 @@
 <body>
 
 <table>
+  <tr>
+    <td> Bookmark:
+      <a href="<%= @bookmark.title %>">
+        <%= @bookmark.url if @bookmark.title.nil? %>
+        <%= @bookmark.title %>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<table>
     <tr>
       <% if @comments.empty? %>
           <p>No comments here yet, would you like to leave one?</p>
@@ -23,7 +34,6 @@
       <tr>
         <th>Your comments</th>
       </tr>
-
         <% @comments.each do |comment| %>
       <tr <%= comment.id %>>
         <td style="text-align: left" >

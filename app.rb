@@ -46,7 +46,6 @@ class BookmarkManager < Sinatra::Base
   end
 
   patch '/bookmarks/update' do
-    # p params
     begin
       bookmark = Bookmark.update(params[:id], params['new_url'], params['new_title'])
       flash[:notice] = 'You must submit a valid URL' unless bookmark
@@ -59,20 +58,25 @@ class BookmarkManager < Sinatra::Base
     redirect '/'
   end
 
-  get '/bookmarks/comments/new' do
+  get '/bookmarks/comments' do
     @bookmark = Bookmark.find(params[:id])
     erb :'comments/new'
   end
 
-  post '/bookmarks/comments' do
+  post '/bookmarks/comments/new' do
     Comment.create(params[:text], params[:id])
     redirect '/'
   end
 
   get '/bookmark/comments' do
-    bookmark = Bookmark.find(params[:id])
-    @comments = bookmark.comments
+    @bookmark = Bookmark.find(params[:id])
+    @comments = @bookmark.comments
     erb :'comments/view'
+  end
+
+  get '/bookmarks/tags' do
+    @bookmark = Bookmark.find(params[:id])
+    erb :'tags/new'
   end
 
   run! if app_file == $PROGRAM_NAME

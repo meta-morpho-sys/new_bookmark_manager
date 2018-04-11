@@ -13,6 +13,8 @@ feature 'Viewing comments' do
     end
 
     expect(current_path).to eq '/bookmark/comments'
+    expect(page).to have_content 'Bookmark: Lloyds'
+
     expect(page).to have_content 'Great bookmark'
     expect(page).to have_content 'Very useful'
   end

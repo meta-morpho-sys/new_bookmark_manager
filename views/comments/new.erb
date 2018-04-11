@@ -8,14 +8,25 @@
 </head>
 <body>
 
+<table>
+  <tr>
+    <td> Bookmark:
+      <a href="<%= @bookmark.title %>">
+        <%= @bookmark.url if @bookmark.title.nil? %>
+        <%= @bookmark.title %>
+      </a>
+    </td>
+  </tr>
+</table>
+
 <div class="intro">
-  <form action="/bookmarks/comments" method="post">
+  <form action="/bookmarks/comments/new" method="post">
     <input type="hidden" name="id" value="<%= @bookmark.id %>">
     <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
     <input type="submit" value="Submit">
   </form>
 
-  <a href="/">Back to bookmarks!</a>
+  <a href="/">Changed my mind. Back to bookmarks!</a>
 </div>
 
 </body>

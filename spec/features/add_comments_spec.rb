@@ -9,6 +9,9 @@ feature 'Commenting on a bookmark' do
       click_button 'Comment'
     end
 
+    expect(current_path).to eq '/bookmarks/comments'
+    expect(page).to have_content 'Bookmark: Lloyds'
+
     fill_in(:text, with: 'This is a test comment')
     click_button 'Submit'
 
