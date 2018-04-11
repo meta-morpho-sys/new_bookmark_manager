@@ -5,6 +5,7 @@ require 'sinatra/flash'
 require 'uri'
 require './models/bookmark'
 require './models/comment'
+require './models/tag'
 require './db_connection_setup.rb'
 
 # Controller
@@ -80,7 +81,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/tags/new' do
-    "'Fun' tag successfully created."
+    Tag.create(params[:content], params[:id])
+    flash[:notice] = "'#{params[:content]}' tag successfully created!"
   end
 
   run! if app_file == $PROGRAM_NAME
