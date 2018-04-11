@@ -6,6 +6,7 @@ require 'uri'
 require './models/bookmark'
 require './models/comment'
 require './models/tag'
+require './models/bookmark_tag'
 require './db_connection_setup.rb'
 
 # Controller
@@ -81,8 +82,9 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/tags/new' do
-    Tag.create(params[:content], params[:id])
-    flash[:notice] = "'#{params[:content]}' tag successfully created!"
+    tag = Tag.create(params[:content], params[:id])
+    BookmarkTag.create(params[:id], tag.id)
+    flash[:notice] = "**#{params[:content]}** tag successfully created!"
     redirect '/'
   end
 

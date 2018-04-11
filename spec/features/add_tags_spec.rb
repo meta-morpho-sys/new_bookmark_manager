@@ -16,6 +16,6 @@ feature 'Creating a tag for a bookmark' do
     fill_in(:content, with: 'Fun')
     click_button 'Submit'
 
-    expect(page).to have_content "'Fun' tag successfully created!"
+    expect(page).to have_content "**Fun** tag successfully created!"
   end
 end
