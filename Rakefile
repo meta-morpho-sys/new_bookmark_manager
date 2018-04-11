@@ -28,13 +28,13 @@ task :create_databases do
                               created_at TIMESTAMP DEFAULT now()
                               )')
     connection.exec('CREATE TABLE IF NOT EXISTS tags (
-                              tag_id SERIAL PRIMARY KEY,
+                              id SERIAL PRIMARY KEY,
                               content VARCHAR(250) NOT NULL)
                                ')
     connection.exec('CREATE TABLE IF NOT EXISTS bookmarks_tags (
                               bt_id SERIAL PRIMARY KEY,
                               bm_id int REFERENCES bookmarks (id),
-                              tg_id int REFERENCES tags (tag_id)
+                              tg_id int REFERENCES tags (id)
                               )')
   end
 end
