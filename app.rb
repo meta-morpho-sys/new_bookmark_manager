@@ -83,6 +83,7 @@ class BookmarkManager < Sinatra::Base
   post '/bookmarks/tags/new' do
     Tag.create(params[:content], params[:id])
     flash[:notice] = "'#{params[:content]}' tag successfully created!"
+    redirect '/'
   end
 
   run! if app_file == $PROGRAM_NAME
