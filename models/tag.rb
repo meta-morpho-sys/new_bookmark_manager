@@ -1,19 +1,19 @@
 # frozen_string_literal: true
 
+# Creates and stores tags in the database
 class Tag
-  attr_reader :id, :content, :bm_id
+  attr_reader :id, :content
 
-  def initialize(id, content, bm_id)
+  def initialize(id, content)
     @id = id
     @content = content
-    @bm_id = bm_id
   end
 
-  def self.create(content, bm_id)
+  def self.create(content)
     result = DbConnector.query_params('INSERT INTO tags (content)
                                                 VALUES ($1)
                                             RETURNING
                                                 id, content', [content])
-    Tag.new(result[0]['id'], result[0]['content'], bm_id)
+    Tag.new(result[0]['id'], result[0]['content'])
   end
 end

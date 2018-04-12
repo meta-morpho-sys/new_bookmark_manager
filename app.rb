@@ -38,7 +38,7 @@ class BookmarkManager < Sinatra::Base
 
   delete '/bookmarks/delete' do
     Bookmark.delete(params[:id])
-    flash[:notice] = "Bookmark '#{params[:title]}' was successfully deleted!"
+    flash[:notice] = "Bookmark **#{params[:title]}** was successfully deleted!"
     redirect '/bookmarks'
   end
 
@@ -82,7 +82,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/tags/new' do
-    tag = Tag.create(params[:content], params[:id])
+    tag = Tag.create(params[:content])
     BookmarkTag.create(params[:id], tag.id)
     flash[:notice] = "**#{params[:content]}** tag successfully created!"
     redirect '/'
