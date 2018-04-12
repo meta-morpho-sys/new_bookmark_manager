@@ -3,13 +3,7 @@
 require_relative '../models/tag'
 
 describe Tag do
-  before(:each) do
-    # @bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy')
-    # @tag = Tag.create('Health and Well-being', @bm.id)
-  end
-
-  subject(:tag) { Tag.create('Health and Well-being')
-  }
+  subject(:tag) { Tag.create('Health and Well-being') }
   describe '.create' do
     it 'adds a new tag to the bookmark' do
       expect(tag.id).not_to be_nil

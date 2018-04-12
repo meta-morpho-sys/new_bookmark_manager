@@ -17,5 +17,9 @@ feature 'Creating a tag for a bookmark' do
     click_button 'Submit'
 
     expect(page).to have_content '**Fun** tag successfully created!'
+
+    within "#bookmark-#{bm.id}" do
+      expect(page).to have_content 'Fun'
+    end
   end
 end
