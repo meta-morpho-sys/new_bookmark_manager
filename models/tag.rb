@@ -9,6 +9,18 @@ class Tag
     @content = content
   end
 
+  def bookmarks
+    result = DbConnector.query("SELECT
+                                        bookmarks.id, title, url
+                                     FROM
+                                        bookmarks_tags
+                                     INNER JOIN bookmarks
+                                     ON bookmarks.id = bookmarks_tags.bm_id
+                                     WHERE
+                                        bookmarks_tags.tg_id = #{@id}")
+    result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
+  end
+
   def self.create(content)
     result = DbConnector.query_params('INSERT INTO tags (content)
                                                 VALUES ($1)
