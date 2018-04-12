@@ -74,17 +74,25 @@
       <td>
         <form action="/bookmarks/tags" method="get">
           <input type="hidden" name="id" value="<%= bookmark.id %>">
-          <input type="submit" value="Tag">
+          <input type="submit" value="Add tag">
         </form>
       </td>
     </tr>
     <% end %>
   </table>
 
+</div>
 
-
-
-
+<div class="tags">
+  <table style="text-align: right">
+    <th>Tags</th>
+    <% @bookmarks.each do |bookmark| %>
+    <tr> <% bookmark.tags.each do |tag| %>
+      <td><%= tag.content%></td>
+    </tr>
+      <% end %>
+    <% end %>
+  </table>
 </div>
 
 </html>

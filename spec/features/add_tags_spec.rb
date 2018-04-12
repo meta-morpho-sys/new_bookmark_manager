@@ -7,7 +7,7 @@ feature 'Creating a tag for a bookmark' do
     visit '/bookmarks'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'Tag'
+      click_button 'Add tag'
     end
 
     expect(current_path).to eq '/bookmarks/tags'
