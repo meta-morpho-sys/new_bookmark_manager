@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require './lib/db_connector'
+require './models/tag'
 
 # Connects to the DB via DatabaseConnection
 # Makes queries to execute the CRUD actions on the bookmarks in the DB.
@@ -19,6 +20,18 @@ class Bookmark
 
   def comments
     Comment.comments @id
+  end
+
+  def tags
+    result = DbConnector.query("SELECT
+                                        tags.id,
+                                        content
+                                     FROM
+                                        bookmarks_tags
+                                     INNER JOIN tags ON tags.id = bookmarks_tags.tg_id
+                                     WHERE
+                                        bookmarks_tags.bm_id = #{@id}")
+    result.map { |tag| Tag.new(tag['id'], tag['content']) }
   end
 
   def self.all

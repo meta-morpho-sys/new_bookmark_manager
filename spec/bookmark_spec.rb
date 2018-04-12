@@ -80,4 +80,15 @@ describe Bookmark do
       expect(bm.comments).to include comment1, comment2
     end
   end
+
+  describe '#tags' do
+    it 'returns all the tags associated with that particular BM ID' do
+      tag1 = Tag.create'Business'
+      tag2 = Tag.create 'Personal'
+      BookmarkTag.create(bm.id, tag1.id)
+      BookmarkTag.create(bm.id, tag2.id)
+
+      expect(bm.tags.map(&:content)).to include tag1.content, tag2.content
+    end
+  end
 end
