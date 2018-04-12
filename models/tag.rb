@@ -16,4 +16,9 @@ class Tag
                                                 id, content', [content])
     Tag.new(result[0]['id'], result[0]['content'])
   end
+
+  def self.find(id)
+    result = DbConnector.query("SELECT * FROM tags WHERE id='#{id}'")
+    result.map { |tag| Tag.new(tag['id'], tag['content']) }.first
+  end
 end

@@ -9,4 +9,13 @@ describe Tag do
       expect(tag.id).not_to be_nil
     end
   end
+
+  describe '.find' do
+    it 'finds a specific tag' do
+      tag = Tag.create 'Fun and movies'
+      found_tag = Tag.find(tag.id)
+      expect(found_tag.id).to eq tag.id
+      expect(found_tag.content).to eq 'Fun and movies'
+    end
+  end
 end
