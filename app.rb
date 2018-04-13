@@ -42,7 +42,7 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
-  get '/bookmarks/edit' do
+  get '/bookmarks/:id/edit' do
     @bookmark = Bookmark.find(params[:id])
     erb :'bookmarks/edit'
   end
@@ -86,6 +86,11 @@ class BookmarkManager < Sinatra::Base
     BookmarkTag.create(params[:id], tag.id)
     flash[:notice] = "**#{params[:content]}** tag successfully created!"
     redirect '/'
+  end
+
+  get '/tags/:id/bookmarks' do
+    @bookmarks = Tag.find(params[:id]).bookmarks
+    erb :'tags/bookmarks/index'
   end
 
   run! if app_file == $PROGRAM_NAME
