@@ -22,15 +22,37 @@ class Comment {
 
 }
 
+class Tag {
+    +id
+    +content
+    +{static} create(content)
+    +{static} find(id)
+    +initialize(id, content)
+    +bookmarks()
+}
+
+class BookmarkTag {
+    +bt_id
+    +{static} create(bm_id, tg_id)
+    +initialize(bt_id)
+}
+
+
 class DatabaseConnection <<Singleton>>  {
     +{static} connection
     +{static} setup()
     +{static} query()
 }
 
-Controller --> bookmark: all bookmarks
+Controller --> Bookmark: all bookmarks
+Controller --> Comment
+Controller--> Tag
+Bookmark --> Controller: [collection of bookmarks]
+Comment --> Controller: [collection of comments]
+Tag --> Controller: [collection of tags]
+Tag  --> BookmarkTag
+BookmarkTag -- Bookmark
+Bookmark --> DatabaseConnection
 Controller --> Index
-bookmark --> Controller: [collection of bookmarks]
-bookmark --> DatabaseConnection
 
 @enduml

@@ -24,11 +24,11 @@ class Bookmark
 
   def tags
     result = DbConnector.query("SELECT
-                                        tags.id,
-                                        content
+                                        tags.id, content
                                      FROM
                                         bookmarks_tags
-                                     INNER JOIN tags ON tags.id = bookmarks_tags.tg_id
+                                     INNER JOIN tags
+                                     ON tags.id = bookmarks_tags.tg_id
                                      WHERE
                                         bookmarks_tags.bm_id = #{@id}")
     result.map { |tag| Tag.new(tag['id'], tag['content']) }
