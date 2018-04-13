@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
 </head>
-<body>
-$END$
-</body>
+
+<div class="intro">
+
+  <%= flash[:notice] %>
+</div>
+
+<div class="bookmarks">
+  <table>
+    <tr>
+    <tr>
+      <th id="manage" colspan="2">Manage</th>
+      <th id="bm_title">Bookmark title</th>
+      <th id="comments" colspan="2">Comments</th>
+      <th id="tags" colspan="2">Tags</th>
+    </tr>
+
+    <% @bookmarks.each do |bookmark| %>
+      <tr  id="bookmark-<%= bookmark.id %>">
+        <td><a href="/bookmarks/<%= bookmark.id %>/edit">Edit</a></td>
+
+        <td>
+          <form action="/bookmarks/delete" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="hidden" name="id" value="<%= bookmark.id %>">
+            <input type="hidden" name="title" value="<%= bookmark.title %>">
+            <input type="submit" value="Delete">
+          </form>
+        </td>
+
+        <td>
+          <a href="<%= bookmark.url %>" target="_blank">
+            <%= bookmark.url if bookmark.title.nil? %>
+            <%= bookmark.title %>
+          </a>
+        </td>
+
+        <td><a href="/bookmarks/<%= bookmark.id %>/comments">Comment</a></td>
+
+        <td><a href="/bookmark/<%= bookmark.id %>/comments/view">View</a></td>
+
+        <td style="width: 50%"><a href="/bookmarks/<%= bookmark.id %>/tags">Add tag</a></td>
+
+        <td>
+          <% bookmark.tags.each do |tag| %>
+            <a href="/tags/<%= tag.id%>/bookmarks"><%= tag.content %></a>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+
+ </div>
+
+<a href="/">Back to bookmarks!</a>
+
 </html>
+

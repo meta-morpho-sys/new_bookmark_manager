@@ -27,10 +27,10 @@
 <div class="bookmarks">
   <table>
   <tr>
-    <th style="width:20%" colspan="2">Manage</th>
-    <th style="width:60%" >Bookmark title</th>
-    <th style="width:20%" colspan="2">Comments</th>
-    <th style="width:20%" colspan="2">Tags</th>
+    <th id="manage" colspan="2">Manage</th>
+    <th id="bm_title">Bookmark title</th>
+    <th id="comments" colspan="2">Comments</th>
+    <th id="tags" colspan="2">Tags</th>
   </tr>
 
     <% @bookmarks.each do |bookmark| %>
@@ -57,7 +57,7 @@
 
       <td><a href="/bookmark/<%= bookmark.id %>/comments/view">View</a></td>
 
-      <td><a href="/bookmarks/<%= bookmark.id %>/tags">Add tag</a></td>
+      <td style="width: 50%"><a href="/bookmarks/<%= bookmark.id %>/tags">Add tag</a></td>
 
       <td>
         <% bookmark.tags.each do |tag| %>

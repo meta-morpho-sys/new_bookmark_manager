@@ -44,15 +44,24 @@ a:hover, a:focus, a:active {
 
 /* specific divs */
 
-table { width: 40% }
+table { width: 50% }
 
 table, th, td {
 	border-collapse: collapse;
 }
 
 th, td {
-	padding: 5px;
+    padding: 10px;
 	text-align: center;
+}
+
+#manage,#comments, #tags {
+	width: 15%;
+
+	}
+
+#bm_title {
+    width:50%
 }
 
 .bookmarks {
