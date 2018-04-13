@@ -9,6 +9,10 @@ class Tag
     @content = content
   end
 
+  def ==(other)
+    @id == other.id
+  end
+
   def bookmarks
     result = DbConnector.query("SELECT
                                         bookmarks.id, title, url
