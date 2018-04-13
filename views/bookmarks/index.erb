@@ -38,9 +38,8 @@
       <td><a href="/bookmarks/<%= bookmark.id %>/edit">Edit</a></td>
 
       <td>
-        <form action="/bookmarks/delete" method="post">
+        <form action="/bookmarks/<%= bookmark.id %>/delete" method="post">
         <input type="hidden" name="_method" value="DELETE">
-        <input type="hidden" name="id" value="<%= bookmark.id %>">
         <input type="hidden" name="title" value="<%= bookmark.title %>">
         <input type="submit" value="Delete">
       </form>

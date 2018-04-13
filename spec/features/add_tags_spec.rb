@@ -23,8 +23,8 @@ feature 'Creating a tag for a bookmark' do
     end
   end
 
-  xscenario 'anyone can see the bookmarks filtered by tag' do
-    bm = Bookmark.create('https://www.netflix.com', 'Neflix')
+  scenario 'anyone can see the bookmarks filtered by tag' do
+    bm = Bookmark.create('https://www.netflix.com', 'Netflix')
     tag = Tag.create 'Movies and fun'
     BookmarkTag.create(bm.id, tag.id)
 

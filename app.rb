@@ -36,7 +36,7 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
-  delete '/bookmarks/delete' do
+  delete '/bookmarks/:id/delete' do
     Bookmark.delete(params[:id])
     flash[:notice] = "Bookmark **#{params[:title]}** was successfully deleted!"
     redirect '/bookmarks'
@@ -47,7 +47,7 @@ class BookmarkManager < Sinatra::Base
     erb :'bookmarks/edit'
   end
 
-  patch '/bookmarks/update' do
+  patch '/bookmarks/:id/update' do
     begin
       bookmark = Bookmark.update(params[:id], params['new_url'], params['new_title'])
       flash[:notice] = 'You must submit a valid URL' unless bookmark
