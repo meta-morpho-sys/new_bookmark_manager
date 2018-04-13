@@ -7,10 +7,10 @@ feature 'Creating a tag for a bookmark' do
     visit '/bookmarks'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'Add tag'
+      click_link 'Add tag'
     end
 
-    expect(current_path).to eq '/bookmarks/tags'
+    expect(current_path).to eq "/bookmarks/#{bm.id}/tags"
     expect(page).to have_content 'Bookmark: Neflix'
 
     fill_in(:content, with: 'Fun')
@@ -21,5 +21,20 @@ feature 'Creating a tag for a bookmark' do
     within "#bookmark-#{bm.id}" do
       expect(page).to have_content 'Fun'
     end
+  end
+
+  xscenario 'anyone can see the bookmarks filtered by tag' do
+    bm = Bookmark.create('https://www.netflix.com', 'Neflix')
+    tag = Tag.create 'Movies and fun'
+    BookmarkTag.create(bm.id, tag.id)
+
+    visit '/bookmarks'
+
+    within "#bookmark-#{bm.id}" do
+      click_link 'Movies and fun'
+    end
+
+    expect(current_path).to eq "/tags/#{tag.id}/bookmarks"
+    expect(page).to have_content 'Netflix'
   end
 end
