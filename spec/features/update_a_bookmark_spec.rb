@@ -8,10 +8,10 @@ feature 'Updating a bookmark' do
     visit '/'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'Edit'
+      click_link 'Edit'
     end
 
-    expect(current_path).to eq '/bookmarks/edit'
+    expect(current_path).to eq "/bookmarks/#{bm.id}/edit"
 
     fill_in 'new_url', with: 'https://www.google.co.uk'
     fill_in 'new_title', with: 'Google'

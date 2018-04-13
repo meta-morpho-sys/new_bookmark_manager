@@ -57,16 +57,14 @@
       </td>
 
       <td>
-        <form action="/bookmarks/comments" method="get">
-        <input type="hidden" name="id" value="<%= bookmark.id %>">
-        <input type="submit" value="Comment">
-      </form>
+        <a href="/bookmarks/<%= bookmark.id %>/comments">
+          Comment
+        </a>
       </td>
       <td>
-        <form action="/bookmark/comments" method="get">
-          <input type="hidden" name="id" value="<%= bookmark.id %>">
-          <input type="submit" value="View">
-        </form>
+        <a href="/bookmark/<%= bookmark.id %>/comments/view">
+          View
+        </a>
       </td>
 
       <td>

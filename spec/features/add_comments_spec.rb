@@ -6,17 +6,17 @@ feature 'Commenting on a bookmark' do
     visit '/bookmarks'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'Comment'
+      click_link 'Comment'
     end
 
-    expect(current_path).to eq '/bookmarks/comments'
+    expect(current_path).to eq "/bookmarks/#{bm.id}/comments"
     expect(page).to have_content 'Bookmark: Lloyds'
 
     fill_in(:text, with: 'This is a test comment')
     click_button 'Submit'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'View'
+      click_link 'View'
     end
     expect(page).to have_content 'This is a test comment'
   end

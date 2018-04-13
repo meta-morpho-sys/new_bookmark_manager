@@ -60,7 +60,7 @@ class BookmarkManager < Sinatra::Base
     redirect '/'
   end
 
-  get '/bookmarks/comments' do
+  get '/bookmarks/:id/comments' do
     @bookmark = Bookmark.find(params[:id])
     erb :'comments/new'
   end
@@ -70,7 +70,7 @@ class BookmarkManager < Sinatra::Base
     redirect '/'
   end
 
-  get '/bookmark/comments' do
+  get '/bookmark/:id/comments/view' do
     @bookmark = Bookmark.find(params[:id])
     @comments = @bookmark.comments
     erb :'comments/view'

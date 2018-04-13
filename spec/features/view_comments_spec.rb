@@ -9,10 +9,10 @@ feature 'Viewing comments' do
     visit '/bookmarks'
 
     within "#bookmark-#{bm.id}" do
-      click_button 'View'
+      click_link 'View'
     end
 
-    expect(current_path).to eq '/bookmark/comments'
+    expect(current_path).to eq "/bookmark/#{bm.id}/comments/view"
     expect(page).to have_content 'Bookmark: Lloyds'
 
     expect(page).to have_content 'Great bookmark'
