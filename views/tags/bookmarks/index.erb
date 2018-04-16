@@ -24,15 +24,16 @@
 
     <% @bookmarks.each do |bookmark| %>
       <tr id="bookmark-<%= bookmark.id %>">
-          <td><a class="edit" href="/bookmarks/<%= bookmark.id %>/edit">Edit</a></td>
+        <td><a class="edit" href="/bookmarks/<%= bookmark.id %>/edit" title="edit">Edit</a></td>
 
         <td>
           <form action="/bookmarks/<%= bookmark.id %>/delete" method="post">
             <input type="hidden" name="_method" value="DELETE">
             <input type="hidden" name="title" value="<%= bookmark.title %>">
-            <input type="submit" value="Delete">
+            <input class="delete" type="submit" title="delete" value="Delete">
           </form>
         </td>
+
 
         <td>
           <a href="<%= bookmark.url %>" target="_blank">
@@ -41,17 +42,17 @@
           </a>
         </td>
 
-        <td><a href="/bookmarks/<%= bookmark.id %>/comments">Comment</a></td>
+        <td><a class="comment" href="/bookmarks/<%= bookmark.id %>/comments" title="comment">Comment</a></td>
 
-        <td><a href="/bookmark/<%= bookmark.id %>/comments/view">View</a></td>
+        <td><a class="view" href="/bookmark/<%= bookmark.id %>/comments/view" title="view comments">View</a></td>
 
-        <td><a href="/bookmarks/<%= bookmark.id %>/tags">Add tag</a></td>
+        <td><a class="tag" href="/bookmarks/<%= bookmark.id %>/tags" title="add tag">Add tag</a></td>
 
-        <!--<td>-->
-          <!--<% bookmark.tags.each do |tag| %>-->
-            <!--<a href="/tags/<%= tag.id%>/bookmarks"><%= tag.content %></a>-->
-          <!--<% end %>-->
-        <!--</td>-->
+        <td>
+          <% bookmark.tags.each do |tag| %>
+            <a href="/tags/<%= tag.id%>/bookmarks"><%= tag.content %></a>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </table>
