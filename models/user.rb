@@ -23,5 +23,4 @@ class User
                                       [email, password])
     User.new(result[0]['id'], result[0]['email'], result[0]['password'])
   end
-
 end

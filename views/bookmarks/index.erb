@@ -7,7 +7,11 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
 
 </head>
-
+  <div>
+    <% if @user %>
+      <h2>Welcome,  <%= @user.email %></h2>
+    <% end %>
+  </div>
 
   <div class="intro">
     <form action="/bookmarks/new" method="post">
