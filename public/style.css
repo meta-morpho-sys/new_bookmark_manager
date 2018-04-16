@@ -23,16 +23,16 @@ p {
 a:link {
 	font-weight: bold;
 	text-decoration: underline;
-	color: #555753;
+	color: blue;
 	}
 a:visited {
-	font-weight: bold;
+	font-weight: lighter;
 	text-decoration: none;
-	color: #555753;
+	color: #e4254c;
 	}
 a:hover, a:focus, a:active {
 	text-decoration: underline;
-	color: #edecf1;
+	color: #e4254c;
 	}
 
 .container {
@@ -56,12 +56,11 @@ th, td {
 }
 
 #manage,#comments, #tags {
-	width: 15%;
-
-	}
+	width: 100px;
+}
 
 #bm_title {
-    width:50%
+    width: auto;
 }
 
 .bookmarks {
@@ -73,21 +72,63 @@ th, td {
 	position: relative;
 }
 
-.bookmarks input {
-	cursor:pointer;
-	border-width: thin;
-	border-radius: 30%;
-	border-color: #ffeaf3;
-	/*color: rgba(0, 0, 0, 0);*/
-	/*width: 30px;*/
-	/*height: 30px;*/
+.edit, .comment, .tag, .view, .delete, .add {
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: border-box;
+
+	display: block;
+	height: 50px;
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space:nowrap;
+}
+
+.edit {
+	background-image: url('graphite pencil_white.png');
+	background-position: right;
+}
+
+.delete {
+	background-color: Transparent;
+	background-image: url('delete.png');
+	background-position: left;
+	border: none;
+	color: rgba(0, 0, 0, 0);
+}
+
+.comment {
+	background-image: url('speech_buble_hand_drawn.png');
+	background-position: right;
+
+}
+
+.view {
+	background-image: url('eye2.png');
+	background-position: left;
+}
+
+.tag {
+	background-image: url('tag.png');
+	background-position: right;
+}
+
+.add {
+	display: inline-block;
+	background-color: Transparent;
+	background-image: url('add_plus__free_hand_drawn_sketch-512.png');
+	border: none;
+	color: rgba(0, 0, 0, 0);
 }
 
 .intro {
 	font-weight: bold;
 	text-decoration: none;
-	color: #555753;
-	min-width: 470px;
+	color: #e4254c;
+	min-width: 700px;
 	width: 100%;
 	}
 

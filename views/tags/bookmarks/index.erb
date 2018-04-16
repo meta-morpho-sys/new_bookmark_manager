@@ -24,7 +24,7 @@
 
     <% @bookmarks.each do |bookmark| %>
       <tr id="bookmark-<%= bookmark.id %>">
-        <td><a href="/bookmarks/<%= bookmark.id %>/edit">Edit</a></td>
+          <td><a class="edit" href="/bookmarks/<%= bookmark.id %>/edit">Edit</a></td>
 
         <td>
           <form action="/bookmarks/<%= bookmark.id %>/delete" method="post">
@@ -45,7 +45,7 @@
 
         <td><a href="/bookmark/<%= bookmark.id %>/comments/view">View</a></td>
 
-        <td style="width: 50%"><a href="/bookmarks/<%= bookmark.id %>/tags">Add tag</a></td>
+        <td><a href="/bookmarks/<%= bookmark.id %>/tags">Add tag</a></td>
 
         <!--<td>-->
           <!--<% bookmark.tags.each do |tag| %>-->
