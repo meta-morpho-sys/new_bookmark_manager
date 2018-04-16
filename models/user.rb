@@ -23,4 +23,9 @@ class User
                                       [email, password])
     User.new(result[0]['id'], result[0]['email'], result[0]['password'])
   end
+
+  def self.find(id)
+    result = DbConnector.query("SELECT * FROM users WHERE id='#{id}'")
+    result.map { |usr| User.new(usr['id'], usr['email'], usr['password']) }.first
+  end
 end

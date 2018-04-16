@@ -17,4 +17,11 @@ describe User do
       expect(user.id).not_to be nil
     end
   end
+
+  describe '.find' do
+    it 'finds user by id' do
+      user = User.create('unit@test1.com', 'pswd123')
+      expect(User.find(user.id).email).to eq 'unit@test1.com'
+    end
+  end
 end
