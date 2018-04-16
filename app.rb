@@ -23,6 +23,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/users' do
+    User.create(params[:email], params[:password])
     redirect '/bookmarks'
   end
 
