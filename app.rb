@@ -3,6 +3,7 @@
 require 'sinatra/base'
 require 'sinatra/flash'
 require 'uri'
+require './models/user'
 require './models/bookmark'
 require './models/comment'
 require './models/tag'
