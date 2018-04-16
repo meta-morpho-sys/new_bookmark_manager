@@ -16,6 +16,11 @@ describe User do
       user = User.create('unit@test.com', 'pswd123')
       expect(user.id).not_to be nil
     end
+
+    it "encrypts user's password" do
+      expect(BCrypt::Password).to receive(:create).with('pswd123')
+      User.create('unit@test.com', 'pswd123')
+    end
   end
 
   describe '.find' do
@@ -25,7 +30,7 @@ describe User do
     end
 
     it 'returns nil if no ID is given' do
-      expect(User.find nil).to eq nil
+      expect(User.find(nil)).to eq nil
     end
       end
 end
