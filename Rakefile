@@ -6,7 +6,7 @@ require_relative 'db_helpers'
 task :test_database_setup do
   puts 'Cleaning database...'
   DbConnector.setup 'new_bookmark_manager_test'
-  DbConnector.query('TRUNCATE comments, tags, bookmarks_tags, bookmarks')
+  DbConnector.query('TRUNCATE users, comments, tags, bookmarks_tags, bookmarks')
 end
 
 task :create_databases do
@@ -35,6 +35,11 @@ task :create_databases do
                               bt_id SERIAL PRIMARY KEY,
                               bm_id int REFERENCES bookmarks (id),
                               tg_id int REFERENCES tags (id)
+                              )')
+    connection.exec('CREATE TABLE IF NOT EXISTS users (
+                              id SERIAL PRIMARY KEY,
+                              email VARCHAR(100) NOT NULL UNIQUE,
+                              password VARCHAR(100) NOT NULL UNIQUE
                               )')
   end
 end

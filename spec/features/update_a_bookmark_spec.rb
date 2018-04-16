@@ -5,7 +5,7 @@ require 'pry'
 feature 'Updating a bookmark' do
   scenario 'a user can modify the title and the url of an existing bookmark' do
     bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
-    visit '/'
+    visit '/bookmarks'
 
     within "#bookmark-#{bm.id}" do
       click_link 'Edit'

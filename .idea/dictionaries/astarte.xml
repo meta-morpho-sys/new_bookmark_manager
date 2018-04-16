@@ -1,6 +1,7 @@
 <component name="ProjectDictionaryState">
   <dictionary name="astarte">
     <words>
+      <w>bcrypt</w>
       <w>datname</w>
       <w>dblink</w>
       <w>dbname</w>

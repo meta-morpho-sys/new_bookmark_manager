@@ -3,7 +3,7 @@
 feature 'Deleting a bookmark' do
   scenario 'user can delete a bookmark' do
     bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
-    visit '/'
+    visit '/bookmarks'
     within "#bookmark-#{bm.id}" do
       click_button 'Delete'
     end

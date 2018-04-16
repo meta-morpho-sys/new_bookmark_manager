@@ -15,6 +15,14 @@ class BookmarkManager < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
+    redirect '/users/new'
+  end
+
+  get '/users/new' do
+    erb :'users/new'
+  end
+
+  post '/users' do
     redirect '/bookmarks'
   end
 
@@ -57,7 +65,7 @@ class BookmarkManager < Sinatra::Base
       flash[:notice] = 'Something went wrong with the database. \
                         This sometimes happens, please try again.'
     end
-    redirect '/'
+    redirect '/bookmarks'
   end
 
   get '/bookmarks/:id/comments' do
@@ -67,7 +75,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks/comments/new' do
     Comment.create(params[:text], params[:id])
-    redirect '/'
+    redirect '/bookmarks'
   end
 
   get '/bookmark/:id/comments/view' do
@@ -85,7 +93,7 @@ class BookmarkManager < Sinatra::Base
     tag = Tag.create(params[:content])
     BookmarkTag.create(params[:id], tag.id)
     flash[:notice] = "**#{params[:content]}** tag successfully created!"
-    redirect '/'
+    redirect '/bookmarks'
   end
 
   get '/tags/:id/bookmarks' do

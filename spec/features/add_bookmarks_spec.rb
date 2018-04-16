@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 feature 'Adding bookmarks' do
-  before { visit '/' }
+  before { visit '/bookmarks' }
   context 'adding real bookmarks' do
     scenario 'the user can add a bookmark to Bookmark Manager' do
       fill_in_and_add
