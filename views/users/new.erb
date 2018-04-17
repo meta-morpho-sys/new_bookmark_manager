@@ -17,14 +17,14 @@
 </script>
 </head>
 <body>
-<p>Sign up</p>
+<h2>Sign up</h2>
 <div class="intro">
   <form action="/users" method="post">
     <label>Email</label>
-    <input type="text" name="email" required="required" size="50" title="email">
+    <input type="email" name="email" required size="50" title="email">
     <label>Password</label>
-    <input id="pswdInput" type="password" name="password" required="required" size="50" title="password" value="FakePSW">
-    <input type="checkbox" onclick="showPswd()">Show Password
+    <input id="pswdInput" type="password" name="password" required size="50" title="password">
+    <input class="view_psw" type="button" onclick="showPswd()">
     <input class="add" type="submit" title="submit" value="Submit">
   </form>
 </div>
