@@ -36,6 +36,6 @@ class Comment
       SQLStrings::INSERT_COMMS_TXT_BKMKID_RETURN,
       [text, bookmark_id]
     )
-    Comment.new(result[0]['id'], result[0]['text'], bookmark_id)
+    make(result[0])
   end
 end
