@@ -34,7 +34,6 @@
           </form>
         </td>
 
-
         <td>
           <a href="<%= bookmark.url %>" target="_blank">
             <%= bookmark.url if bookmark.title.nil? %>
@@ -50,7 +49,7 @@
 
         <td>
           <% bookmark.tags.each do |tag| %>
-            <a href="/tags/<%= tag.id%>/bookmarks"><%= tag.content %></a>
+            <a href="/tags/<%= tag.id %>/bookmarks"><%= tag.content %></a>
           <% end %>
         </td>
       </tr>
