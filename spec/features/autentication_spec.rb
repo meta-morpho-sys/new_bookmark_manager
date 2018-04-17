@@ -17,8 +17,8 @@ feature 'Creating a new session' do
     expect(page).to have_content 'Welcome, test@example.com'
   end
 
-  scenario "a user can't sign in if email is incorrect" do
-    User.create('test@example.com','password123')
+  scenario "a user can't sign in if the email is incorrect" do
+    User.create('test@example.com', 'password123')
     visit '/'
     click_link 'Sign in'
 
@@ -27,6 +27,19 @@ feature 'Creating a new session' do
     click_button 'Sign me in'
 
     expect(page).not_to have_content 'Welcome, test@example.com'
-    expect(page).to have_content 'You must have entered a wrong email!'
+    expect(page).to have_content 'You must have entered a wrong email or password!'
+  end
+
+  scenario "a user can't sign in if then password is incorrect" do
+    User.create('test@example.com', 'password123')
+    visit '/'
+    click_link 'Sign in'
+
+    fill_in('email', with: 'test@example.com')
+    fill_in('password', with: 'wrong_password')
+    click_button 'Sign me in'
+
+    expect(page).not_to have_content 'Welcome, test@example.com'
+    expect(page).to have_content 'You must have entered a wrong email or password!'
   end
 end

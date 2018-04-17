@@ -38,7 +38,8 @@ class User
 
   def self.authenticate(email, pswd)
     result = DbConnector.query("SELECT * FROM users WHERE email = '#{email}'")
-    return nil unless result.any?
+    return unless result.any?
+    return unless BCrypt::Password.new(result[0]['password']) == pswd
     wrap(result[0])
   end
 end

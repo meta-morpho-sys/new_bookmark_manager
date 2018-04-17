@@ -29,7 +29,7 @@ class BookmarkManager < Sinatra::Base
       session[:user_id] = user.id
       redirect '/bookmarks'
     else
-      flash[:notice] = 'You must have entered a wrong email!'
+      flash[:notice] = 'You must have entered a wrong email or password!'
       redirect '/sessions/new'
     end
   end
