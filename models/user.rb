@@ -11,9 +11,14 @@ class User
     @password = password
   end
 
+  # TODO: look into how to merge this with initialize, using keyword args ** ?
+  def self.make(user)
+    User.new(user['id'], user['email'], user['password'])
+  end
+
   def self.all
     result = DbConnector.query 'SELECT * FROM users'
-    result.map { |user| User.new(user['id'], user['email'], user['password']) }
+    result.map { |user| User.make(user) }
   end
 
   def self.create(email, pswd)
@@ -23,12 +28,12 @@ class User
                                             RETURNING
                                                 id, email',
                                       [email, password])
-    User.new(result[0]['id'], result[0]['email'], result[0]['password'])
+    User.make(result[0])
   end
 
   def self.find(id)
     return nil unless id
     result = DbConnector.query("SELECT * FROM users WHERE id = #{id}")
-    User.new(result[0]['id'], result[0]['email'], result[0]['password'])
+    User.make(result[0])
   end
 end
