@@ -18,7 +18,7 @@ class User
 
   def self.all
     result = DbConnector.query 'SELECT * FROM users'
-    result.map { |user| User.make(user) }
+    result.map { |user| make(user) }
   end
 
   def self.create(email, pswd)
@@ -28,12 +28,12 @@ class User
                                             RETURNING
                                                 id, email',
                                       [email, password])
-    User.make(result[0])
+    make(result[0])
   end
 
   def self.find(id)
     return nil unless id
     result = DbConnector.query("SELECT * FROM users WHERE id = #{id}")
-    User.make(result[0])
+    make(result[0])
   end
 end

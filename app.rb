@@ -76,7 +76,6 @@ class BookmarkManager < Sinatra::Base
   end
   # </editor-fold>
 
-
   # <editor-fold desc="Comments">
   get '/bookmarks/:id/comments' do
     @bookmark = Bookmark.find(params[:id])
