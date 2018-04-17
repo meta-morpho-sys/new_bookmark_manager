@@ -26,6 +26,7 @@ class SQLStrings
                               bookmark_id INTEGER REFERENCES bookmarks (id) ON DELETE CASCADE,
                               created_at TIMESTAMP DEFAULT now()
                               )'
+
   TRUNCATE_TABLES = 'TRUNCATE users, comments, tags, bookmarks_tags, bookmarks'
 
 
@@ -38,6 +39,11 @@ class SQLStrings
                                                 VALUES ($1, $2)
                                             RETURNING
                                                 id, url, title'
+
+  INSERT_BKMARKS_TAGS_RETURN = 'INSERT INTO bookmarks_tags (bm_id, tg_id)
+                                                VALUES ($1, $2)
+                                            RETURNING
+                                                bt_id'
 
   SELECT_JOIN_TAG_ID = "SELECT
                           tags.id, content

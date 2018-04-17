@@ -9,10 +9,10 @@ class BookmarkTag
   end
 
   def self.create(bm_id, tg_id)
-    result = DbConnector.query_params('INSERT INTO bookmarks_tags (bm_id, tg_id)
-                                                VALUES ($1, $2)
-                                            RETURNING
-                                                bt_id', [bm_id, tg_id])
+    result = DbConnector.query_params(
+      SQLStrings::INSERT_BKMARKS_TAGS_RETURN,
+      [bm_id, tg_id]
+    )
     BookmarkTag.new(result[0]['bt_id'])
   end
 end
