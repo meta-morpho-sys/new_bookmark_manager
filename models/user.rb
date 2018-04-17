@@ -12,13 +12,13 @@ class User
   end
 
   # TODO: look into how to merge this with initialize, using keyword args ** ?
-  def self.make(user)
+  def self.wrap(user)
     User.new(user['id'], user['email'], user['password'])
   end
 
   def self.all
     result = DbConnector.query 'SELECT * FROM users'
-    result.map { |user| make(user) }
+    result.map { |user| wrap(user) }
   end
 
   def self.create(email, pswd)
@@ -27,12 +27,17 @@ class User
       SQLStrings::INSERT_USERS_EML_PSWD_RETURN,
       [email, password]
     )
-    make(result[0])
+    wrap(result[0])
   end
 
   def self.find(id)
     return nil unless id
     result = DbConnector.query("SELECT * FROM users WHERE id = #{id}")
-    make(result[0])
+    wrap(result[0])
+  end
+
+  def self.authenticate(email, pswd)
+    result = DbConnector.query("SELECT * FROM users WHERE email = '#{email}'")
+    wrap(result[0])
   end
 end
