@@ -23,11 +23,10 @@ class User
 
   def self.create(email, pswd)
     password = BCrypt::Password.create(pswd)
-    result = DbConnector.query_params('INSERT INTO users (email, password)
-                                                VALUES ($1, $2)
-                                            RETURNING
-                                                id, email',
-                                      [email, password])
+    result = DbConnector.query_params(
+      SQLStrings::INSERT_USERS_EML_PSWD_RETURN,
+      [email, password]
+    )
     make(result[0])
   end
 

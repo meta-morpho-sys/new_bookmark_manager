@@ -28,4 +28,9 @@ class SQLStrings
                               )'
   TRUNCATE_TABLES = 'TRUNCATE users, comments, tags, bookmarks_tags, bookmarks'
 
+
+  INSERT_USERS_EML_PSWD_RETURN = 'INSERT INTO users (email, password)
+                                                VALUES ($1, $2)
+                                            RETURNING
+                                                id, email'
 end
