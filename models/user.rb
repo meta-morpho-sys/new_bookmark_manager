@@ -38,6 +38,7 @@ class User
 
   def self.authenticate(email, pswd)
     result = DbConnector.query("SELECT * FROM users WHERE email = '#{email}'")
+    return nil unless result.any?
     wrap(result[0])
   end
 end

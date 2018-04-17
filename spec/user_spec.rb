@@ -35,11 +35,16 @@ describe User do
   end
 
   describe '.authenticate' do
-    example 'user gives correct email and password' do
+    example 'the user gives correct email and password' do
       user = User.create('unit@test1.com', 'pswd123')
       authenticated_user = User.authenticate('unit@test1.com', 'pswd123')
       expect(authenticated_user.email).to eq 'unit@test1.com'
       expect(authenticated_user.id).to eq user.id
+    end
+
+    example 'returns nil if the user gives incorrect email' do
+      User.create('unit@test1.com', 'pswd123')
+      expect(User.authenticate('wrong_email@test1.com', 'pswd123')).to be_nil
     end
   end
 end

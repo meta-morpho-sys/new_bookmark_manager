@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <title>Sign in</title>
 </head>
+
+<script>
+    function showPswd() {
+        var x = document.getElementById("pswdInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
 <body>
-$END$
+
+<%= styled_flash%>
+
+<h2>Sign in</h2>
+<div class="intro">
+  <form action="/sessions" method="post">
+    <label>Email</label>
+    <input type="email" name="email" required size="50" title="email">
+    <label>Password</label>
+    <input id="pswdInput" type="password" name="password" required size="50" title="password">
+    <input class="view_psw" type="button" onclick="showPswd()">
+    <input type="submit" title="submit" value="Sign me in">
+  </form>
+
+</div>
+
 </body>
+
+
 </html>
