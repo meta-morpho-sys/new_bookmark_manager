@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 feature 'Creating a tag for a bookmark' do
-
   scenario 'anyone can tag a bm' do
     bm = Bookmark.create('https://www.netflix.com', 'Neflix')
     visit '/bookmarks'
@@ -33,7 +32,6 @@ feature 'Creating a tag for a bookmark' do
     within "#bookmark-#{bm.id}" do
       click_link 'Movies and fun'
     end
-
     expect(current_path).to eq "/tags/#{tag.id}/bookmarks"
     expect(page).to have_content 'Netflix'
   end
