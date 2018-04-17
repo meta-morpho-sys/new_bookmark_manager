@@ -32,5 +32,5 @@ describe User do
     it 'returns nil if no ID is given' do
       expect(User.find(nil)).to eq nil
     end
-      end
+  end
 end
