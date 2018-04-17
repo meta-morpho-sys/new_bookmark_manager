@@ -45,6 +45,11 @@ class SQLStrings
                                             RETURNING
                                                 bt_id'
 
+  INSERT_COMMS_TXT_BKMKID_RETURN = 'INSERT INTO comments (text, bookmark_id)
+                                                VALUES ($1, $2)
+                                            RETURNING
+                                                id, text'
+
   SELECT_JOIN_TAG_ID = "SELECT
                           tags.id, content
                        FROM
