@@ -19,6 +19,7 @@ class BookmarkManager < Sinatra::Base
     redirect '/users/new'
   end
 
+  # <editor-fold desc="Users">
   get '/users/new' do
     erb :'users/new'
   end
@@ -28,7 +29,9 @@ class BookmarkManager < Sinatra::Base
     session[:user_id] = user.id
     redirect '/bookmarks'
   end
+  # </editor-fold>
 
+  # <editor-fold desc="Bookmarks">
   get '/bookmarks' do
     @user = User.find(session[:user_id])
     @bookmarks = Bookmark.all
@@ -71,7 +74,10 @@ class BookmarkManager < Sinatra::Base
     end
     redirect '/bookmarks'
   end
+  # </editor-fold>
 
+
+  # <editor-fold desc="Comments">
   get '/bookmarks/:id/comments' do
     @bookmark = Bookmark.find(params[:id])
     erb :'comments/new'
@@ -87,7 +93,9 @@ class BookmarkManager < Sinatra::Base
     @comments = @bookmark.comments
     erb :'comments/view'
   end
+  # </editor-fold>
 
+  # <editor-fold desc="Tags">
   get '/bookmarks/:id/tags' do
     @bookmark = Bookmark.find(params[:id])
     erb :'tags/new'
@@ -104,6 +112,7 @@ class BookmarkManager < Sinatra::Base
     @bookmarks = Tag.find(params[:id]).bookmarks
     erb :'tags/bookmarks/index'
   end
+  # </editor-fold>
 
   run! if app_file == $PROGRAM_NAME
 end
