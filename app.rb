@@ -16,8 +16,9 @@ class BookmarkManager < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
-    redirect '/users/new'
+    erb :'login/login'
   end
+
 
   # <editor-fold desc="Users">
   get '/users/new' do
