@@ -30,6 +30,11 @@ class SQLStrings
   TRUNCATE_TABLES = 'TRUNCATE users, comments, tags, bookmarks_tags, bookmarks'
 
 
+  INSERT_TAGS_CONTENT = 'INSERT INTO tags (content)
+                                                VALUES ($1)
+                                            RETURNING
+                                                id, content'
+
   INSERT_USERS_EML_PSWD_RETURN = 'INSERT INTO users (email, password)
                                                 VALUES ($1, $2)
                                             RETURNING
@@ -58,6 +63,15 @@ class SQLStrings
                        ON tags.id = bookmarks_tags.tg_id
                        WHERE
                           bookmarks_tags.bm_id = $1"
+
+  SELECT_JOIN_BKMARK_ID = "SELECT
+                              bookmarks.id, title, url
+                           FROM
+                              bookmarks_tags
+                           INNER JOIN bookmarks
+                           ON bookmarks.id = bookmarks_tags.bm_id
+                           WHERE
+                              bookmarks_tags.tg_id = $1"
 
   UPDATE_BKMARKS_TTL_URL_ID = 'UPDATE
                                 bookmarks
