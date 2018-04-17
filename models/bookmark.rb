@@ -2,6 +2,7 @@
 
 require './lib/db_connector'
 require './models/tag'
+require './lib/sql_strings'
 
 # Connects to the DB via DatabaseConnection
 # Makes queries to execute the CRUD actions on the bookmarks in the DB.
@@ -14,40 +15,35 @@ class Bookmark
     @title = title
   end
 
+  def self.make(bkmark)
+    Bookmark.new(bkmark['id'], bkmark['url'], bkmark['title'])
+  end
+
   def ==(other)
     @id == other.id
   end
 
   def comments
-    Comment.comments @id
+    Comment.comments id
   end
 
   def tags
-    result = DbConnector.query("SELECT
-                                        tags.id, content
-                                     FROM
-                                        bookmarks_tags
-                                     INNER JOIN tags
-                                     ON tags.id = bookmarks_tags.tg_id
-                                     WHERE
-                                        bookmarks_tags.bm_id = #{@id}")
+    result = DbConnector.query_params(SQLStrings::SELECT_JOIN_TAG_ID, [id])
     result.map { |tag| Tag.new(tag['id'], tag['content']) }
   end
 
   def self.all
     result = DbConnector.query 'SELECT * FROM bookmarks'
-    result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
+    result.map { |bm| make(bm) }
   end
 
   def self.create(url, title)
     return false unless a_url?(url)
-
-    result = DbConnector.query_params('INSERT INTO bookmarks (url, title)
-                                                VALUES ($1, $2)
-                                            RETURNING
-                                                id, url, title',
-                                      [url, title])
-    Bookmark.new(result[0]['id'], result[0]['url'], result[0]['title'])
+    result = DbConnector.query_params(
+      SQLStrings::INSERT_BKMARKS_URL_TTL_RETURN,
+      [url, title]
+    )
+    make(result[0])
   end
 
   def self.delete(id)
@@ -56,18 +52,15 @@ class Bookmark
 
   def self.update(id, url, title)
     return false unless a_url?(url)
-    DbConnector.query_params('UPDATE
-                                bookmarks
-                            SET
-                                Title = $3,
-                                url = $2
-                            WHERE
-                                id = $1', [id, url, title])
+    DbConnector.query_params(
+      SQLStrings::UPDATE_BKMARKS_TTL_URL_ID,
+      [id, url, title]
+    )
   end
 
   def self.find(id)
     result = DbConnector.query("SELECT * FROM bookmarks WHERE id='#{id}'")
-    result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }.first
+    result.map { |bm| make(bm) }.first
   end
 
   def self.a_url?(string)

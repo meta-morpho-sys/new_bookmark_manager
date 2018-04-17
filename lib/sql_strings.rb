@@ -33,4 +33,26 @@ class SQLStrings
                                                 VALUES ($1, $2)
                                             RETURNING
                                                 id, email'
+
+  INSERT_BKMARKS_URL_TTL_RETURN = 'INSERT INTO bookmarks (url, title)
+                                                VALUES ($1, $2)
+                                            RETURNING
+                                                id, url, title'
+
+  SELECT_JOIN_TAG_ID = "SELECT
+                          tags.id, content
+                       FROM
+                          bookmarks_tags
+                       INNER JOIN tags
+                       ON tags.id = bookmarks_tags.tg_id
+                       WHERE
+                          bookmarks_tags.bm_id = $1"
+
+  UPDATE_BKMARKS_TTL_URL_ID = 'UPDATE
+                                bookmarks
+                            SET
+                                Title = $3,
+                                url = $2
+                            WHERE
+                                id = $1'
 end

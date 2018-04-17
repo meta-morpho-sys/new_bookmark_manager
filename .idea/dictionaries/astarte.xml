@@ -2,6 +2,8 @@
   <dictionary name="astarte">
     <words>
       <w>bcrypt</w>
+      <w>bkmark</w>
+      <w>bkmarks</w>
       <w>datname</w>
       <w>dblink</w>
       <w>dbname</w>
