@@ -9,7 +9,7 @@ feature 'Registration' do
 
     fill_in('email', with: 'test@example.com')
     fill_in('password', with: 'password123')
-    click_button 'Submit'
+    click_button 'Sign me up'
 
     expect(page).to have_content 'Welcome, test@example.com'
   end
