@@ -21,17 +21,20 @@ class Tag
     result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
   end
 
-
   def self.create(content)
     result = DbConnector.query_params(
       SQLStrings::INSERT_TAGS_CONTENT,
-      [content])
-    Tag.new(result[0]['id'], result[0]['content']
+      [content]
     )
+    make(result[0])
   end
 
   def self.find(id)
     result = DbConnector.query("SELECT * FROM tags WHERE id='#{id}'")
-    result.map { |tag| Tag.new(tag['id'], tag['content']) }.first
+    result.map { |tag| make(tag) }.first
+  end
+
+  def self.make(tag)
+    Tag.new(tag['id'], tag['content'])
   end
 end
