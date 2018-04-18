@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb" afterPath="$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/bookmark/bookmark_tag_spec.rb" afterPath="$PROJECT_DIR$/spec/bookmark/bookmark_tag_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/comment/comment_spec.rb" afterPath="$PROJECT_DIR$/spec/comment/comment_spec.rb" />
       <change beforePath="$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb" afterPath="$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb" />
       <change beforePath="$PROJECT_DIR$/spec/features/bookmarks_feat/deleting_a_bookmark_spec.rb" afterPath="$PROJECT_DIR$/spec/features/bookmarks_feat/deleting_a_bookmark_spec.rb" />
       <change beforePath="$PROJECT_DIR$/spec/features/bookmarks_feat/update_a_bookmark_spec.rb" afterPath="$PROJECT_DIR$/spec/features/bookmarks_feat/update_a_bookmark_spec.rb" />
       <change beforePath="$PROJECT_DIR$/spec/features/login_feat/sign_out_spec.rb" afterPath="$PROJECT_DIR$/spec/features/login_feat/sign_out_spec.rb" />
       <change beforePath="$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb" afterPath="$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/tag/tag_spec.rb" afterPath="$PROJECT_DIR$/spec/tag/tag_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/user/user_spec.rb" afterPath="$PROJECT_DIR$/spec/user/user_spec.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -694,7 +688,7 @@
       <workItem from="1523220570821" duration="44656000" />
       <workItem from="1523382539308" duration="2353000" />
       <workItem from="1523398230395" duration="66847000" />
-      <workItem from="1523884409546" duration="46353000" />
+      <workItem from="1523884409546" duration="46551000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored controller - delete feature logic moved to the model.">
       <created>1522606644961</created>
@@ -794,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524050157462</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="'Corrected the require paths to the tested files.'">
+      <created>1524067866245</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1524067866245</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -830,7 +831,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368820000" />
+    <option name="totallyTimeSpent" value="369018000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -910,7 +911,8 @@
     <MESSAGE value="Sign-out feature." />
     <MESSAGE value="Tidying up." />
     <MESSAGE value="Updated bookmarks table with FKEY to users." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated bookmarks table with FKEY to users." />
+    <MESSAGE value="'Corrected the require paths to the tested files.'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'Corrected the require paths to the tested files.'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

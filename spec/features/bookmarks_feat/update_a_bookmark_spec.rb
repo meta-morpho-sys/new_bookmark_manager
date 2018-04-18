@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'pry'
-
 feature 'Updating a bookmark' do
   scenario 'a user can modify the title and the url of an existing bookmark' do
     bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
@@ -16,11 +14,9 @@ feature 'Updating a bookmark' do
     fill_in 'new_url', with: 'https://www.google.co.uk'
     fill_in 'new_title', with: 'Google'
 
-    # binding.pry
     click_button 'Confirm the edit'
 
-
-    expect(current_path).to eq '/bookmarks'
+    expect(current_path).to eq '/user/:id/bookmarks'
     expect(page).not_to have_content 'Lloyds'
     expect(page).to have_content 'Google'
   end

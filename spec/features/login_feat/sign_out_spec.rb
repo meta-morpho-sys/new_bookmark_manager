@@ -11,7 +11,10 @@ feature 'Destroying a session' do
     fill_in('password', with: 'password123')
     click_button 'Sign me in'
 
+    expect(current_path).to eq '/bookmarks/index'
+
     click_button 'Sign out'
+    expect(current_path).to eq '/'
 
     expect(page).not_to have_content 'Welcome, test@example.com'
     expect(page).to have_content 'You successfully signed out'

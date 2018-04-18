@@ -7,7 +7,7 @@ feature 'Deleting a bookmark' do
     within "#bookmark-#{bm.id}" do
       click_button 'Delete'
     end
-    expect(current_path).to eq '/bookmarks'
+    expect(current_path).to eq '/user/:id/bookmarks'
     expect(page).to have_content 'Bookmark **Lloyds** was successfully deleted!'
   end
 end
