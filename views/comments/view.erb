@@ -23,7 +23,7 @@
     <tr>
       <% if @comments.empty? %>
           <p>No comments here yet, would you like to leave one?</p>
-          <form class="intro" action="/bookmarks/comments" method="post">
+          <form class="intro" action="/bookmarks/comments/new" method="post">
             <input type="hidden" name="id" value="<%= params[:id] %>">
             <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
             <input type="submit" value="Submit">
@@ -44,7 +44,7 @@
     <% end %>
 </table>
 
-  <a class="intro" href="/">Back to bookmarks!</a>
+  <a class="intro" href="/bookmarks">Back to bookmarks!</a>
 
 </body>
 </html>
