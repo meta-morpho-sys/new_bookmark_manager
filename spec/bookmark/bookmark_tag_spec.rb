@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../models/bookmark_tag'
+require_relative '../models/odels/bookmark_tag'
 
 describe BookmarkTag do
   describe '.create' do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../models/tag'
+require_relative '../models/odels/tag'
 
 describe Tag do
   subject(:tag) { Tag.create('Health and Well-being') }

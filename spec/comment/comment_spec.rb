@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../models/comment.rb'
+require_relative '../models/odels/comment.rb'
 
 describe Comment do
   before(:each) do
@@ -8,7 +8,7 @@ describe Comment do
     @comm = Comment.create('My comment', @bm.id)
   end
 
-  let(:comments) { Comment.all }
+  let(:comments_feat) { Comment.all }
   let(:text) { comments.map(&:text) }
 
   describe '.all' do
