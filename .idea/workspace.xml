@@ -4,10 +4,6 @@
     <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="Updated path to registration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/lib/sql_strings.rb" afterPath="$PROJECT_DIR$/lib/sql_strings.rb" />
-      <change beforePath="$PROJECT_DIR$/views/bookmarks/edit.erb" afterPath="$PROJECT_DIR$/views/bookmarks/edit.erb" />
-      <change beforePath="$PROJECT_DIR$/views/comments/view.erb" afterPath="$PROJECT_DIR$/views/comments/view.erb" />
-      <change beforePath="$PROJECT_DIR$/views/tags/bookmarks/index.erb" afterPath="$PROJECT_DIR$/views/tags/bookmarks/index.erb" />
-      <change beforePath="$PROJECT_DIR$/views/tags/new.erb" afterPath="$PROJECT_DIR$/views/tags/new.erb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -731,7 +727,7 @@
       <workItem from="1523220570821" duration="44656000" />
       <workItem from="1523382539308" duration="2353000" />
       <workItem from="1523398230395" duration="66847000" />
-      <workItem from="1523884409546" duration="41146000" />
+      <workItem from="1523884409546" duration="41197000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored controller - delete feature logic moved to the model.">
       <created>1522606644961</created>
@@ -817,7 +813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524050062635</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Tidying up.">
+      <created>1524050115123</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1524050115123</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -853,7 +856,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363613000" />
+    <option name="totallyTimeSpent" value="363664000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -924,7 +927,6 @@
     <MESSAGE value="Refactoring according to RESTful conventions." />
     <MESSAGE value="Refactored routes and submission  according to RESTful conventions." />
     <MESSAGE value="Refactored controller - delete feature logic moved to the model." />
-    <MESSAGE value="Tidying up." />
     <MESSAGE value="Updated path to registration" />
     <MESSAGE value="View for registration and authentication" />
     <MESSAGE value="Tidying up" />
@@ -932,7 +934,8 @@
     <MESSAGE value="Method authenticate user - happy case." />
     <MESSAGE value="Sign out form." />
     <MESSAGE value="Sign-out feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sign-out feature." />
+    <MESSAGE value="Tidying up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidying up." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,6 +5,7 @@ class SQLStrings
                               id SERIAL PRIMARY KEY,
                               url VARCHAR(1000) NOT NULL,
                               title VARCHAR(100) NOT NULL UNIQUE
+                              user_id int REFERENCES users (id) ON DELETE CASCADE
                               )'
   CREATE_TABLE_USERS = 'CREATE TABLE IF NOT EXISTS users (
                               id SERIAL PRIMARY KEY,
@@ -13,8 +14,8 @@ class SQLStrings
                               )'
   CREATE_TABLE_BOOKMARK_TAGS = 'CREATE TABLE IF NOT EXISTS bookmarks_tags (
                               bt_id SERIAL PRIMARY KEY,
-                              bm_id int REFERENCES bookmarks (id),
-                              tg_id int REFERENCES tags (id)
+                              bm_id int REFERENCES bookmarks (id) ON DELETE CASCADE,
+                              tg_id int REFERENCES tags (id) ON DELETE CASCADE
                               )'
   CREATE_TABLE_TAGS = 'CREATE TABLE IF NOT EXISTS tags (
                               id SERIAL PRIMARY KEY,
