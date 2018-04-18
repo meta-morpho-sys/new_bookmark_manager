@@ -13,6 +13,12 @@
     <% end %>
   </div>
 
+<div>
+  <form action="sessions/destroy" method="post">
+    <input type="submit" value="Sign out">
+  </form>
+</div>
+
   <div class="intro">
     <form action="/bookmarks/new" method="post">
       <label>URL</label>
@@ -70,12 +76,6 @@
     </tr>
     <% end %>
   </table>
-
-  <div>
-    <form action="sessions/destroy" method="post">
-      <input type="submit" value="Sign out">
-    </form>
-  </div>
 
 </div>
 
