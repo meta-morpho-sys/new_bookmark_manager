@@ -27,7 +27,7 @@ class BookmarkManager < Sinatra::Base
     user = User.authenticate(params[:email], params[:password])
     if user
       session[:user_id] = user.id
-      redirect '/bookmarks'
+      redirect "/user/#{user.id}/bookmarks"
     else
       flash[:notice] = 'You must have entered a wrong email or password!'
       redirect '/sessions/new'
@@ -49,6 +49,10 @@ class BookmarkManager < Sinatra::Base
     user = User.create(params[:email], params[:password])
     session[:user_id] = user.id
     redirect '/bookmarks'
+  end
+
+  get 'user/:id/bookmarks' do
+
   end
   # </editor-fold>
 
