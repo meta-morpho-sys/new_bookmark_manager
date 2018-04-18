@@ -33,12 +33,16 @@ class BookmarkManager < Sinatra::Base
       redirect '/sessions/new'
     end
   end
-
-  post '/sessions/destroy' do
+  post '/user/:id/sessions/destroy' do
     session.clear
     flash[:notice] = 'You successfully signed out'
     redirect '/'
   end
+  # post '/sessions/destroy' do
+  #   session.clear
+  #   flash[:notice] = 'You successfully signed out'
+  #   redirect '/'
+  # end
 
   # <editor-fold desc="Users">
   get '/users/new' do
@@ -51,17 +55,26 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
-  get 'user/:id/bookmarks' do
-
-  end
+  # get '/user/:id/bookmarks' do
+  #   'Hello world'
+  # end
   # </editor-fold>
 
   # <editor-fold desc="Bookmarks">
   get '/bookmarks' do
+    redirect '/user/:id/bookmarks'
+  end
+
+  get '/user/:id/bookmarks' do
     @user = User.find(session[:user_id])
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end
+  # get '/bookmarks' do
+  #   @user = User.find(session[:user_id])
+  #   @bookmarks = Bookmark.all
+  #   erb :'bookmarks/index'
+  # end
 
   post '/bookmarks/new' do
     begin

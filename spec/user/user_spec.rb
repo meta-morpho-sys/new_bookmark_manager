@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../models/ls/user'
+require_relative '../../models/user'
 
 describe User do
   describe '.all' do

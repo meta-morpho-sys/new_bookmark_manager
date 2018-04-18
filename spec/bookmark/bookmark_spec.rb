@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require_relative '../models/bookmark'
+require_relative '../../models/bookmark'
 
 describe Bookmark do
 
   let(:bm) { Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds') }
-  let(:bookmarks_feat) { Bookmark.all }
+  let(:bookmarks) { Bookmark.all }
   let(:urls) { bookmarks.map(&:url) }
   let(:titles) { bookmarks.map(&:title) }
 
