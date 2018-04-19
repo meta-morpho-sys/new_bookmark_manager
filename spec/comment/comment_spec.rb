@@ -4,7 +4,8 @@ require_relative '../../models/comment.rb'
 
 describe Comment do
   before(:each) do
-    @bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy')
+    @user = User.create('test@example', 'password123')
+    @bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy', @user.id)
     @comm = Comment.create('My comment', @bm.id)
   end
 
@@ -26,7 +27,7 @@ describe Comment do
 
   describe '.comments' do
     it 'returns all comments with a bookmark_id equal to this BM ID' do
-      bookmark = Bookmark.create('https://test_for_comments.com', 'test 1')
+      bookmark = Bookmark.create('https://test_for_comments.com', 'test 1', @user.id)
       comment1 = Comment.create('I am comment1 for this BM ID', bookmark.id)
       comment2 = Comment.create('I am comment2 for this BM ID', bookmark.id)
       expect(Comment.comments.map(&:id)).to include comment1.id, comment2.id
