@@ -77,6 +77,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   delete '/bookmarks/:id/delete' do
+    user = User.find(session[:user_id])
     Bookmark.delete(params[:id])
     flash[:notice] = "Bookmark **#{params[:title]}** was successfully deleted!"
     redirect "/user/#{user.id}/bookmarks"
@@ -99,8 +100,6 @@ class BookmarkManager < Sinatra::Base
       flash[:notice] = 'Something went wrong with the database. \
                         This sometimes happens, please try again.'
     end
-    p ' from patch'
-    p user.id
     redirect "/user/#{user.id}/bookmarks"
   end
   # </editor-fold>
