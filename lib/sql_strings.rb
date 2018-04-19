@@ -10,7 +10,7 @@ class SQLStrings
   CREATE_TABLE_USERS = 'CREATE TABLE IF NOT EXISTS users (
                               id SERIAL PRIMARY KEY,
                               email VARCHAR(100) NOT NULL UNIQUE,
-                              password VARCHAR(100) NOT NULL
+                              password_hash VARCHAR(100) NOT NULL
                               )'
   CREATE_TABLE_BOOKMARK_TAGS = 'CREATE TABLE IF NOT EXISTS bookmarks_tags (
                               bt_id SERIAL PRIMARY KEY,
@@ -41,10 +41,10 @@ class SQLStrings
                                             RETURNING
                                                 id, email'
 
-  INSERT_BKMARKS_URL_TTL_RETURN = 'INSERT INTO bookmarks (url, title)
-                                                VALUES ($1, $2)
+  INSERT_BKMARKS_URL_TTL_RETURN = 'INSERT INTO bookmarks (url, title, user_id)
+                                                VALUES ($1, $2, $3)
                                             RETURNING
-                                                id, url, title'
+                                                id, url, title, user_id'
 
   INSERT_BKMARKS_TAGS_RETURN = 'INSERT INTO bookmarks_tags (bm_id, tg_id)
                                                 VALUES ($1, $2)
