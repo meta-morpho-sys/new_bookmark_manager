@@ -2,8 +2,10 @@
 
 feature 'Updating a bookmark' do
   scenario 'a user can modify the title and the url of an existing bookmark' do
-    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
-    visit '/bookmarks'
+    user = User.create('test@example', 'password123')
+    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user.id)
+
+    login user
 
     within "#bookmark-#{bm.id}" do
       click_link 'Edit'
@@ -16,7 +18,7 @@ feature 'Updating a bookmark' do
 
     click_button 'Confirm the edit'
 
-    expect(current_path).to eq '/user/:id/bookmarks'
+    expect(current_path).to eq "/user/#{user.id}/bookmarks"
     expect(page).not_to have_content 'Lloyds'
     expect(page).to have_content 'Google'
   end
