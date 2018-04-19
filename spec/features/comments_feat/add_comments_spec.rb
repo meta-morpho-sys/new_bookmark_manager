@@ -2,8 +2,10 @@
 
 feature 'Commenting on a bookmark' do
   scenario 'anyone can comment on a bookmark' do
-    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
-    visit '/bookmarks'
+    user = User.create('test@example', 'password123')
+    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user.id)
+
+    login user
 
     within "#bookmark-#{bm.id}" do
       click_link 'Comment'
@@ -18,6 +20,7 @@ feature 'Commenting on a bookmark' do
     within "#bookmark-#{bm.id}" do
       click_link 'View'
     end
+
     expect(page).to have_content 'This is a test comment'
   end
 end
