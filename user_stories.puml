@@ -44,6 +44,18 @@ class DatabaseConnection <<Singleton>>  {
     +{static} query()
 }
 
+
+class User {
+    id
+    email
+}
+
+class DbUser <<Database Table>> {
+    id
+    email
+    password_hash
+}
+
 Controller --> Bookmark: all bookmarks
 Controller --> Comment
 Controller--> Tag
