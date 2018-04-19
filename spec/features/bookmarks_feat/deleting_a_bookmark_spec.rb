@@ -2,12 +2,21 @@
 
 feature 'Deleting a bookmark' do
   scenario 'user can delete a bookmark' do
-    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds')
-    visit '/bookmarks'
+    user = User.create('test@example', 'password123')
+
+    login user
+
+    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user.id)
+
+    expect(current_path).to eq "/user/#{user.id}/bookmarks"
+
+    visit "/user/#{user.id}/bookmarks"
+
     within "#bookmark-#{bm.id}" do
       click_button 'Delete'
     end
-    expect(current_path).to eq '/user/:id/bookmarks'
+
+    expect(current_path).to eq "/user/#{user.id}/bookmarks"
     expect(page).to have_content 'Bookmark **Lloyds** was successfully deleted!'
   end
 end
