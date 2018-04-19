@@ -3,14 +3,10 @@
 feature 'Deleting a bookmark' do
   scenario 'user can delete a bookmark' do
     user = User.create('test@example', 'password123')
-
+    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user.id)
     login user
 
-    bm = Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user.id)
-
     expect(current_path).to eq "/user/#{user.id}/bookmarks"
-
-    visit "/user/#{user.id}/bookmarks"
 
     within "#bookmark-#{bm.id}" do
       click_button 'Delete'
