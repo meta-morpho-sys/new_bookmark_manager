@@ -72,7 +72,7 @@ th, td {
 	position: relative;
 }
 
-.edit, .comment, .tag, .view, .delete, .add {
+.edit, .comment, .tag, .view, .delete {
 	background-size: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -132,14 +132,6 @@ th, td {
 .tag {
 	background-image: url('tag.png');
 	background-position: right;
-}
-
-.add {
-	display: inline-block;
-	background-color: Transparent;
-	background-image: url('add_plus__free_hand_drawn_sketch-512.png');
-	border: none;
-	color: rgba(0, 0, 0, 0);
 }
 
 .intro {
