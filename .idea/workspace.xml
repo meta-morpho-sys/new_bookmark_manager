@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="'Corrected the require paths to the tested files.'">
+    <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/favicon-32x32.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/spec/features/tags_feat/add_tags_spec.rb" afterPath="$PROJECT_DIR$/spec/features/tags_feat/add_tags_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb" afterPath="$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb" />
+      <change beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
+      <change beforePath="$PROJECT_DIR$/views/bookmarks/edit.erb" afterPath="$PROJECT_DIR$/views/bookmarks/edit.erb" />
+      <change beforePath="$PROJECT_DIR$/views/bookmarks/index.erb" afterPath="$PROJECT_DIR$/views/bookmarks/index.erb" />
+      <change beforePath="$PROJECT_DIR$/views/comments/new.erb" afterPath="$PROJECT_DIR$/views/comments/new.erb" />
+      <change beforePath="$PROJECT_DIR$/views/comments/view.erb" afterPath="$PROJECT_DIR$/views/comments/view.erb" />
+      <change beforePath="$PROJECT_DIR$/views/home.erb" afterPath="$PROJECT_DIR$/views/home.erb" />
+      <change beforePath="$PROJECT_DIR$/views/sessions/new.erb" afterPath="$PROJECT_DIR$/views/sessions/new.erb" />
+      <change beforePath="$PROJECT_DIR$/views/tags/bookmarks/index.erb" afterPath="$PROJECT_DIR$/views/tags/bookmarks/index.erb" />
+      <change beforePath="$PROJECT_DIR$/views/tags/new.erb" afterPath="$PROJECT_DIR$/views/tags/new.erb" />
+      <change beforePath="$PROJECT_DIR$/views/users/new.erb" afterPath="$PROJECT_DIR$/views/users/new.erb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,6 +29,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@User_all_returns_all_users_wrapped_in_user_instances__new_bookmark_manager.coverage" NAME="User.all returns all users wrapped in user instances: new_bookmark_manager Coverage Results" MODIFIED="1523887841342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_create__new_bookmark_manager.coverage" NAME="Link.create: new_bookmark_manager Coverage Results" MODIFIED="1522873100805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Adding_bookmarks_adding_real_bookmarks__new_bookmark_manager.coverage" NAME="Adding bookmarks adding real bookmarks: new_bookmark_manager Coverage Results" MODIFIED="1524146161112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@User_bookmarks__new_bookmark_manager.coverage" NAME="User#bookmarks: new_bookmark_manager Coverage Results" MODIFIED="1524235160815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_create_raises_an_exception_if_a_title_is_duplicated__new_bookmark_manager.coverage" NAME="Link.create raises an exception if a title is duplicated: new_bookmark_manager Coverage Results" MODIFIED="1522857219818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@DatabaseConnection__new_bookmark_manager.coverage" NAME="DatabaseConnection: new_bookmark_manager Coverage Results" MODIFIED="1522004222368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@User_find__new_bookmark_manager.coverage" NAME="User.find: new_bookmark_manager Coverage Results" MODIFIED="1523889475123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -70,7 +80,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Tag__new_bookmark_manager.coverage" NAME="Tag: new_bookmark_manager Coverage Results" MODIFIED="1524056540892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_delete_deletes_a_bookmark__new_bookmark_manager.coverage" NAME="Bookmark.delete deletes a bookmark: new_bookmark_manager Coverage Results" MODIFIED="1523314367439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__add_links_spec___new_bookmark_manager.coverage" NAME="Run spec 'add_links_spec': new_bookmark_manager Coverage Results" MODIFIED="1522440367087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@User_adds_a_bookmark_a_user_can_t_see_other_user_s_bookmarks__new_bookmark_manager.coverage" NAME="User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager Coverage Results" MODIFIED="1524077739243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@User_adds_a_bookmark_a_user_can_t_see_other_user_s_bookmarks__new_bookmark_manager.coverage" NAME="User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager Coverage Results" MODIFIED="1524235357393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Comment__new_bookmark_manager.coverage" NAME="Comment: new_bookmark_manager Coverage Results" MODIFIED="1524142206070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Deleting_a_bookmark__new_bookmark_manager.coverage" NAME="Deleting a bookmark: new_bookmark_manager Coverage Results" MODIFIED="1524232413888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__view_links_spec___new_bookmark_manager.coverage" NAME="Run spec 'view_links_spec': new_bookmark_manager Coverage Results" MODIFIED="1521465654189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -101,7 +111,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Commenting_on_a_bookmark__new_bookmark_manager.coverage" NAME="Commenting on a bookmark: new_bookmark_manager Coverage Results" MODIFIED="1524147155754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Adding_bookmarks_adding_real_bookmarks_title_duplications_are_not_allowed__new_bookmark_manager.coverage" NAME="Adding bookmarks adding real bookmarks title duplications are not allowed: new_bookmark_manager Coverage Results" MODIFIED="1524140704550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_____new_bookmark_manager.coverage" NAME="Bookmark#==: new_bookmark_manager Coverage Results" MODIFIED="1523314612339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@User_adds_a_bookmark__new_bookmark_manager.coverage" NAME="User adds a bookmark: new_bookmark_manager Coverage Results" MODIFIED="1524233495735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@User_adds_a_bookmark__new_bookmark_manager.coverage" NAME="User adds a bookmark: new_bookmark_manager Coverage Results" MODIFIED="1524233612569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_create_does_not_add_a_new_link_if_it_is_not_valid__new_bookmark_manager.coverage" NAME="Link.create does not add a new link if it is not valid: new_bookmark_manager Coverage Results" MODIFIED="1522440286786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Deleting_a_link_user_can_delete_a_link__new_bookmark_manager.coverage" NAME="Deleting a link user can delete a link: new_bookmark_manager Coverage Results" MODIFIED="1522536668604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Creating_a_new_session__new_bookmark_manager.coverage" NAME="Creating a new session: new_bookmark_manager Coverage Results" MODIFIED="1523981515386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -121,7 +131,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Comment_comments__new_bookmark_manager.coverage" NAME="Comment.comments: new_bookmark_manager Coverage Results" MODIFIED="1523198404592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__user_spec___new_bookmark_manager.coverage" NAME="Run spec 'user_spec': new_bookmark_manager Coverage Results" MODIFIED="1524139376703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__registration_spec___new_bookmark_manager.coverage" NAME="Run spec 'registration_spec': new_bookmark_manager Coverage Results" MODIFIED="1524139478387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1524233436779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1524247464802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_update_returns_previously_submitted_url_if_no_new_url_is_provided__new_bookmark_manager.coverage" NAME="Bookmark.update returns previously submitted url if no new url is provided: new_bookmark_manager Coverage Results" MODIFIED="1523314560906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Creating_a_tag_for_a_bookmark_anyone_can_see_the_bookmarks_filtered_by_tag__new_bookmark_manager.coverage" NAME="Creating a tag for a bookmark anyone can see the bookmarks filtered by tag: new_bookmark_manager Coverage Results" MODIFIED="1523885349744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
   </component>
@@ -142,47 +152,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="user_adds_bookmarks_spec.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/user/user_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+            <state relative-caret-position="188">
+              <caret line="62" column="15" lean-forward="false" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
               <folding>
                 <element signature="e#942#970#0" expanded="false" />
-                <element signature="e#2334#2858#0" expanded="false" />
-                <element signature="e#2881#2912#0" expanded="false" />
-                <element signature="e#3502#3614#0" expanded="false" />
+                <element signature="e#2369#2893#0" expanded="false" />
+                <element signature="e#2916#2947#0" expanded="false" />
+                <element signature="e#3537#3649#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web_helpers.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/web_helpers.rb">
+      <file leaf-file-name="bookmark.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/bookmark.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="80">
+              <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="62" />
+              <folding>
+                <element signature="e#502#544#0" expanded="false" />
+                <element signature="e#702#810#0" expanded="false" />
+                <element signature="e#1038#1135#0" expanded="false" />
+                <element signature="e#1139#1316#0" expanded="false" />
+                <element signature="e#1461#1545#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_bookmarks_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb">
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-179">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_adds_bookmarks_spec.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="463">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <element signature="e#350#458#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -263,7 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/features/add_comments_spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/features/add_bookmarks_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/update_a_bookmark_spec.rb" />
@@ -276,24 +303,15 @@
         <option value="$PROJECT_DIR$/models/comment.rb" />
         <option value="$PROJECT_DIR$/spec/features/add_tags_spec.rb" />
         <option value="$PROJECT_DIR$/views/login/login.erb" />
-        <option value="$PROJECT_DIR$/views/users/new.erb" />
         <option value="$PROJECT_DIR$/spec/features/registration_spec.rb" />
-        <option value="$PROJECT_DIR$/views/sessions/new.erb" />
         <option value="$PROJECT_DIR$/autentication_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/autentication_spec.rb" />
         <option value="$PROJECT_DIR$/spec/user_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/sign_out_spec.rb" />
-        <option value="$PROJECT_DIR$/views/home.erb" />
         <option value="$PROJECT_DIR$/models/bookmark.rb" />
         <option value="$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/user/user_spec.rb" />
         <option value="$PROJECT_DIR$/user_stories.puml" />
         <option value="$PROJECT_DIR$/lib/sql_strings.rb" />
-        <option value="$PROJECT_DIR$/models/user.rb" />
-        <option value="$PROJECT_DIR$/views/bookmarks/edit.erb" />
-        <option value="$PROJECT_DIR$/views/comments/new.erb" />
-        <option value="$PROJECT_DIR$/views/tags/new.erb" />
-        <option value="$PROJECT_DIR$/views/tags/bookmarks/index.erb" />
         <option value="$PROJECT_DIR$/spec/bookmark/bookmark_tag_spec.rb" />
         <option value="$PROJECT_DIR$/spec/comment/comment_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb" />
@@ -303,17 +321,27 @@
         <option value="$PROJECT_DIR$/spec/features/comments_feat/add_comments_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/bookmarks_feat/update_a_bookmark_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/login_feat/sign_out_spec.rb" />
-        <option value="$PROJECT_DIR$/views/bookmarks/index.erb" />
-        <option value="$PROJECT_DIR$/views/comments/view.erb" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/spec/features/tags_feat/add_tags_spec.rb" />
         <option value="$PROJECT_DIR$/models/tag.rb" />
         <option value="$PROJECT_DIR$/spec/tag/tag_spec.rb" />
         <option value="$PROJECT_DIR$/spec/bookmark_tag_spec.rb" />
         <option value="$PROJECT_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/spec/features/web_helpers.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/user/user_spec.rb" />
+        <option value="$PROJECT_DIR$/models/user.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/coverage/index.html" />
+        <option value="$PROJECT_DIR$/views/bookmarks/edit.erb" />
+        <option value="$PROJECT_DIR$/views/bookmarks/index.erb" />
+        <option value="$PROJECT_DIR$/views/home.erb" />
+        <option value="$PROJECT_DIR$/views/comments/new.erb" />
+        <option value="$PROJECT_DIR$/views/comments/view.erb" />
+        <option value="$PROJECT_DIR$/views/sessions/new.erb" />
+        <option value="$PROJECT_DIR$/views/tags/bookmarks/index.erb" />
+        <option value="$PROJECT_DIR$/views/users/new.erb" />
+        <option value="$PROJECT_DIR$/views/tags/new.erb" />
       </list>
     </option>
   </component>
@@ -381,32 +409,25 @@
             <path>
               <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="bookmark" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="bookmark_tag" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="0.10.2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="bookmarks_feat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
@@ -417,6 +438,19 @@
               <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="sessions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tags" type="462c0819:PsiDirectoryNode" />
               <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,6 +475,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/spec/features" />
@@ -465,7 +500,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.User adds a bookmark: new_bookmark_manager">
+  <component name="RunManager" selected="RSpec.All specs in new_bookmark_manager: new_bookmark_manager">
     <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
@@ -498,7 +533,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
     </configuration>
-    <configuration name="Creating a tag for a bookmark: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -517,42 +552,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/tags_feat/add_tags_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Creating a tag for a bookmark" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-    </configuration>
-    <configuration name="Deleting a bookmark: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="new_bookmark_manager" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/bookmarks_feat/deleting_a_bookmark_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Deleting a bookmark" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User adds a bookmark a user can't see other user's bookmarks" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -626,6 +629,38 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
     </configuration>
+    <configuration name="User#bookmarks: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="new_bookmark_manager" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/user/user_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User#bookmarks" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+    </configuration>
     <configuration default="true" type="RackRunConfigurationType" factoryName="Rack">
       <module name="" />
       <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -648,19 +683,19 @@
       <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Deleting a bookmark: new_bookmark_manager" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Creating a tag for a bookmark: new_bookmark_manager" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.User adds a bookmark: new_bookmark_manager" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.User: new_bookmark_manager" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.User adds a bookmark: new_bookmark_manager" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.User: new_bookmark_manager" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.User#bookmarks: new_bookmark_manager" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.User adds a bookmark: new_bookmark_manager" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.User: new_bookmark_manager" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Creating a tag for a bookmark: new_bookmark_manager" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Deleting a bookmark: new_bookmark_manager" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.User#bookmarks: new_bookmark_manager" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.User adds a bookmark: new_bookmark_manager" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.User: new_bookmark_manager" />
       </list>
     </recent_temporary>
   </component>
@@ -686,7 +721,7 @@
       <workItem from="1523382539308" duration="2353000" />
       <workItem from="1523398230395" duration="66847000" />
       <workItem from="1523884409546" duration="68075000" />
-      <workItem from="1524146738581" duration="8578000" />
+      <workItem from="1524146738581" duration="18030000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored controller - delete feature logic moved to the model.">
       <created>1522606644961</created>
@@ -919,43 +954,57 @@
       <option name="project" value="LOCAL" />
       <updated>1524233206418</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="DRYed out login helper method">
+      <created>1524233594373</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1524233594373</updated>
+    </task>
+    <task id="LOCAL-00035" summary="User can see only his book marks">
+      <created>1524235185849</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1524235185849</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.20 at 15h 09m 59s.xml">
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.20 at 15h 40m 02s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.20 at 15h 10m 43s.xml">
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.04.20 at 19h 04m 32s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User__new_bookmark_manager - 2018.04.20 at 15h 07m 00s.xml">
-      <configuration name="User: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User#bookmarks__new_bookmark_manager - 2018.04.20 at 15h 31m 19s.xml">
+      <configuration name="User#bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User_adds_a_bookmark__new_bookmark_manager - 2018.04.20 at 15h 01m 08s.xml">
-      <configuration name="User adds a bookmark: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User#bookmarks__new_bookmark_manager - 2018.04.20 at 15h 35m 02s.xml">
+      <configuration name="User#bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User_adds_a_bookmark__new_bookmark_manager - 2018.04.20 at 15h 01m 34s.xml">
-      <configuration name="User adds a bookmark: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User#bookmarks__new_bookmark_manager - 2018.04.20 at 15h 36m 29s.xml">
+      <configuration name="User#bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User_adds_a_bookmark__new_bookmark_manager - 2018.04.20 at 15h 02m 39s.xml">
-      <configuration name="User adds a bookmark: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User#bookmarks__new_bookmark_manager - 2018.04.20 at 15h 36m 39s.xml">
+      <configuration name="User#bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User_adds_a_bookmark__new_bookmark_manager - 2018.04.20 at 15h 02m 51s.xml">
-      <configuration name="User adds a bookmark: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User#bookmarks__new_bookmark_manager - 2018.04.20 at 15h 37m 34s.xml">
+      <configuration name="User#bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User_adds_a_bookmark__new_bookmark_manager - 2018.04.20 at 15h 02m 56s.xml">
-      <configuration name="User adds a bookmark: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User#bookmarks__new_bookmark_manager - 2018.04.20 at 15h 38m 54s.xml">
+      <configuration name="User#bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User_adds_a_bookmark__new_bookmark_manager - 2018.04.20 at 15h 03m 21s.xml">
-      <configuration name="User adds a bookmark: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User#bookmarks__new_bookmark_manager - 2018.04.20 at 15h 39m 22s.xml">
+      <configuration name="User#bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="User_adds_a_bookmark__new_bookmark_manager - 2018.04.20 at 15h 11m 37s.xml">
-      <configuration name="User adds a bookmark: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="User_adds_a_bookmark_a_user_can't_see_other_user's_bookmarks__new_bookmark_manager - 2018.04.20 at 15h 42m 39s.xml">
+      <configuration name="User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="399120000" />
+    <option name="totallyTimeSpent" value="408572000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -969,16 +1018,17 @@
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="6" />
     <layout>
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30990416" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17739628" sideWeight="0.49042144" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30972818" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41123882" sideWeight="0.5143061" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3090677" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26947638" sideWeight="0.4914163" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.48569384" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26251787" sideWeight="0.49042144" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21711366" sideWeight="0.5114449" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43678162" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26947638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16080937" sideWeight="0.49553" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41123882" sideWeight="0.48855507" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39846742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13733906" sideWeight="0.5095785" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -989,7 +1039,6 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48914433" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1046,7 +1095,9 @@
     <MESSAGE value="Corrected the line separator" />
     <MESSAGE value="More robust tests" />
     <MESSAGE value="Test for  displaying BMs for a specific user only." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test for  displaying BMs for a specific user only." />
+    <MESSAGE value="DRYed out login helper method" />
+    <MESSAGE value="User can see only his book marks" />
+    <option name="LAST_COMMIT_MESSAGE" value="User can see only his book marks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,76 +1106,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/route.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bla.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/db_connector.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/bookmark_tag.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/rspec-support-3.7.1/lib/rspec/support.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/db/database_connection_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/login_feat/registration_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/sessions/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1196,13 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_stories.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs24/pg/1.0.0/pg.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1223,23 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="120" column="4" lean-forward="false" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/tags/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="e#350#458#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1274,14 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/bookmarks/edit.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/update_a_bookmark_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1294,22 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/comments/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/comments/view.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1338,59 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/bookmarks/index.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="72" column="39" lean-forward="false" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/tags/bookmarks/index.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sql_strings.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <element signature="e#1181#1370#0" expanded="false" />
-            <element signature="e#1393#2011#0" expanded="false" />
-            <element signature="e#1807#2005#0" expanded="false" />
-            <element signature="e#2032#2234#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/bookmark.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding>
-            <element signature="e#365#455#0" expanded="false" />
-            <element signature="e#502#544#0" expanded="false" />
-            <element signature="e#548#698#0" expanded="false" />
-            <element signature="e#702#810#0" expanded="false" />
-            <element signature="e#1038#1135#0" expanded="false" />
-            <element signature="e#1139#1316#0" expanded="false" />
-            <element signature="e#1461#1545#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/deleting_a_bookmark_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1407,14 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/user/user_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/tags_feat/add_tags_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1423,16 +1299,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-          <folding>
-            <element signature="e#942#970#0" expanded="false" />
-            <element signature="e#2334#2858#0" expanded="false" />
-            <element signature="e#2881#2912#0" expanded="false" />
-            <element signature="e#3502#3614#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,18 +1315,972 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="101">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#1181#1370#0" expanded="false" />
+            <element signature="e#1393#2011#0" expanded="false" />
+            <element signature="e#1807#2005#0" expanded="false" />
+            <element signature="e#2032#2234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sql_strings.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="58" column="2" lean-forward="false" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/user/user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/bookmark.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="e#502#544#0" expanded="false" />
+            <element signature="e#702#810#0" expanded="false" />
+            <element signature="e#1038#1135#0" expanded="false" />
+            <element signature="e#1139#1316#0" expanded="false" />
+            <element signature="e#1461#1545#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#350#458#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="62" column="15" lean-forward="false" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+          <folding>
+            <element signature="e#942#970#0" expanded="false" />
+            <element signature="e#2369#2893#0" expanded="false" />
+            <element signature="e#2916#2947#0" expanded="false" />
+            <element signature="e#3537#3649#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_stories.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/assets/0.10.2/magnify.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/assets/0.10.2/favicon_yellow.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/assets/0.10.2/favicon_red.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/assets/0.10.2/favicon_green.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon_green.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/bookmarks/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9286#9291#0" expanded="true" />
+            <element signature="e#9312#9317#0" expanded="true" />
+            <element signature="e#10031#10036#0" expanded="true" />
+            <element signature="e#10050#10055#0" expanded="true" />
+            <element signature="e#10057#10062#0" expanded="true" />
+            <element signature="e#10069#10074#0" expanded="true" />
+            <element signature="e#10560#10565#0" expanded="true" />
+            <element signature="e#10596#10601#0" expanded="true" />
+            <element signature="e#10603#10608#0" expanded="true" />
+            <element signature="e#10614#10619#0" expanded="true" />
+            <element signature="e#11037#11042#0" expanded="true" />
+            <element signature="e#11251#11256#0" expanded="true" />
+            <element signature="e#11588#11593#0" expanded="true" />
+            <element signature="e#11597#11602#0" expanded="true" />
+            <element signature="e#11783#11788#0" expanded="true" />
+            <element signature="e#11840#11845#0" expanded="true" />
+            <element signature="e#12047#12052#0" expanded="true" />
+            <element signature="e#12084#12089#0" expanded="true" />
+            <element signature="e#12091#12096#0" expanded="true" />
+            <element signature="e#12103#12108#0" expanded="true" />
+            <element signature="e#12318#12323#0" expanded="true" />
+            <element signature="e#12355#12360#0" expanded="true" />
+            <element signature="e#12362#12367#0" expanded="true" />
+            <element signature="e#12374#12379#0" expanded="true" />
+            <element signature="e#13218#13223#0" expanded="true" />
+            <element signature="e#13230#13235#0" expanded="true" />
+            <element signature="e#13416#13421#0" expanded="true" />
+            <element signature="e#13440#13445#0" expanded="true" />
+            <element signature="e#13648#13653#0" expanded="true" />
+            <element signature="e#13659#13664#0" expanded="true" />
+            <element signature="e#13862#13867#0" expanded="true" />
+            <element signature="e#13898#13903#0" expanded="true" />
+            <element signature="e#14574#14579#0" expanded="true" />
+            <element signature="e#14631#14636#0" expanded="true" />
+            <element signature="e#14832#14837#0" expanded="true" />
+            <element signature="e#14856#14861#0" expanded="true" />
+            <element signature="e#14863#14868#0" expanded="true" />
+            <element signature="e#14889#14894#0" expanded="true" />
+            <element signature="e#15111#15116#0" expanded="true" />
+            <element signature="e#15137#15142#0" expanded="true" />
+            <element signature="e#15347#15352#0" expanded="true" />
+            <element signature="e#15371#15376#0" expanded="true" />
+            <element signature="e#15993#15998#0" expanded="true" />
+            <element signature="e#16005#16010#0" expanded="true" />
+            <element signature="e#16191#16196#0" expanded="true" />
+            <element signature="e#16214#16219#0" expanded="true" />
+            <element signature="e#16628#16633#0" expanded="true" />
+            <element signature="e#16639#16644#0" expanded="true" />
+            <element signature="e#16849#16854#0" expanded="true" />
+            <element signature="e#16885#16890#0" expanded="true" />
+            <element signature="e#17507#17512#0" expanded="true" />
+            <element signature="e#17519#17524#0" expanded="true" />
+            <element signature="e#17705#17710#0" expanded="true" />
+            <element signature="e#17727#17732#0" expanded="true" />
+            <element signature="e#17935#17940#0" expanded="true" />
+            <element signature="e#17976#17981#0" expanded="true" />
+            <element signature="e#17983#17988#0" expanded="true" />
+            <element signature="e#18002#18007#0" expanded="true" />
+            <element signature="e#18212#18217#0" expanded="true" />
+            <element signature="e#18248#18253#0" expanded="true" />
+            <element signature="e#18454#18459#0" expanded="true" />
+            <element signature="e#18495#18500#0" expanded="true" />
+            <element signature="e#18707#18712#0" expanded="true" />
+            <element signature="e#18718#18723#0" expanded="true" />
+            <element signature="e#18926#18931#0" expanded="true" />
+            <element signature="e#18945#18950#0" expanded="true" />
+            <element signature="e#19417#19422#0" expanded="true" />
+            <element signature="e#19467#19472#0" expanded="true" />
+            <element signature="e#19675#19680#0" expanded="true" />
+            <element signature="e#19699#19704#0" expanded="true" />
+            <element signature="e#19706#19711#0" expanded="true" />
+            <element signature="e#19730#19735#0" expanded="true" />
+            <element signature="e#19942#19947#0" expanded="true" />
+            <element signature="e#19966#19971#0" expanded="true" />
+            <element signature="e#20176#20181#0" expanded="true" />
+            <element signature="e#20200#20205#0" expanded="true" />
+            <element signature="e#20822#20827#0" expanded="true" />
+            <element signature="e#20832#20837#0" expanded="true" />
+            <element signature="e#21018#21023#0" expanded="true" />
+            <element signature="e#21048#21053#0" expanded="true" />
+            <element signature="e#21467#21472#0" expanded="true" />
+            <element signature="e#21503#21508#0" expanded="true" />
+            <element signature="e#21714#21719#0" expanded="true" />
+            <element signature="e#21725#21730#0" expanded="true" />
+            <element signature="e#22347#22352#0" expanded="true" />
+            <element signature="e#22355#22360#0" expanded="true" />
+            <element signature="e#22546#22551#0" expanded="true" />
+            <element signature="e#22593#22598#0" expanded="true" />
+            <element signature="e#22806#22811#0" expanded="true" />
+            <element signature="e#22827#22832#0" expanded="true" />
+            <element signature="e#22834#22839#0" expanded="true" />
+            <element signature="e#22845#22850#0" expanded="true" />
+            <element signature="e#23056#23061#0" expanded="true" />
+            <element signature="e#23077#23082#0" expanded="true" />
+            <element signature="e#23084#23089#0" expanded="true" />
+            <element signature="e#23095#23100#0" expanded="true" />
+            <element signature="e#23927#23932#0" expanded="true" />
+            <element signature="e#23941#23946#0" expanded="true" />
+            <element signature="e#24127#24132#0" expanded="true" />
+            <element signature="e#24188#24193#0" expanded="true" />
+            <element signature="e#24394#24399#0" expanded="true" />
+            <element signature="e#24424#24429#0" expanded="true" />
+            <element signature="e#24431#24436#0" expanded="true" />
+            <element signature="e#24452#24457#0" expanded="true" />
+            <element signature="e#24812#24817#0" expanded="true" />
+            <element signature="e#24845#24850#0" expanded="true" />
+            <element signature="e#25061#25066#0" expanded="true" />
+            <element signature="e#25094#25099#0" expanded="true" />
+            <element signature="e#25950#25955#0" expanded="true" />
+            <element signature="e#25960#25965#0" expanded="true" />
+            <element signature="e#26146#26151#0" expanded="true" />
+            <element signature="e#26209#26214#0" expanded="true" />
+            <element signature="e#26411#26416#0" expanded="true" />
+            <element signature="e#26424#26429#0" expanded="true" />
+            <element signature="e#26624#26629#0" expanded="true" />
+            <element signature="e#26637#26642#0" expanded="true" />
+            <element signature="e#27401#27406#0" expanded="true" />
+            <element signature="e#28839#28844#0" expanded="true" />
+            <element signature="e#28869#28874#0" expanded="true" />
+            <element signature="e#29388#29393#0" expanded="true" />
+            <element signature="e#29400#29405#0" expanded="true" />
+            <element signature="e#29585#29590#0" expanded="true" />
+            <element signature="e#29631#29636#0" expanded="true" />
+            <element signature="e#29834#29839#0" expanded="true" />
+            <element signature="e#29851#29856#0" expanded="true" />
+            <element signature="e#29858#29863#0" expanded="true" />
+            <element signature="e#29874#29879#0" expanded="true" />
+            <element signature="e#30076#30081#0" expanded="true" />
+            <element signature="e#30094#30099#0" expanded="true" />
+            <element signature="e#30101#30106#0" expanded="true" />
+            <element signature="e#30117#30122#0" expanded="true" />
+            <element signature="e#30321#30326#0" expanded="true" />
+            <element signature="e#30356#30361#0" expanded="true" />
+            <element signature="e#30363#30368#0" expanded="true" />
+            <element signature="e#30373#30378#0" expanded="true" />
+            <element signature="e#30587#30592#0" expanded="true" />
+            <element signature="e#30619#30624#0" expanded="true" />
+            <element signature="e#30626#30631#0" expanded="true" />
+            <element signature="e#30641#30646#0" expanded="true" />
+            <element signature="e#30851#30856#0" expanded="true" />
+            <element signature="e#30877#30882#0" expanded="true" />
+            <element signature="e#33252#33257#0" expanded="true" />
+            <element signature="e#33280#33285#0" expanded="true" />
+            <element signature="e#33996#34001#0" expanded="true" />
+            <element signature="e#34013#34018#0" expanded="true" />
+            <element signature="e#34020#34025#0" expanded="true" />
+            <element signature="e#34036#34041#0" expanded="true" />
+            <element signature="e#34238#34243#0" expanded="true" />
+            <element signature="e#34273#34278#0" expanded="true" />
+            <element signature="e#34280#34285#0" expanded="true" />
+            <element signature="e#34290#34295#0" expanded="true" />
+            <element signature="e#34503#34508#0" expanded="true" />
+            <element signature="e#34518#34523#0" expanded="true" />
+            <element signature="e#35221#35226#0" expanded="true" />
+            <element signature="e#35557#35562#0" expanded="true" />
+            <element signature="e#35566#35571#0" expanded="true" />
+            <element signature="e#35752#35757#0" expanded="true" />
+            <element signature="e#35807#35812#0" expanded="true" />
+            <element signature="e#36007#36012#0" expanded="true" />
+            <element signature="e#36023#36028#0" expanded="true" />
+            <element signature="e#36238#36243#0" expanded="true" />
+            <element signature="e#36253#36258#0" expanded="true" />
+            <element signature="e#36260#36265#0" expanded="true" />
+            <element signature="e#36276#36281#0" expanded="true" />
+            <element signature="e#36898#36903#0" expanded="true" />
+            <element signature="e#36910#36915#0" expanded="true" />
+            <element signature="e#37096#37101#0" expanded="true" />
+            <element signature="e#37119#37124#0" expanded="true" />
+            <element signature="e#37951#37956#0" expanded="true" />
+            <element signature="e#37965#37970#0" expanded="true" />
+            <element signature="e#38151#38156#0" expanded="true" />
+            <element signature="e#38215#38220#0" expanded="true" />
+            <element signature="e#38427#38432#0" expanded="true" />
+            <element signature="e#38461#38466#0" expanded="true" />
+            <element signature="e#38468#38473#0" expanded="true" />
+            <element signature="e#38479#38484#0" expanded="true" />
+            <element signature="e#38698#38703#0" expanded="true" />
+            <element signature="e#38731#38736#0" expanded="true" />
+            <element signature="e#38953#38958#0" expanded="true" />
+            <element signature="e#38986#38991#0" expanded="true" />
+            <element signature="e#39210#39215#0" expanded="true" />
+            <element signature="e#39873#39878#0" expanded="true" />
+            <element signature="e#39881#39886#0" expanded="true" />
+            <element signature="e#40072#40077#0" expanded="true" />
+            <element signature="e#40118#40123#0" expanded="true" />
+            <element signature="e#40329#40334#0" expanded="true" />
+            <element signature="e#40350#40355#0" expanded="true" />
+            <element signature="e#40357#40362#0" expanded="true" />
+            <element signature="e#40368#40373#0" expanded="true" />
+            <element signature="e#40577#40582#0" expanded="true" />
+            <element signature="e#40598#40603#0" expanded="true" />
+            <element signature="e#40605#40610#0" expanded="true" />
+            <element signature="e#40616#40621#0" expanded="true" />
+            <element signature="e#42202#42207#0" expanded="true" />
+            <element signature="e#42225#42230#0" expanded="true" />
+            <element signature="e#42744#42749#0" expanded="true" />
+            <element signature="e#42755#42760#0" expanded="true" />
+            <element signature="e#42940#42945#0" expanded="true" />
+            <element signature="e#42992#42997#0" expanded="true" />
+            <element signature="e#43221#43226#0" expanded="true" />
+            <element signature="e#43237#43242#0" expanded="true" />
+            <element signature="e#43437#43442#0" expanded="true" />
+            <element signature="e#43453#43458#0" expanded="true" />
+            <element signature="e#44076#44081#0" expanded="true" />
+            <element signature="e#44087#44092#0" expanded="true" />
+            <element signature="e#44273#44278#0" expanded="true" />
+            <element signature="e#44302#44307#0" expanded="true" />
+            <element signature="e#44518#44523#0" expanded="true" />
+            <element signature="e#44548#44553#0" expanded="true" />
+            <element signature="e#44772#44777#0" expanded="true" />
+            <element signature="e#44801#44806#0" expanded="true" />
+            <element signature="e#45002#45007#0" expanded="true" />
+            <element signature="e#45031#45036#0" expanded="true" />
+            <element signature="e#46425#46430#0" expanded="true" />
+            <element signature="e#46446#46451#0" expanded="true" />
+            <element signature="e#46835#46840#0" expanded="true" />
+            <element signature="e#46856#46861#0" expanded="true" />
+            <element signature="e#46863#46868#0" expanded="true" />
+            <element signature="e#46879#46884#0" expanded="true" />
+            <element signature="e#47535#47540#0" expanded="true" />
+            <element signature="e#47561#47566#0" expanded="true" />
+            <element signature="e#47753#47758#0" expanded="true" />
+            <element signature="e#47805#47810#0" expanded="true" />
+            <element signature="e#48211#48216#0" expanded="true" />
+            <element signature="e#48226#48231#0" expanded="true" />
+            <element signature="e#48704#48709#0" expanded="true" />
+            <element signature="e#48743#48748#0" expanded="true" />
+            <element signature="e#48947#48952#0" expanded="true" />
+            <element signature="e#48969#48974#0" expanded="true" />
+            <element signature="e#48976#48981#0" expanded="true" />
+            <element signature="e#48992#48997#0" expanded="true" />
+            <element signature="e#50058#50063#0" expanded="true" />
+            <element signature="e#50107#50112#0" expanded="true" />
+            <element signature="e#50729#50734#0" expanded="true" />
+            <element signature="e#50762#50767#0" expanded="true" />
+            <element signature="e#50953#50958#0" expanded="true" />
+            <element signature="e#50961#50966#0" expanded="true" />
+            <element signature="e#50974#50979#0" expanded="true" />
+            <element signature="e#50998#51003#0" expanded="true" />
+            <element signature="e#51186#51191#0" expanded="true" />
+            <element signature="e#51196#51201#0" expanded="true" />
+            <element signature="e#51209#51214#0" expanded="true" />
+            <element signature="e#51233#51238#0" expanded="true" />
+            <element signature="e#51426#51431#0" expanded="true" />
+            <element signature="e#51434#51439#0" expanded="true" />
+            <element signature="e#51788#51793#0" expanded="true" />
+            <element signature="e#51812#51817#0" expanded="true" />
+            <element signature="e#52021#52026#0" expanded="true" />
+            <element signature="e#52053#52058#0" expanded="true" />
+            <element signature="e#53304#53309#0" expanded="true" />
+            <element signature="e#53328#53333#0" expanded="true" />
+            <element signature="e#53517#53522#0" expanded="true" />
+            <element signature="e#53548#53553#0" expanded="true" />
+            <element signature="e#53749#53754#0" expanded="true" />
+            <element signature="e#53766#53771#0" expanded="true" />
+            <element signature="e#53773#53778#0" expanded="true" />
+            <element signature="e#53789#53794#0" expanded="true" />
+            <element signature="e#53990#53995#0" expanded="true" />
+            <element signature="e#54026#54031#0" expanded="true" />
+            <element signature="e#54033#54038#0" expanded="true" />
+            <element signature="e#54044#54049#0" expanded="true" />
+            <element signature="e#54584#54590#0" expanded="true" />
+            <element signature="e#54616#54622#0" expanded="true" />
+            <element signature="e#54945#54951#0" expanded="true" />
+            <element signature="e#54969#54975#0" expanded="true" />
+            <element signature="e#55168#55173#0" expanded="true" />
+            <element signature="e#55179#55184#0" expanded="true" />
+            <element signature="e#55675#55681#0" expanded="true" />
+            <element signature="e#55707#55713#0" expanded="true" />
+            <element signature="e#55917#55922#0" expanded="true" />
+            <element signature="e#55967#55972#0" expanded="true" />
+            <element signature="e#57216#57221#0" expanded="true" />
+            <element signature="e#57240#57245#0" expanded="true" />
+            <element signature="e#57429#57434#0" expanded="true" />
+            <element signature="e#57497#57502#0" expanded="true" />
+            <element signature="e#57698#57703#0" expanded="true" />
+            <element signature="e#57715#57720#0" expanded="true" />
+            <element signature="e#57722#57727#0" expanded="true" />
+            <element signature="e#57738#57743#0" expanded="true" />
+            <element signature="e#57939#57944#0" expanded="true" />
+            <element signature="e#57975#57980#0" expanded="true" />
+            <element signature="e#57982#57987#0" expanded="true" />
+            <element signature="e#57993#57998#0" expanded="true" />
+            <element signature="e#58654#58660#0" expanded="true" />
+            <element signature="e#58678#58684#0" expanded="true" />
+            <element signature="e#58875#58880#0" expanded="true" />
+            <element signature="e#58884#58889#0" expanded="true" />
+            <element signature="e#59380#59386#0" expanded="true" />
+            <element signature="e#59410#59416#0" expanded="true" />
+            <element signature="e#59740#59745#0" expanded="true" />
+            <element signature="e#59752#59757#0" expanded="true" />
+            <element signature="e#59765#59770#0" expanded="true" />
+            <element signature="e#59794#59799#0" expanded="true" />
+            <element signature="e#59982#59987#0" expanded="true" />
+            <element signature="e#59996#60001#0" expanded="true" />
+            <element signature="e#60009#60014#0" expanded="true" />
+            <element signature="e#60020#60025#0" expanded="true" />
+            <element signature="e#60354#60359#0" expanded="true" />
+            <element signature="e#60375#60380#0" expanded="true" />
+            <element signature="e#60723#60729#0" expanded="true" />
+            <element signature="e#60755#60761#0" expanded="true" />
+            <element signature="e#60969#60974#0" expanded="true" />
+            <element signature="e#60980#60985#0" expanded="true" />
+            <element signature="e#61189#61194#0" expanded="true" />
+            <element signature="e#61200#61205#0" expanded="true" />
+            <element signature="e#62446#62451#0" expanded="true" />
+            <element signature="e#62468#62473#0" expanded="true" />
+            <element signature="e#62657#62662#0" expanded="true" />
+            <element signature="e#62686#62691#0" expanded="true" />
+            <element signature="e#62887#62892#0" expanded="true" />
+            <element signature="e#62904#62909#0" expanded="true" />
+            <element signature="e#62911#62916#0" expanded="true" />
+            <element signature="e#62927#62932#0" expanded="true" />
+            <element signature="e#63587#63592#0" expanded="true" />
+            <element signature="e#63623#63628#0" expanded="true" />
+            <element signature="e#63630#63635#0" expanded="true" />
+            <element signature="e#63641#63646#0" expanded="true" />
+            <element signature="e#63844#63849#0" expanded="true" />
+            <element signature="e#63852#63857#0" expanded="true" />
+            <element signature="e#64048#64053#0" expanded="true" />
+            <element signature="e#64081#64086#0" expanded="true" />
+            <element signature="e#64088#64093#0" expanded="true" />
+            <element signature="e#64100#64105#0" expanded="true" />
+            <element signature="e#64303#64308#0" expanded="true" />
+            <element signature="e#64311#64316#0" expanded="true" />
+            <element signature="e#64518#64524#0" expanded="true" />
+            <element signature="e#64550#64556#0" expanded="true" />
+            <element signature="e#64901#64906#0" expanded="true" />
+            <element signature="e#64912#64917#0" expanded="true" />
+            <element signature="e#65121#65126#0" expanded="true" />
+            <element signature="e#65133#65138#0" expanded="true" />
+            <element signature="e#66376#66381#0" expanded="true" />
+            <element signature="e#66405#66410#0" expanded="true" />
+            <element signature="e#66594#66599#0" expanded="true" />
+            <element signature="e#66631#66636#0" expanded="true" />
+            <element signature="e#66832#66837#0" expanded="true" />
+            <element signature="e#66849#66854#0" expanded="true" />
+            <element signature="e#66856#66861#0" expanded="true" />
+            <element signature="e#66872#66877#0" expanded="true" />
+            <element signature="e#67073#67078#0" expanded="true" />
+            <element signature="e#67109#67114#0" expanded="true" />
+            <element signature="e#67116#67121#0" expanded="true" />
+            <element signature="e#67127#67132#0" expanded="true" />
+            <element signature="e#67788#67794#0" expanded="true" />
+            <element signature="e#67812#67818#0" expanded="true" />
+            <element signature="e#68009#68014#0" expanded="true" />
+            <element signature="e#68021#68026#0" expanded="true" />
+            <element signature="e#68517#68523#0" expanded="true" />
+            <element signature="e#68551#68557#0" expanded="true" />
+            <element signature="e#68761#68766#0" expanded="true" />
+            <element signature="e#68782#68787#0" expanded="true" />
+            <element signature="e#69124#69129#0" expanded="true" />
+            <element signature="e#69151#69156#0" expanded="true" />
+            <element signature="e#69345#69350#0" expanded="true" />
+            <element signature="e#69356#69361#0" expanded="true" />
+            <element signature="e#69684#69690#0" expanded="true" />
+            <element signature="e#69708#69714#0" expanded="true" />
+            <element signature="e#69905#69910#0" expanded="true" />
+            <element signature="e#69914#69919#0" expanded="true" />
+            <element signature="e#70412#70417#0" expanded="true" />
+            <element signature="e#70439#70444#0" expanded="true" />
+            <element signature="e#71683#71688#0" expanded="true" />
+            <element signature="e#71704#71709#0" expanded="true" />
+            <element signature="e#71893#71898#0" expanded="true" />
+            <element signature="e#71935#71940#0" expanded="true" />
+            <element signature="e#72136#72141#0" expanded="true" />
+            <element signature="e#72153#72158#0" expanded="true" />
+            <element signature="e#72160#72165#0" expanded="true" />
+            <element signature="e#72176#72181#0" expanded="true" />
+            <element signature="e#72377#72382#0" expanded="true" />
+            <element signature="e#72413#72418#0" expanded="true" />
+            <element signature="e#72420#72425#0" expanded="true" />
+            <element signature="e#72431#72436#0" expanded="true" />
+            <element signature="e#72819#72824#0" expanded="true" />
+            <element signature="e#72838#72843#0" expanded="true" />
+            <element signature="e#73040#73045#0" expanded="true" />
+            <element signature="e#73056#73061#0" expanded="true" />
+            <element signature="e#73392#73398#0" expanded="true" />
+            <element signature="e#73416#73422#0" expanded="true" />
+            <element signature="e#73613#73618#0" expanded="true" />
+            <element signature="e#73622#73627#0" expanded="true" />
+            <element signature="e#74118#74124#0" expanded="true" />
+            <element signature="e#74156#74162#0" expanded="true" />
+            <element signature="e#74366#74371#0" expanded="true" />
+            <element signature="e#74387#74392#0" expanded="true" />
+            <element signature="e#74737#74742#0" expanded="true" />
+            <element signature="e#74756#74761#0" expanded="true" />
+            <element signature="e#74965#74970#0" expanded="true" />
+            <element signature="e#74981#74986#0" expanded="true" />
+            <element signature="e#76362#76367#0" expanded="true" />
+            <element signature="e#76389#76394#0" expanded="true" />
+            <element signature="e#76718#76723#0" expanded="true" />
+            <element signature="e#76741#76746#0" expanded="true" />
+            <element signature="e#76935#76940#0" expanded="true" />
+            <element signature="e#76956#76961#0" expanded="true" />
+            <element signature="e#76962#76967#0" expanded="true" />
+            <element signature="e#76978#76983#0" expanded="true" />
+            <element signature="e#77164#77169#0" expanded="true" />
+            <element signature="e#77170#77175#0" expanded="true" />
+            <element signature="e#77360#77365#0" expanded="true" />
+            <element signature="e#77372#77377#0" expanded="true" />
+            <element signature="e#77720#77725#0" expanded="true" />
+            <element signature="e#77738#77743#0" expanded="true" />
+            <element signature="e#78067#78072#0" expanded="true" />
+            <element signature="e#78077#78082#0" expanded="true" />
+            <element signature="e#78090#78095#0" expanded="true" />
+            <element signature="e#78111#78116#0" expanded="true" />
+            <element signature="e#78300#78305#0" expanded="true" />
+            <element signature="e#78313#78318#0" expanded="true" />
+            <element signature="e#78326#78331#0" expanded="true" />
+            <element signature="e#78342#78347#0" expanded="true" />
+            <element signature="e#78536#78541#0" expanded="true" />
+            <element signature="e#78551#78556#0" expanded="true" />
+            <element signature="e#78901#78906#0" expanded="true" />
+            <element signature="e#78931#78936#0" expanded="true" />
+            <element signature="e#79405#79411#0" expanded="true" />
+            <element signature="e#79421#79426#0" expanded="true" />
+            <element signature="e#79461#79467#0" expanded="true" />
+            <element signature="e#79657#79662#0" expanded="true" />
+            <element signature="e#79678#79683#0" expanded="true" />
+            <element signature="e#79685#79690#0" expanded="true" />
+            <element signature="e#79701#79706#0" expanded="true" />
+            <element signature="e#79888#79893#0" expanded="true" />
+            <element signature="e#79894#79899#0" expanded="true" />
+            <element signature="e#80085#80090#0" expanded="true" />
+            <element signature="e#80097#80102#0" expanded="true" />
+            <element signature="e#80426#80431#0" expanded="true" />
+            <element signature="e#80436#80441#0" expanded="true" />
+            <element signature="e#80449#80454#0" expanded="true" />
+            <element signature="e#80476#80481#0" expanded="true" />
+            <element signature="e#80665#80670#0" expanded="true" />
+            <element signature="e#80678#80683#0" expanded="true" />
+            <element signature="e#80691#80696#0" expanded="true" />
+            <element signature="e#80707#80712#0" expanded="true" />
+            <element signature="e#80901#80906#0" expanded="true" />
+            <element signature="e#80916#80921#0" expanded="true" />
+            <element signature="e#81270#81275#0" expanded="true" />
+            <element signature="e#81300#81305#0" expanded="true" />
+            <element signature="e#81509#81514#0" expanded="true" />
+            <element signature="e#81562#81567#0" expanded="true" />
+            <element signature="e#82036#82042#0" expanded="true" />
+            <element signature="e#82052#82057#0" expanded="true" />
+            <element signature="e#82096#82102#0" expanded="true" />
+            <element signature="e#82292#82297#0" expanded="true" />
+            <element signature="e#82313#82318#0" expanded="true" />
+            <element signature="e#82320#82325#0" expanded="true" />
+            <element signature="e#82336#82341#0" expanded="true" />
+            <element signature="e#82523#82528#0" expanded="true" />
+            <element signature="e#82529#82534#0" expanded="true" />
+            <element signature="e#82720#82725#0" expanded="true" />
+            <element signature="e#82732#82737#0" expanded="true" />
+            <element signature="e#83061#83066#0" expanded="true" />
+            <element signature="e#83071#83076#0" expanded="true" />
+            <element signature="e#83084#83089#0" expanded="true" />
+            <element signature="e#83105#83110#0" expanded="true" />
+            <element signature="e#83294#83299#0" expanded="true" />
+            <element signature="e#83307#83312#0" expanded="true" />
+            <element signature="e#83320#83325#0" expanded="true" />
+            <element signature="e#83339#83344#0" expanded="true" />
+            <element signature="e#83533#83538#0" expanded="true" />
+            <element signature="e#83548#83553#0" expanded="true" />
+            <element signature="e#83902#83907#0" expanded="true" />
+            <element signature="e#83932#83937#0" expanded="true" />
+            <element signature="e#84141#84146#0" expanded="true" />
+            <element signature="e#84194#84199#0" expanded="true" />
+            <element signature="e#85572#85577#0" expanded="true" />
+            <element signature="e#85589#85594#0" expanded="true" />
+            <element signature="e#85918#85923#0" expanded="true" />
+            <element signature="e#85941#85946#0" expanded="true" />
+            <element signature="e#86129#86134#0" expanded="true" />
+            <element signature="e#86135#86140#0" expanded="true" />
+            <element signature="e#86325#86330#0" expanded="true" />
+            <element signature="e#86337#86342#0" expanded="true" />
+            <element signature="e#86665#86670#0" expanded="true" />
+            <element signature="e#86675#86680#0" expanded="true" />
+            <element signature="e#86688#86693#0" expanded="true" />
+            <element signature="e#86709#86714#0" expanded="true" />
+            <element signature="e#86898#86903#0" expanded="true" />
+            <element signature="e#86911#86916#0" expanded="true" />
+            <element signature="e#86924#86929#0" expanded="true" />
+            <element signature="e#86940#86945#0" expanded="true" />
+            <element signature="e#87134#87139#0" expanded="true" />
+            <element signature="e#87149#87154#0" expanded="true" />
+            <element signature="e#87499#87504#0" expanded="true" />
+            <element signature="e#87529#87534#0" expanded="true" />
+            <element signature="e#88765#88770#0" expanded="true" />
+            <element signature="e#88790#88795#0" expanded="true" />
+            <element signature="e#89119#89124#0" expanded="true" />
+            <element signature="e#89143#89148#0" expanded="true" />
+            <element signature="e#89337#89342#0" expanded="true" />
+            <element signature="e#89358#89363#0" expanded="true" />
+            <element signature="e#89364#89369#0" expanded="true" />
+            <element signature="e#89380#89385#0" expanded="true" />
+            <element signature="e#89566#89571#0" expanded="true" />
+            <element signature="e#89572#89577#0" expanded="true" />
+            <element signature="e#89762#89767#0" expanded="true" />
+            <element signature="e#89774#89779#0" expanded="true" />
+            <element signature="e#90102#90107#0" expanded="true" />
+            <element signature="e#90112#90117#0" expanded="true" />
+            <element signature="e#90125#90130#0" expanded="true" />
+            <element signature="e#90146#90151#0" expanded="true" />
+            <element signature="e#90335#90340#0" expanded="true" />
+            <element signature="e#90348#90353#0" expanded="true" />
+            <element signature="e#90361#90366#0" expanded="true" />
+            <element signature="e#90377#90382#0" expanded="true" />
+            <element signature="e#90571#90576#0" expanded="true" />
+            <element signature="e#90586#90591#0" expanded="true" />
+            <element signature="e#90920#90925#0" expanded="true" />
+            <element signature="e#90933#90938#0" expanded="true" />
+            <element signature="e#91140#91145#0" expanded="true" />
+            <element signature="e#91146#91151#0" expanded="true" />
+            <element signature="e#91500#91505#0" expanded="true" />
+            <element signature="e#91530#91535#0" expanded="true" />
+            <element signature="e#91739#91744#0" expanded="true" />
+            <element signature="e#91771#91776#0" expanded="true" />
+            <element signature="e#93006#93011#0" expanded="true" />
+            <element signature="e#93040#93045#0" expanded="true" />
+            <element signature="e#93229#93234#0" expanded="true" />
+            <element signature="e#93253#93258#0" expanded="true" />
+            <element signature="e#93454#93459#0" expanded="true" />
+            <element signature="e#93471#93476#0" expanded="true" />
+            <element signature="e#93478#93483#0" expanded="true" />
+            <element signature="e#93494#93499#0" expanded="true" />
+            <element signature="e#93695#93700#0" expanded="true" />
+            <element signature="e#93723#93728#0" expanded="true" />
+            <element signature="e#93730#93735#0" expanded="true" />
+            <element signature="e#93741#93746#0" expanded="true" />
+            <element signature="e#94261#94267#0" expanded="true" />
+            <element signature="e#94285#94291#0" expanded="true" />
+            <element signature="e#94482#94487#0" expanded="true" />
+            <element signature="e#94494#94499#0" expanded="true" />
+            <element signature="e#94990#94996#0" expanded="true" />
+            <element signature="e#95020#95026#0" expanded="true" />
+            <element signature="e#95230#95235#0" expanded="true" />
+            <element signature="e#95251#95256#0" expanded="true" />
+            <element signature="e#95596#95601#0" expanded="true" />
+            <element signature="e#95604#95609#0" expanded="true" />
+            <element signature="e#95798#95803#0" expanded="true" />
+            <element signature="e#95809#95814#0" expanded="true" />
+            <element signature="e#96159#96164#0" expanded="true" />
+            <element signature="e#96197#96202#0" expanded="true" />
+            <element signature="e#96525#96531#0" expanded="true" />
+            <element signature="e#96549#96555#0" expanded="true" />
+            <element signature="e#96764#96769#0" expanded="true" />
+            <element signature="e#96772#96777#0" expanded="true" />
+            <element signature="e#97394#97399#0" expanded="true" />
+            <element signature="e#97443#97448#0" expanded="true" />
+            <element signature="e#97645#97650#0" expanded="true" />
+            <element signature="e#97662#97667#0" expanded="true" />
+            <element signature="e#97669#97674#0" expanded="true" />
+            <element signature="e#97685#97690#0" expanded="true" />
+            <element signature="e#97887#97892#0" expanded="true" />
+            <element signature="e#97915#97920#0" expanded="true" />
+            <element signature="e#97922#97927#0" expanded="true" />
+            <element signature="e#97933#97938#0" expanded="true" />
+            <element signature="e#98140#98145#0" expanded="true" />
+            <element signature="e#98159#98164#0" expanded="true" />
+            <element signature="e#98852#98858#0" expanded="true" />
+            <element signature="e#98877#98883#0" expanded="true" />
+            <element signature="e#99046#99051#0" expanded="true" />
+            <element signature="e#99065#99070#0" expanded="true" />
+            <element signature="e#99543#99549#0" expanded="true" />
+            <element signature="e#99567#99573#0" expanded="true" />
+            <element signature="e#99764#99769#0" expanded="true" />
+            <element signature="e#99783#99788#0" expanded="true" />
+            <element signature="e#100279#100285#0" expanded="true" />
+            <element signature="e#100310#100316#0" expanded="true" />
+            <element signature="e#100520#100525#0" expanded="true" />
+            <element signature="e#100532#100537#0" expanded="true" />
+            <element signature="e#101779#101784#0" expanded="true" />
+            <element signature="e#101790#101795#0" expanded="true" />
+            <element signature="e#102113#102118#0" expanded="true" />
+            <element signature="e#102138#102143#0" expanded="true" />
+            <element signature="e#102467#102472#0" expanded="true" />
+            <element signature="e#102521#102526#0" expanded="true" />
+            <element signature="e#102863#102868#0" expanded="true" />
+            <element signature="e#102884#102889#0" expanded="true" />
+            <element signature="e#102891#102896#0" expanded="true" />
+            <element signature="e#102907#102912#0" expanded="true" />
+            <element signature="e#103584#103590#0" expanded="true" />
+            <element signature="e#103617#103623#0" expanded="true" />
+            <element signature="e#103955#103960#0" expanded="true" />
+            <element signature="e#103991#103996#0" expanded="true" />
+            <element signature="e#103998#104003#0" expanded="true" />
+            <element signature="e#104009#104014#0" expanded="true" />
+            <element signature="e#104354#104359#0" expanded="true" />
+            <element signature="e#104362#104367#0" expanded="true" />
+            <element signature="e#104712#104717#0" expanded="true" />
+            <element signature="e#104723#104728#0" expanded="true" />
+            <element signature="e#105197#105203#0" expanded="true" />
+            <element signature="e#105213#105218#0" expanded="true" />
+            <element signature="e#105234#105239#0" expanded="true" />
+            <element signature="e#105250#105256#0" expanded="true" />
+            <element signature="e#105454#105459#0" expanded="true" />
+            <element signature="e#105475#105480#0" expanded="true" />
+            <element signature="e#105482#105487#0" expanded="true" />
+            <element signature="e#105498#105503#0" expanded="true" />
+            <element signature="e#105699#105704#0" expanded="true" />
+            <element signature="e#105721#105726#0" expanded="true" />
+            <element signature="e#105728#105733#0" expanded="true" />
+            <element signature="e#105744#105749#0" expanded="true" />
+            <element signature="e#106118#106124#0" expanded="true" />
+            <element signature="e#106151#106157#0" expanded="true" />
+            <element signature="e#106348#106353#0" expanded="true" />
+            <element signature="e#106381#106386#0" expanded="true" />
+            <element signature="e#106388#106393#0" expanded="true" />
+            <element signature="e#106400#106405#0" expanded="true" />
+            <element signature="e#106604#106609#0" expanded="true" />
+            <element signature="e#106612#106617#0" expanded="true" />
+            <element signature="e#107126#107132#0" expanded="true" />
+            <element signature="e#107159#107165#0" expanded="true" />
+            <element signature="e#107356#107361#0" expanded="true" />
+            <element signature="e#107392#107397#0" expanded="true" />
+            <element signature="e#107399#107404#0" expanded="true" />
+            <element signature="e#107410#107415#0" expanded="true" />
+            <element signature="e#107614#107619#0" expanded="true" />
+            <element signature="e#107622#107627#0" expanded="true" />
+            <element signature="e#107976#107981#0" expanded="true" />
+            <element signature="e#107988#107993#0" expanded="true" />
+            <element signature="e#108169#108174#0" expanded="true" />
+            <element signature="e#108180#108185#0" expanded="true" />
+            <element signature="e#109404#109409#0" expanded="true" />
+            <element signature="e#109425#109430#0" expanded="true" />
+            <element signature="e#109954#109959#0" expanded="true" />
+            <element signature="e#109980#109985#0" expanded="true" />
+            <element signature="e#110169#110174#0" expanded="true" />
+            <element signature="e#110181#110186#0" expanded="true" />
+            <element signature="e#110366#110371#0" expanded="true" />
+            <element signature="e#110401#110406#0" expanded="true" />
+            <element signature="e#111230#111235#0" expanded="true" />
+            <element signature="e#111240#111245#0" expanded="true" />
+            <element signature="e#111426#111431#0" expanded="true" />
+            <element signature="e#111451#111456#0" expanded="true" />
+            <element signature="e#111653#111658#0" expanded="true" />
+            <element signature="e#111672#111677#0" expanded="true" />
+            <element signature="e#112301#112306#0" expanded="true" />
+            <element signature="e#112320#112325#0" expanded="true" />
+            <element signature="e#112942#112947#0" expanded="true" />
+            <element signature="e#112957#112962#0" expanded="true" />
+            <element signature="e#113143#113148#0" expanded="true" />
+            <element signature="e#113194#113199#0" expanded="true" />
+            <element signature="e#113399#113404#0" expanded="true" />
+            <element signature="e#113416#113421#0" expanded="true" />
+            <element signature="e#113423#113428#0" expanded="true" />
+            <element signature="e#113439#113444#0" expanded="true" />
+            <element signature="e#113642#113647#0" expanded="true" />
+            <element signature="e#113660#113665#0" expanded="true" />
+            <element signature="e#113667#113672#0" expanded="true" />
+            <element signature="e#113681#113686#0" expanded="true" />
+            <element signature="e#113886#113891#0" expanded="true" />
+            <element signature="e#113914#113919#0" expanded="true" />
+            <element signature="e#113921#113926#0" expanded="true" />
+            <element signature="e#113933#113938#0" expanded="true" />
+            <element signature="e#114148#114153#0" expanded="true" />
+            <element signature="e#114174#114179#0" expanded="true" />
+            <element signature="e#114181#114186#0" expanded="true" />
+            <element signature="e#114191#114196#0" expanded="true" />
+            <element signature="e#114406#114411#0" expanded="true" />
+            <element signature="e#114431#114436#0" expanded="true" />
+            <element signature="e#114438#114443#0" expanded="true" />
+            <element signature="e#114447#114452#0" expanded="true" />
+            <element signature="e#114656#114661#0" expanded="true" />
+            <element signature="e#114667#114672#0" expanded="true" />
+            <element signature="e#114866#114871#0" expanded="true" />
+            <element signature="e#114876#114881#0" expanded="true" />
+            <element signature="e#116705#116710#0" expanded="true" />
+            <element signature="e#116713#116718#0" expanded="true" />
+            <element signature="e#116904#116909#0" expanded="true" />
+            <element signature="e#116946#116951#0" expanded="true" />
+            <element signature="e#117148#117153#0" expanded="true" />
+            <element signature="e#117161#117166#0" expanded="true" />
+            <element signature="e#117361#117366#0" expanded="true" />
+            <element signature="e#117374#117379#0" expanded="true" />
+            <element signature="e#118949#118954#0" expanded="true" />
+            <element signature="e#118971#118976#0" expanded="true" />
+            <element signature="e#119483#119488#0" expanded="true" />
+            <element signature="e#119492#119497#0" expanded="true" />
+            <element signature="e#119677#119682#0" expanded="true" />
+            <element signature="e#119725#119730#0" expanded="true" />
+            <element signature="e#119929#119934#0" expanded="true" />
+            <element signature="e#119948#119953#0" expanded="true" />
+            <element signature="e#119955#119960#0" expanded="true" />
+            <element signature="e#119967#119972#0" expanded="true" />
+            <element signature="e#120169#120174#0" expanded="true" />
+            <element signature="e#120188#120193#0" expanded="true" />
+            <element signature="e#120195#120200#0" expanded="true" />
+            <element signature="e#120207#120212#0" expanded="true" />
+            <element signature="e#120410#120415#0" expanded="true" />
+            <element signature="e#121067#121072#0" expanded="true" />
+            <element signature="e#121079#121084#0" expanded="true" />
+            <element signature="e#121265#121270#0" expanded="true" />
+            <element signature="e#121285#121290#0" expanded="true" />
+            <element signature="e#121489#121494#0" expanded="true" />
+            <element signature="e#121507#121512#0" expanded="true" />
+            <element signature="e#121514#121519#0" expanded="true" />
+            <element signature="e#121526#121531#0" expanded="true" />
+            <element signature="e#122205#122211#0" expanded="true" />
+            <element signature="e#122224#122229#0" expanded="true" />
+            <element signature="e#122239#122245#0" expanded="true" />
+            <element signature="e#122475#122480#0" expanded="true" />
+            <element signature="e#122487#122492#0" expanded="true" />
+            <element signature="e#122505#122510#0" expanded="true" />
+            <element signature="e#122514#122519#0" expanded="true" />
+            <element signature="e#122708#122713#0" expanded="true" />
+            <element signature="e#122726#122731#0" expanded="true" />
+            <element signature="e#122733#122738#0" expanded="true" />
+            <element signature="e#122745#122750#0" expanded="true" />
+            <element signature="e#123368#123373#0" expanded="true" />
+            <element signature="e#123378#123383#0" expanded="true" />
+            <element signature="e#123564#123569#0" expanded="true" />
+            <element signature="e#123585#123590#0" expanded="true" />
+            <element signature="e#123789#123794#0" expanded="true" />
+            <element signature="e#123808#123813#0" expanded="true" />
+            <element signature="e#123815#123820#0" expanded="true" />
+            <element signature="e#123827#123832#0" expanded="true" />
+            <element signature="e#124049#124054#0" expanded="true" />
+            <element signature="e#124068#124073#0" expanded="true" />
+            <element signature="e#124540#124545#0" expanded="true" />
+            <element signature="e#124574#124579#0" expanded="true" />
+            <element signature="e#125408#125413#0" expanded="true" />
+            <element signature="e#125426#125431#0" expanded="true" />
+            <element signature="e#125617#125622#0" expanded="true" />
+            <element signature="e#125663#125668#0" expanded="true" />
+            <element signature="e#125867#125872#0" expanded="true" />
+            <element signature="e#125886#125891#0" expanded="true" />
+            <element signature="e#125893#125898#0" expanded="true" />
+            <element signature="e#125905#125910#0" expanded="true" />
+            <element signature="e#126127#126132#0" expanded="true" />
+            <element signature="e#126146#126151#0" expanded="true" />
+            <element signature="e#126153#126158#0" expanded="true" />
+            <element signature="e#126165#126170#0" expanded="true" />
+            <element signature="e#126387#126392#0" expanded="true" />
+            <element signature="e#126406#126411#0" expanded="true" />
+            <element signature="e#127103#127108#0" expanded="true" />
+            <element signature="e#127153#127158#0" expanded="true" />
+            <element signature="e#127350#127355#0" expanded="true" />
+            <element signature="e#127369#127374#0" expanded="true" />
+            <element signature="e#127376#127381#0" expanded="true" />
+            <element signature="e#127388#127393#0" expanded="true" />
+            <element signature="e#127596#127601#0" expanded="true" />
+            <element signature="e#127622#127627#0" expanded="true" />
+            <element signature="e#127629#127634#0" expanded="true" />
+            <element signature="e#127641#127646#0" expanded="true" />
+            <element signature="e#128130#128135#0" expanded="true" />
+            <element signature="e#128183#128188#0" expanded="true" />
+            <element signature="e#128380#128385#0" expanded="true" />
+            <element signature="e#128399#128404#0" expanded="true" />
+            <element signature="e#128406#128411#0" expanded="true" />
+            <element signature="e#128418#128423#0" expanded="true" />
+            <element signature="e#128626#128631#0" expanded="true" />
+            <element signature="e#128645#128650#0" expanded="true" />
+            <element signature="e#128652#128657#0" expanded="true" />
+            <element signature="e#128671#128676#0" expanded="true" />
+            <element signature="e#129305#129310#0" expanded="true" />
+            <element signature="e#129320#129325#0" expanded="true" />
+            <element signature="e#129506#129511#0" expanded="true" />
+            <element signature="e#129570#129575#0" expanded="true" />
+            <element signature="e#129775#129780#0" expanded="true" />
+            <element signature="e#129794#129799#0" expanded="true" />
+            <element signature="e#129801#129806#0" expanded="true" />
+            <element signature="e#129813#129818#0" expanded="true" />
+            <element signature="e#130016#130021#0" expanded="true" />
+            <element signature="e#130035#130040#0" expanded="true" />
+            <element signature="e#130042#130047#0" expanded="true" />
+            <element signature="e#130054#130059#0" expanded="true" />
+            <element signature="e#130259#130264#0" expanded="true" />
+            <element signature="e#130281#130286#0" expanded="true" />
+            <element signature="e#130288#130293#0" expanded="true" />
+            <element signature="e#130299#130304#0" expanded="true" />
+            <element signature="e#130514#130519#0" expanded="true" />
+            <element signature="e#130538#130543#0" expanded="true" />
+            <element signature="e#130545#130550#0" expanded="true" />
+            <element signature="e#130557#130562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/comments/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/bookmarks/edit.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/comments/view.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sessions/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tags/bookmarks/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tags/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
         </state>
       </provider>
