@@ -52,4 +52,18 @@ describe User do
       expect(User.authenticate('unit@test1.com', 'wrong_password')).to be_nil
     end
   end
+
+  describe '#bookmarks' do
+    it 'returns all the BMs associated with that particular user ID' do
+      user1 = User.create('unit@test1.com', 'pswd123')
+      user2 = User.create('unit@test2.com', 'pswd456')
+      bm1 = Bookmark.create('https://odeon.com', 'Cinema', user1.id)
+      bm2 = Bookmark.create('https://netflix.com', 'Netflix', user2.id)
+
+      expect(user1.bookmarks).to include bm1
+      expect(user1.bookmarks).not_to include bm2
+      expect(user2.bookmarks).to include bm2
+      expect(user2.bookmarks).not_to include bm1
+    end
+  end
 end

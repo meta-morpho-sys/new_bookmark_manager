@@ -42,4 +42,15 @@ class User
     return unless BCrypt::Password.new(result[0]['password']) == pswd
     wrap(result[0])
   end
+
+  def bookmarks
+    result = DbConnector.query("SELECT
+                                      *
+                                  FROM
+                                      bookmarks
+                                  WHERE
+                                      user_id = '#{id}'")
+    result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
+  end
+
 end
