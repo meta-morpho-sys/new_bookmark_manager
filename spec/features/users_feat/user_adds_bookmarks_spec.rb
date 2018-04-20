@@ -1,21 +1,38 @@
 # frozen_string_literal: true
 
+require 'bcrypt'
+
 feature 'User adds a bookmark' do
 
   scenario 'a specific BM is added to a specific user account' do
-    user = User.create('test@example.com', 'password123')
 
-    visit '/sessions/new'
+    user1 = User.create('test@example.com', 'password123')
 
-    fill_in('email', with: 'test@example.com')
-    fill_in('password', with: 'password123')
+    login1(user1)
 
-    click_button 'Sign me in'
+    expect(current_path).to eq "/user/#{user1.id}/bookmarks"
 
-    expect(current_path).to eq "/user/#{user.id}/bookmarks"
+    Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user1.id)
 
+    click_button 'Add'
 
-    # expect().to
+    expect(page).to have_content 'Lloyds'
+  end
 
+  scenario "a user can't see other user's bookmarks" do
+    user1 = User.create('test@example.com', 'password123')
+    user2 = User.create('test2@example.com', 'password456')
+    login2(user2)
+    visit "/user/#{user2.id}/bookmarks"
+    Bookmark.create('https://online.barkley.co.uk', 'Barkley', user2.id)
+    click_button 'Add'
+
+    login1(user2)
+    visit "/user/#{user1.id}/bookmarks"
+    Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user1.id)
+    click_button 'Add'
+
+    expect(page).to_not have_content 'Barkley'
+    expect(page).to have_content 'Lloyds'
   end
 end
