@@ -36,7 +36,7 @@ class BookmarkManager < Sinatra::Base
     end
   end
 
-  post '/user /:id/sessions/destroy' do
+  post '/user/:id/sessions/destroy' do
     session.clear
     flash[:notice] = 'You successfully signed out'
     redirect '/'
@@ -65,7 +65,7 @@ class BookmarkManager < Sinatra::Base
   post '/bookmarks/new' do
     begin
       user = User.find(session[:user_id])
-      bookmark = Bookmark.create(params[:url], params[:title], params[:user_id])
+      bookmark = Bookmark.create(params[:url], params[:title], session[:user_id])
       flash[:notice] = 'You must submit a valid URL.' unless bookmark
     rescue PG::UniqueViolation
       flash[:notice] = 'That title is already taken, choose another.'
