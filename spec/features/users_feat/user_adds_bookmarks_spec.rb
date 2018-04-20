@@ -8,7 +8,7 @@ feature 'User adds a bookmark' do
 
     user1 = User.create('test@example.com', 'password123')
 
-    login1(user1)
+    login(user1)
 
     expect(current_path).to eq "/user/#{user1.id}/bookmarks"
 
@@ -21,13 +21,13 @@ feature 'User adds a bookmark' do
 
   scenario "a user can't see other user's bookmarks" do
     user1 = User.create('test@example.com', 'password123')
-    user2 = User.create('test2@example.com', 'password456')
-    login2(user2)
+    user2 = User.create('test2@example.com', 'password123')
+    login(user2)
     visit "/user/#{user2.id}/bookmarks"
     Bookmark.create('https://online.barkley.co.uk', 'Barkley', user2.id)
     click_button 'Add'
 
-    login1(user2)
+    login(user2)
     visit "/user/#{user1.id}/bookmarks"
     Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user1.id)
     click_button 'Add'
