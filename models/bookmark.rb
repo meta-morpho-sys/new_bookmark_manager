@@ -37,11 +37,11 @@ class Bookmark
     result.map { |bm| make(bm) }
   end
 
-  def self.create(url, title)
+  def self.create(url, title, user_id)
     return false unless a_url?(url)
     result = DbConnector.query_params(
       SQLStrings::INSERT_BKMARKS_URL_TTL_RETURN,
-      [url, title]
+      [url, title, user_id]
     )
     make(result[0])
   end

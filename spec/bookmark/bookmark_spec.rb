@@ -3,16 +3,19 @@
 require_relative '../../models/bookmark'
 
 describe Bookmark do
+  before(:each) do
+    @user = User.create('unit@test1.com', 'pswd123')
+  end
 
-  let(:bm) { Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds') }
+  let(:bm) { Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', @user.id) }
   let(:bookmarks) { Bookmark.all }
   let(:urls) { bookmarks.map(&:url) }
   let(:titles) { bookmarks.map(&:title) }
 
   describe '.all' do
     it 'returns all bookmarks wrapped in bookmarks instances' do
-      bm1 = Bookmark.create('https://online.lloydsbank.co.uk1', 'Lloyds1')
-      bm2 = Bookmark.create('https://online.lloydsbank.co.uk1', 'Lloyds2')
+      bm1 = Bookmark.create('https://online.lloydsbank.co.uk1', 'Lloyds1', @user.id)
+      bm2 = Bookmark.create('https://online.lloydsbank.co.uk1', 'Lloyds2', @user.id)
       expect(bookmarks).to eq [bm1, bm2]
     end
   end
@@ -25,7 +28,7 @@ describe Bookmark do
     end
 
     it 'does not add a new bookmark if it is not a valid url' do
-      Bookmark.create 'not a real bookmark', 'Not real title hehehe'
+      Bookmark.create 'not a real bookmark', 'Not real title hehehe', @user.id
       expect(titles).not_to include 'Not real title hehehe'
       expect(urls).not_to include 'not a real bookmark'
     end
@@ -73,7 +76,7 @@ describe Bookmark do
 
   describe '#comments' do
     it 'returns all the comments for that particular bookmark ID' do
-      bm = Bookmark.create('https://test_comments.com', 'BM with comments')
+      bm = Bookmark.create('https://test_comments.com', 'BM with comments', @user.id)
 
       comment1 = Comment.create('I am comment1 for this BM ID', bm.id)
       comment2 = Comment.create('I am comment2 for this BM ID', bm.id)
