@@ -58,7 +58,7 @@ class BookmarkManager < Sinatra::Base
   # <editor-fold desc="Bookmarks">
   get '/user/:id/bookmarks' do
     @user = User.find(session[:user_id])
-    @bookmarks = Bookmark.all
+    @bookmarks = @user.bookmarks
     erb :'bookmarks/index'
   end
 
