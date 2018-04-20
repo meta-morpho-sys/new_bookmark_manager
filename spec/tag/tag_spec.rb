@@ -20,17 +20,20 @@ describe Tag do
   end
 
   describe '#bookmarks' do
-    # let(:bm1) { double :bookmark_netflix }
-    # let(:bm2) { double :bookmark_odeon }
-
     it 'returns all the BMs for that particular tag ID' do
-      bm1 = Bookmark.create('https://www.netflix.com', 'Netflix')
-      bm2 = Bookmark.create('https://www.odeon.com', 'Odeon')
+      user1 = User.create('test@example', 'password123')
+      user2 = User.create('test2@example', 'password1')
+      bm1 = Bookmark.create('https://www.netflix.com', 'Netflix', user1.id)
+      bm2 = Bookmark.create('https://www.odeon.com', 'Odeon', user1.id)
+      bm3 = Bookmark.create('https://www.cora.com', 'Cora', user2.id)
       tag = Tag.create'Movies'
+      tag2 = Tag.create'Magic'
       BookmarkTag.create(bm1.id, tag.id)
       BookmarkTag.create(bm2.id, tag.id)
+      BookmarkTag.create(bm3.id, tag2.id)
 
       expect(tag.bookmarks).to include bm1, bm2
+      expect(tag2.bookmarks).to include bm3
     end
   end
 
