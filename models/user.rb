@@ -1,19 +1,19 @@
 # frozen_string_literal: true
 
 require 'bcrypt'
+
 # Interacts with the  DB to persist user data
 class User
-  attr_reader :id, :email, :password
+  attr_reader :id, :email
 
-  def initialize(id, email, password)
+  def initialize(id, email)
     @id = id
     @email = email
-    @password = password
   end
 
   # TODO: look into how to merge this with initialize, using keyword args ** ?
   def self.wrap(user)
-    User.new(user['id'], user['email'], user['password'])
+    User.new(user['id'], user['email'])
   end
 
   def self.all

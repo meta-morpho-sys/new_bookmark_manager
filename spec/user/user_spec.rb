@@ -18,7 +18,7 @@ describe User do
     end
 
     it "encrypts user's password" do
-      expect(BCrypt::Password).to receive(:create).with('pswd123')
+      expect(BCrypt::Password).to receive(:create).with('pswd123').and_return 'blah'
       User.create('unit@test.com', 'pswd123')
     end
   end
