@@ -19,6 +19,7 @@
     }
 </script>
 </head>
+
 <body>
 <h2>Sign up</h2>
 <div class="intro">
@@ -31,5 +32,9 @@
     <input type="submit" title="submit" value="Sign me up!">
   </form>
 </div>
+<div class="intro">
+  <%= flash[:notice] %>
+</div>
+
 </body>
 </html>

@@ -26,7 +26,6 @@ class BookmarkManager < Sinatra::Base
 
   post '/sessions' do
     user = User.authenticate(params[:email], params[:password])
-
     if user
       session[:user_id] = user.id
       redirect "/user/#{user.id}/bookmarks"
@@ -49,8 +48,14 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/users' do
-    user = User.create(params[:email], params[:password])
-    session[:user_id] = user.id
+    begin
+      user = User.create(params[:email], params[:password])
+      session[:user_id] = user.id
+    rescue PG::UniqueViolation
+      flash[:notice] = 'This address is already used, choose another.'
+      redirect '/users/new'
+    end
+
     redirect "/user/#{user.id}/bookmarks"
   end
   # </editor-fold>
