@@ -10,12 +10,21 @@ describe Tag do
     end
   end
 
+  describe '.get_existing_tag' do
+    it 'fetches the tag if it already exists in the DB' do
+      tag1 = Tag.create('Health and Well-being')
+      # # Tag.create('Health and Well-being')
+      # expect { Tag.create('Health and Well-being') }.to raise_error 'Duplicate tag'
+      fetched_tag = Tag.get_existing_tag('Health and Well-being')
+      expect(fetched_tag.id).to eq tag1.id
+    end
+  end
+
   describe '.find' do
     it 'finds a specific tag' do
-      tag = Tag.create 'Fun and movies'
       found_tag = Tag.find(tag.id)
       expect(found_tag.id).to eq tag.id
-      expect(found_tag.content).to eq 'Fun and movies'
+      expect(found_tag.content).to eq 'Health and Well-being'
     end
   end
 
@@ -26,7 +35,6 @@ describe Tag do
       bm1 = Bookmark.create('https://www.netflix.com', 'Netflix', user1.id)
       bm2 = Bookmark.create('https://www.odeon.com', 'Odeon', user1.id)
       bm3 = Bookmark.create('https://www.cora.com', 'Cora', user2.id)
-      tag = Tag.create'Movies'
       tag2 = Tag.create'Magic'
       BookmarkTag.create(bm1.id, tag.id)
       BookmarkTag.create(bm2.id, tag.id)
@@ -39,8 +47,8 @@ describe Tag do
 
   describe '#==' do
     example 'two Tags are equal if their IDs match' do
-      tag1 = Tag.new(1,'Business')
-      tag2 = Tag.new(1,'Business')
+      tag1 = Tag.new(1, 'Business')
+      tag2 = Tag.new(1, 'Business')
       expect(tag1).to eq tag2
     end
   end

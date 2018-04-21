@@ -26,15 +26,25 @@ class Tag
       SQLStrings::INSERT_TAGS_CONTENT,
       [content]
     )
-    make(result[0])
+    wrap(result[0])
+  end
+
+  def self.get_existing_tag(identifier)
+    result = DbConnector.query("SELECT
+                                    *
+                                FROM
+                                    tags
+                                WHERE
+                                    content ILIKE '#{identifier}'")
+    result.map { |tag| wrap(tag) }.first
   end
 
   def self.find(id)
     result = DbConnector.query("SELECT * FROM tags WHERE id='#{id}'")
-    result.map { |tag| make(tag) }.first
+    result.map { |tag| wrap(tag) }.first
   end
 
-  def self.make(tag)
+  def self.wrap(tag)
     Tag.new(tag['id'], tag['content'])
   end
 end

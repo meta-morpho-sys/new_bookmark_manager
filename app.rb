@@ -138,10 +138,17 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/tags/new' do
-    user = User.find(session[:user_id])
-    tag = Tag.create(params[:content])
-    BookmarkTag.create(params[:id], tag.id)
-    flash[:notice] = "**#{params[:content]}** tag successfully created!"
+    begin
+      user = User.find(session[:user_id])
+      tag = Tag.create(params[:content])
+      BookmarkTag.create(params[:id], tag.id)
+      flash[:notice] = "'#{params[:content]}' tag successfully created"
+    rescue PG::UniqueViolation
+      flash[:notice] = 'This tag already exists!When you are done\
+ with the logic take me and my test out, please!!!'
+      # here my Tag gets fetched if it already exists in the DB
+    end
+
     redirect "/user/#{user.id}/bookmarks"
   end
 
