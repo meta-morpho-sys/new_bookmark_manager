@@ -5,15 +5,12 @@ require 'bcrypt'
 feature 'User adds a bookmark' do
 
   scenario 'a specific BM is added to a specific user account' do
-
     user1 = User.create('test@example.com', 'password123')
 
     login(user1)
-
     expect(current_path).to eq "/user/#{user1.id}/bookmarks"
 
     Bookmark.create('https://online.lloydsbank.co.uk', 'Lloyds', user1.id)
-
     click_button 'Add'
 
     expect(page).to have_content 'Lloyds'
