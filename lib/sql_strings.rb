@@ -4,7 +4,7 @@ class SQLStrings
   CREATE_TABLE_BOOKMARKS = 'CREATE TABLE IF NOT EXISTS bookmarks (
                               id SERIAL PRIMARY KEY,
                               url VARCHAR(1000) NOT NULL,
-                              title VARCHAR(100) NOT NULL UNIQUE
+                              title VARCHAR(100) NOT NULL UNIQUE,
                               user_id int REFERENCES users (id) ON DELETE CASCADE
                               )'
   CREATE_TABLE_USERS = 'CREATE TABLE IF NOT EXISTS users (
@@ -19,7 +19,7 @@ class SQLStrings
                               )'
   CREATE_TABLE_TAGS = 'CREATE TABLE IF NOT EXISTS tags (
                               id SERIAL PRIMARY KEY,
-                              content VARCHAR(250) NOT NULL
+                              content VARCHAR(250) NOT NULL UNIQUE
                               )'
   CREATE_TABLE_COMMENTS = 'CREATE TABLE IF NOT EXISTS comments (
                               id SERIAL PRIMARY KEY,
@@ -56,23 +56,23 @@ class SQLStrings
                                             RETURNING
                                                 id, text'
 
-  SELECT_JOIN_TAG_ID = "SELECT
+  SELECT_JOIN_TAG_ID = 'SELECT
                           tags.id, content
                        FROM
                           bookmarks_tags
                        INNER JOIN tags
                        ON tags.id = bookmarks_tags.tg_id
                        WHERE
-                          bookmarks_tags.bm_id = $1"
+                          bookmarks_tags.bm_id = $1'
 
-  SELECT_JOIN_BKMARK_ID = "SELECT
+  SELECT_JOIN_BKMARK_ID = 'SELECT
                               bookmarks.id, title, url
                            FROM
                               bookmarks_tags
                            INNER JOIN bookmarks
                            ON bookmarks.id = bookmarks_tags.bm_id
                            WHERE
-                              bookmarks_tags.tg_id = $1"
+                              bookmarks_tags.tg_id = $1'
 
   UPDATE_BKMARKS_TTL_URL_ID = 'UPDATE
                                 bookmarks
