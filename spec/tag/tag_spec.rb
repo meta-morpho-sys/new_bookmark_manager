@@ -10,12 +10,12 @@ describe Tag do
     end
   end
 
-  describe '.get_existing_tag' do
+  describe '.fetch_existing_tag' do
     it 'fetches the tag if it already exists in the DB' do
       tag1 = Tag.create('Health and Well-being')
       # # Tag.create('Health and Well-being')
       # expect { Tag.create('Health and Well-being') }.to raise_error 'Duplicate tag'
-      fetched_tag = Tag.get_existing_tag('Health and Well-being')
+      fetched_tag = Tag.fetch_existing_tag('Health and Well-being')
       expect(fetched_tag.id).to eq tag1.id
     end
   end

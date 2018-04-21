@@ -29,7 +29,7 @@ class Tag
     wrap(result[0])
   end
 
-  def self.get_existing_tag(identifier)
+  def self.fetch_existing_tag(identifier)
     result = DbConnector.query("SELECT
                                     *
                                 FROM

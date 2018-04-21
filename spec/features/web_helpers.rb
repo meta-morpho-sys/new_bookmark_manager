@@ -15,3 +15,14 @@ def login(user)
   fill_in('password', with: 'password123')
   click_button 'Sign me in'
 end
+
+def add_tag(bookmark)
+  within "#bookmark-#{bookmark.id}" do
+    click_link 'Add tag'
+  end
+
+  expect(current_path).to eq "/bookmarks/#{bookmark.id}/tags"
+
+  fill_in(:content, with: 'Fun')
+  click_button 'Submit'
+end

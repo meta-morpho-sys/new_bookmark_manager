@@ -4,20 +4,12 @@ feature 'Tags are unique' do
   scenario 'a tag can have one name only' do
     user = User.create('test@example', 'password123')
     bm = Bookmark.create('https://www.netflix.com', 'Neflix', user.id)
+    bm2 = Bookmark.create('https://www.odeon.com', 'Odeon', user.id)
+
     login user
+    add_tag(bm)
+    add_tag(bm2)
 
-    2.times {
-      within "#bookmark-#{bm.id}" do
-        click_link 'Add tag'
-      end
-
-      expect(current_path).to eq "/bookmarks/#{bm.id}/tags"
-      expect(page).to have_content 'Bookmark: Neflix'
-
-      fill_in(:content, with: 'Fun')
-      click_button 'Submit'
-    }
-    expect(page).to have_content 'This tag already exists!When you are done\
- with the logic take me and my test out, please!!!'
+    expect(page).to have_content "'Fun' tag successfully assigned"
   end
 end
