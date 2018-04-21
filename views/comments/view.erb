@@ -15,10 +15,10 @@
 <table>
   <tr>
     <td> Bookmark:
-      <a href="<%= @bookmark.title %>">
+      <p <%= @bookmark.title %>>
         <%= @bookmark.url if @bookmark.title.nil? %>
         <%= @bookmark.title %>
-      </a>
+      </p>
     </td>
   </tr>
 </table>
@@ -29,7 +29,7 @@
           <p>No comments here yet, would you like to leave one?</p>
           <form class="intro" action="/bookmarks/comments/new" method="post">
             <input type="hidden" name="id" value="<%= params[:id] %>">
-            <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
+            <textarea name="text" rows="5" cols="50" placeholder="Leave your comment." autofocus></textarea>
             <input type="submit" value="Submit">
           </form>
     </tr>

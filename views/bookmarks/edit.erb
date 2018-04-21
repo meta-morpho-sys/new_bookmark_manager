@@ -19,7 +19,7 @@
   <form action="/bookmarks/<%= @bookmark.id %>/update" method="post">
     <input type="hidden" name="_method" value="PATCH">
     <label>New URL</label>
-    <input type="text" name="new_url"  title="new url" size="50" value="<%= @bookmark.url %>">
+    <input type="text" name="new_url"  title="new url" size="50" value="<%= @bookmark.url %>" autofocus>
     <label>New title</label>
     <input type="text" name="new_title" title="new_title" size="50" value="<%= @bookmark.title %>">
     <input type="submit" value="Confirm the edit">

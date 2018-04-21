@@ -26,7 +26,7 @@
 <div class="intro">
   <form action="/bookmarks/comments/new" method="post">
     <input type="hidden" name="id" value="<%= @bookmark.id %>">
-    <textarea name="text" rows="5" cols="50" placeholder="Leave your comment."></textarea>
+    <textarea name="text" rows="5" cols="50" placeholder="Leave your comment." autofocus></textarea>
     <input type="submit" value="Submit">
   </form>
 
