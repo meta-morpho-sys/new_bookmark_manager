@@ -73,11 +73,11 @@ class BookmarkManager < Sinatra::Base
     begin
       user = User.find(session[:user_id])
       bookmark = Bookmark.create(params[:url], params[:title], session[:user_id])
-      flash[:notice] = MessageStrings::VALID_URL unless bookmark
+      flash[:notice] = MsgStrings::VALID_URL unless bookmark
     rescue PG::UniqueViolation
-      flash[:notice] = MessageStrings::DUPLICATE_TITLE
+      flash[:notice] = MsgStrings::DUPLICATE_TITLE
     rescue StandardError
-      flash[:notice] = MessageStrings::GENERIC_DB_ERROR
+      flash[:notice] = MsgStrings::GENERIC_DB_ERROR
     end
     redirect "/user/#{user.id}/bookmarks"
   end
@@ -85,7 +85,7 @@ class BookmarkManager < Sinatra::Base
   delete '/bookmarks/:id/delete' do
     user = User.find(session[:user_id])
     Bookmark.delete(params[:id])
-    flash[:notice] = MessageStrings::BKMARK_DELETED.call(params[:title])
+    flash[:notice] = MsgStrings::BKMARK_DELETED.call(params[:title])
     redirect "/user/#{user.id}/bookmarks"
   end
 

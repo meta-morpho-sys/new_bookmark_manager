@@ -13,6 +13,6 @@ feature 'Deleting a bookmark' do
     end
 
     expect(current_path).to eq "/user/#{user.id}/bookmarks"
-    expect(page).to have_content 'Bookmark **Lloyds** was successfully deleted!'
+    expect(page).to have_content MsgStrings::BKMARK_DELETED.call(bm.title)
   end
 end
