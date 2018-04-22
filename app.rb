@@ -9,10 +9,12 @@ require './models/comment'
 require './models/tag'
 require './models/bookmark_tag'
 require './db_connection_setup.rb'
+# require './lib/message_strings'
 
 # Controller
 class BookmarkManager < Sinatra::Base
   enable :sessions
+  set :session_secret, ENV.fetch('SESSION_SECRET') { SecureRandom.hex(20) }
   register Sinatra::Flash
 
   get '/' do
@@ -71,12 +73,11 @@ class BookmarkManager < Sinatra::Base
     begin
       user = User.find(session[:user_id])
       bookmark = Bookmark.create(params[:url], params[:title], session[:user_id])
-      flash[:notice] = 'You must submit a valid URL.' unless bookmark
+      flash[:notice] = MessageStrings::VALID_URL unless bookmark
     rescue PG::UniqueViolation
-      flash[:notice] = 'That title is already taken, choose another.'
+      flash[:notice] = MessageStrings::DUPLICATE_TITLE
     rescue StandardError
-      flash[:notice] = 'Something went wrong with the database. \
-                        This sometimes happens, please try again.'
+      flash[:notice] = MessageStrings::GENERIC_DB_ERROR
     end
     redirect "/user/#{user.id}/bookmarks"
   end
@@ -84,7 +85,7 @@ class BookmarkManager < Sinatra::Base
   delete '/bookmarks/:id/delete' do
     user = User.find(session[:user_id])
     Bookmark.delete(params[:id])
-    flash[:notice] = "Bookmark **#{params[:title]}** was successfully deleted!"
+    flash[:notice] = MessageStrings::BKMARK_DELETED.call(params[:title])
     redirect "/user/#{user.id}/bookmarks"
   end
 
@@ -102,8 +103,7 @@ class BookmarkManager < Sinatra::Base
     rescue PG::UniqueViolation
       flash[:notice] = 'That title is already taken, choose another.'
     rescue StandardError
-      flash[:notice] = 'Something went wrong with the database. \
-                        This sometimes happens, please try again.'
+      flash[:notice] = GENERIC_DB_ERROR
     end
     redirect "/user/#{user.id}/bookmarks"
   end
@@ -148,7 +148,6 @@ class BookmarkManager < Sinatra::Base
       BookmarkTag.create(params[:id], fetched_tag.id)
       flash[:notice] = "'#{params[:content]}' tag successfully assigned"
     end
-
     redirect "/user/#{user.id}/bookmarks"
   end
 
