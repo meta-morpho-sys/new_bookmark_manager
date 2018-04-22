@@ -35,7 +35,7 @@ class Tag
                                 FROM
                                     tags
                                 WHERE
-                                    content ILIKE '#{identifier}'")
+                                    content ILIKE '%#{identifier}%'")
     result.map { |tag| wrap(tag) }.first
   end
 

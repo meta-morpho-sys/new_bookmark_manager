@@ -13,10 +13,17 @@ describe Tag do
   describe '.fetch_existing_tag' do
     it 'fetches the tag if it already exists in the DB' do
       tag1 = Tag.create('Health and Well-being')
-      # # Tag.create('Health and Well-being')
-      # expect { Tag.create('Health and Well-being') }.to raise_error 'Duplicate tag'
       fetched_tag = Tag.fetch_existing_tag('Health and Well-being')
       expect(fetched_tag.id).to eq tag1.id
+    end
+
+    it 'fetches the tag even if partial name is given' do
+      tag1 = Tag.create('Health and Well-being')
+      fetched_tag = Tag.fetch_existing_tag('Health ')
+      fetched_tag2 = Tag.fetch_existing_tag('-being')
+
+      expect(fetched_tag.id).to eq tag1.id
+      expect(fetched_tag2.id).to eq tag1.id
     end
   end
 
