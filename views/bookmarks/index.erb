@@ -12,7 +12,7 @@
 </head>
   <div>
     <% if @user %>
-      <h2>Welcome, <%= @user.email %></h2>
+      <h1>Welcome, <%= @user.email %></h1>
     <% end %>
   </div>
 
@@ -38,11 +38,12 @@
 
 <div class="bookmarks">
   <table>
+
   <tr>
-    <th id="manage" colspan="2">Manage</th>
-    <th id="bm_title">Bookmark title</th>
-    <th id="comments" colspan="2">Comments</th>
-    <th id="tags" colspan="2">Tags</th>
+    <th id="manage" colspan="2"><h2>Manage</h2></th>
+    <th id="bm_title"><h2>Bookmark title</h2></th>
+    <th id="comments" colspan="2"><h2>Comments</h2></th>
+    <th id="tags" colspan="2"><h2>Tags</h2></th>
   </tr>
 
     <% @bookmarks.each do |bookmark| %>

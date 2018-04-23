@@ -2,7 +2,7 @@
 
 class MsgStrings
 
-  BACK_LINK = 'Back to bookmarks'
+  BACK_LINK = 'Back to Bookmarks'
   BKMARK_DELETED = ->(bm_id) { "Bookmark #{bm_id} was successfully deleted." }
   DUPLICATE_ADDRESS = 'This address is already used, choose another.'
   DUPLICATE_TITLE = 'That title is already taken, choose another.'

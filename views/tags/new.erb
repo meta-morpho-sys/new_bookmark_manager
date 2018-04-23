@@ -29,8 +29,11 @@
       <textarea name="content" rows="5" cols="50" placeholder="Tag" autofocus autocomplete="on"></textarea>
       <input type="submit" title="submit" value="Submit">
     </form>
-
-    <a href="/user/<%= @user.id%>/bookmarks"><%= MsgStrings::BACK_LINK %></a>
   </div>
+
+<footer>
+  <a href="/user/<%= @user.id%>/bookmarks"><%= MsgStrings::BACK_LINK %></a>
+</footer>
+
 </body>
 </html>
