@@ -19,7 +19,7 @@ feature 'Viewing bookmarks' do
 
   scenario 'a user can see the bookmarks filtered by tag' do
     user = User.create('test@example', 'password123')
-    bm = Bookmark.create('https://www.netflix.com', 'Neflix', user.id)
+    bm = Bookmark.create('https://www.netflix.com', 'Netflix', user.id)
     tag = Tag.create 'Movies and fun'
     BookmarkTag.create(bm.id, tag.id)
     login user
