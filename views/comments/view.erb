@@ -14,11 +14,10 @@
 
 <table>
   <tr>
-    <td> Bookmark:
-      <p <%= @bookmark.title %>>
-        <%= @bookmark.url if @bookmark.title.nil? %>
-        <%= @bookmark.title %>
-      </p>
+    <td> <h3>Bookmark:<%= @bookmark.title %>
+      <%= @bookmark.url if @bookmark.title.nil? %>
+    </h3>
+
     </td>
   </tr>
 </table>
