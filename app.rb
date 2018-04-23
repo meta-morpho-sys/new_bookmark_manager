@@ -9,7 +9,7 @@ require './models/comment'
 require './models/tag'
 require './models/bookmark_tag'
 require './db_connection_setup.rb'
-# require './lib/message_strings'
+require './lib/msg_strings'
 
 # Controller
 class BookmarkManager < Sinatra::Base
@@ -39,7 +39,8 @@ class BookmarkManager < Sinatra::Base
 
   post '/user/:id/sessions/destroy' do
     session.clear
-    flash[:notice] = 'You successfully signed out'
+
+    flash[:notice] = MsgStrings::SIGN_OUT
     redirect '/'
   end
   # </editor-fold>
@@ -54,7 +55,7 @@ class BookmarkManager < Sinatra::Base
       user = User.create(params[:email], params[:password])
       session[:user_id] = user.id
     rescue PG::UniqueViolation
-      flash[:notice] = 'This address is already used, choose another.'
+      flash[:notice] = MsgStrings::DUPLICATE_ADDRESS
       redirect '/users/new'
     end
 
@@ -99,9 +100,9 @@ class BookmarkManager < Sinatra::Base
     begin
       bookmark = Bookmark.update(params[:id], params['new_url'], params['new_title'])
       user = User.find(session[:user_id])
-      flash[:notice] = 'You must submit a valid URL' unless bookmark
+      flash[:notice] = MsgStrings::VALID_URL unless bookmark
     rescue PG::UniqueViolation
-      flash[:notice] = 'That title is already taken, choose another.'
+      flash[:notice] = MsgStrings::DUPLICATE_TITLE
     rescue StandardError
       flash[:notice] = GENERIC_DB_ERROR
     end
@@ -142,11 +143,11 @@ class BookmarkManager < Sinatra::Base
       user = User.find(session[:user_id])
       tag = Tag.create(params[:content])
       BookmarkTag.create(params[:id], tag.id)
-      flash[:notice] = "'#{params[:content]}' tag successfully created"
+      flash[:notice] = MsgStrings::TAG_CREATED.call(params[:content])
     rescue PG::UniqueViolation
       fetched_tag = Tag.fetch_existing_tag(params[:content])
       BookmarkTag.create(params[:id], fetched_tag.id)
-      flash[:notice] = "'#{params[:content]}' tag successfully assigned"
+      flash[:notice] = MsgStrings::TAG_ASSIGNED.call(params[:content])
     end
     redirect "/user/#{user.id}/bookmarks"
   end
