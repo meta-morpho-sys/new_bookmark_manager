@@ -2,8 +2,7 @@
 
 require_relative 'app'
 
-#
-ENV['SESSION_SECRET'] = 'WC1BoCWzHAzsB962ZLXVfNg6SOc='
+# ENV['SESSION_SECRET'] = 'WC1BoCWzHAzsB962ZLXVfNg6SOc='
 
 use Rack::MethodOverride
 
