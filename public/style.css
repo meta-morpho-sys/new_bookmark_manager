@@ -7,7 +7,7 @@ html {
 body { 
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
-	color: #c461b6;
+	color: #73ad21;
 	background: url(flower-pencil-4.jpg);
 	background-color: #ffeaf3;
 	margin: 0; 
@@ -28,12 +28,12 @@ a:link {
 a:visited {
 	font-weight: lighter;
 	text-decoration: none;
-	color: #b73aa6d1;
-	}
+	color: #c461b6;
+}
 a:hover, a:focus, a:active {
 	text-decoration: underline;
-	color: #e4254c;
-	}
+	color: #73ad2180;
+}
 
 .container {
 	width: 90%;
@@ -146,7 +146,14 @@ th, td {
 	margin:	20px;
 	text-align: center;
 	border-radius: 30%;
-	border-color: #73ad2180;
+	border-width: 2px;
+	border-color: #73ad21d1;
+}
+
+.intro #button {
+	background-color: #bc77ba70;
+	font-weight: bold;
+	color: #6f6e6edb;
 }
 
 .home {
@@ -161,3 +168,4 @@ th, td {
 .home td {
 	width: 50%;
 }
+

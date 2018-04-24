@@ -14,37 +14,40 @@
 
 <table>
   <tr>
-    <td> <h3>Bookmark:<%= @bookmark.title %>
+    <td>
+      <h3>Bookmark:  <%= @bookmark.title %>
       <%= @bookmark.url if @bookmark.title.nil? %>
     </h3>
-
     </td>
   </tr>
 </table>
 
-<table>
-    <tr>
-      <% if @comments.empty? %>
-          <p>No comments here yet, would you like to leave one?</p>
-          <form class="intro" action="/bookmarks/comments/new" method="post">
-            <input type="hidden" name="id" value="<%= params[:id] %>">
-            <textarea name="text" rows="5" cols="50" placeholder="Leave your comment." autofocus></textarea>
-            <input type="submit" value="Submit">
-          </form>
-    </tr>
-      <% else %>
 
-      <tr>
-        <th>Your comments</th>
-      </tr>
-        <% @comments.each do |comment| %>
-      <tr <%= comment.id %>>
-        <td style="text-align: left" >
-            <%= comment.text %>
-          <% end %>
-        </td>
-      </tr>
-    <% end %>
+<% if @comments.empty? %>
+  <div class="intro" >
+    <h4>No comments here yet, would you like to leave one?</h4>
+    <form action="/bookmarks/comments/new" method="post">
+      <input type="hidden" name="id" value="<%= params[:id] %>">
+      <textarea name="text" rows="5" cols="50" placeholder="Leave your comment." autofocus></textarea>
+      <input id="button" title="submit" type="submit" value="Submit">
+    </form>
+
+  </div>
+
+<table>
+    <% else %>
+
+  <tr>
+    <th><h3>Your comments:</h3></th>
+  </tr>
+    <% @comments.each do |comment| %>
+  <tr <%= comment.id %>>
+    <td style="text-align: left" >
+        <%= comment.text %>
+      <% end %>
+    </td>
+  </tr>
+  <% end %>
 </table>
 
 <footer>

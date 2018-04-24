@@ -14,11 +14,11 @@
 
 <table>
   <tr>
-    <td> Bookmark:
-      <a href="<%= @bookmark.title %>">
-        <%= @bookmark.url if @bookmark.title.nil? %>
-        <%= @bookmark.title %>
-      </a>
+    <td>
+      <h3>Bookmark:<%= @bookmark.title %>
+      <%= @bookmark.url if @bookmark.title.nil? %>
+      </h3>
+
     </td>
   </tr>
 </table>
@@ -27,7 +27,7 @@
   <form action="/bookmarks/comments/new" method="post">
     <input type="hidden" name="id" value="<%= @bookmark.id %>">
     <textarea name="text" rows="5" cols="50" placeholder="Leave your comment." autofocus></textarea>
-    <input type="submit" value="Submit">
+    <input id="button" title="submit" type="submit" value="Submit">
   </form>
 </div>
 

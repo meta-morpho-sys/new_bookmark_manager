@@ -14,20 +14,19 @@
 
 <table>
   <tr>
-    <td> Bookmark:
-      <a href="<%= @bookmark.title %>">
-        <%= @bookmark.url if @bookmark.title.nil? %>
-        <%= @bookmark.title %>
-      </a>
+    <td>
+      <h3>Bookmark:  <%= @bookmark.title %>
+      <%= @bookmark.url if @bookmark.title.nil? %>
+      </h3>
     </td>
-      </tr>
- </table>
+  </tr>
+</table>
 
   <div class="intro">
     <form action="/bookmarks/tags/new" method="post">
       <input type="hidden" name="id" value="<%= @bookmark.id %>">
       <textarea name="content" rows="5" cols="50" placeholder="Tag" autofocus autocomplete="on"></textarea>
-      <input type="submit" title="submit" value="Submit">
+      <input id="button" type="submit" title="submit" value="Submit">
     </form>
   </div>
 
