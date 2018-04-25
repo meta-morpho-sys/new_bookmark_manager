@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" />
   <link rel="shortcut icon" type="image/png" href="/favicon-32x32.png" />
-
   <title>Bookmarks</title>
 </head>
+
+<body>
   <div>
     <% if @user %>
       <h1>Welcome, <%= @user.email %></h1>
     <% end %>
   </div>
 
-<div class=intro >
-  <form action="sessions/destroy" method="post">
-    <input id="button" title="sign out"  type="submit" value="Sign out">
-  </form>
-</div>
+  <div class=intro >
+    <form action="sessions/destroy" method="post">
+      <input id="button" title="sign out"  type="submit" value="Sign out">
+    </form>
+    </div>
 
   <div class="intro">
     <form action="/bookmarks/new" method="post">
@@ -30,56 +32,56 @@
       <input type="text" name="title" required size="50" maxlength="100" placeholder="Give a title to your bookmark">
       <input id="button" type="submit" name="new_bookmark" title="add" value="Add">
     </form>
-  </div>
+    </div>
 
-<div class="intro">
-  <%= flash[:notice] %>
-</div>
+  <div class="intro">
+    <%= flash[:notice] %>
+    </div>
 
-<div class="bookmarks">
-  <table>
+  <div class="bookmarks">
+      <table>
 
-  <tr>
-    <th id="manage" colspan="2"><h2>Manage</h2></th>
-    <th id="bm_title"><h2>Bookmark title</h2></th>
-    <th id="comments" colspan="2"><h2>Comments</h2></th>
-    <th id="tags" colspan="2"><h2>Tags</h2></th>
-  </tr>
+      <tr>
+        <th id="manage" colspan="2"><h2>Manage</h2></th>
+        <th id="bm_title"><h2>Bookmark title</h2></th>
+        <th id="comments" colspan="2"><h2>Comments</h2></th>
+        <th id="tags" colspan="2"><h2>Tags</h2></th>
+      </tr>
 
-    <% @bookmarks.each do |bookmark| %>
-    <tr id="bookmark-<%= bookmark.id %>">
-      <td><a class="edit" href="/bookmarks/<%= bookmark.id %>/edit" title="edit">Edit</a></td>
+        <% @bookmarks.each do |bookmark| %>
+        <tr id="bookmark-<%= bookmark.id %>">
+          <td><a class="edit" href="/bookmarks/<%= bookmark.id %>/edit" title="edit">Edit</a></td>
 
-      <td>
-        <form action="/bookmarks/<%= bookmark.id %>/delete" method="post">
-        <input type="hidden" name="_method" value="DELETE">
-        <input type="hidden" name="title" value="<%= bookmark.title %>">
-        <input class="delete" type="submit" title="delete" value="Delete">
-      </form>
-      </td>
+          <td>
+            <form action="/bookmarks/<%= bookmark.id %>/delete" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="hidden" name="title" value="<%= bookmark.title %>">
+            <input class="delete" type="submit" title="delete" value="Delete">
+          </form>
+          </td>
 
-      <td>
-        <a href="<%= bookmark.url %>" target="_blank">
-          <%= bookmark.url if bookmark.title.nil? %>
-          <%= bookmark.title %>
-        </a>
-      </td>
+          <td>
+            <a href="<%= bookmark.url %>" target="_blank">
+              <%= bookmark.url if bookmark.title.nil? %>
+              <%= bookmark.title %>
+            </a>
+          </td>
 
-      <td><a class="comment" href="/bookmarks/<%= bookmark.id %>/comments" title="comment">Comment</a></td>
+          <td><a class="comment" href="/bookmarks/<%= bookmark.id %>/comments" title="comment">Comment</a></td>
 
-      <td><a class="view" href="/bookmark/<%= bookmark.id %>/comments/view" title="view comments">View</a></td>
+          <td><a class="view" href="/bookmark/<%= bookmark.id %>/comments/view" title="view comments">View</a></td>
 
-      <td><a class="tag" href="/bookmarks/<%= bookmark.id %>/tags" title="add tag">Add tag</a></td>
+          <td><a class="tag" href="/bookmarks/<%= bookmark.id %>/tags" title="add tag">Add tag</a></td>
 
-      <td>
-        <% bookmark.tags.each do |tag| %>
-        <a href="/tags/<%= tag.id %>/bookmarks"><%= tag.content %></a>
+          <td>
+            <% bookmark.tags.each do |tag| %>
+            <a href="/tags/<%= tag.id %>/bookmarks"><%= tag.content %></a>
+            <% end %>
+          </td>
+        </tr>
         <% end %>
-      </td>
-    </tr>
-    <% end %>
-  </table>
-
-</div>
+      </table>
+    </div>
+</body>
 
 </html>

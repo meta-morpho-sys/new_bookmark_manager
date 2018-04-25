@@ -4,6 +4,7 @@ ENV['RACK_ENV'] = 'test'
 
 require 'capybara'
 require 'capybara/rspec'
+require 'pg_tester'
 require 'rspec'
 require 'selenium-webdriver'
 require 'simplecov'
@@ -19,6 +20,9 @@ RSpec.configure do |config|
   end
 end
 
+RSpec.configure do |config|
+  config.order = :random
+end
 
 # require our Sinatra app file
 require File.join(File.dirname(__FILE__), '..', 'app.rb')

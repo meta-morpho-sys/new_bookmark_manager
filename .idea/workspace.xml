@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/misc/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/misc/postgres_manager.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/misc/postgresql_manager_spec.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/misc/user_db_spec.rb" />
       <change beforePath="$PROJECT_DIR$/.idea/new_bookmark_manager.iml" afterPath="$PROJECT_DIR$/.idea/new_bookmark_manager.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/lib/db_connector.rb" afterPath="$PROJECT_DIR$/lib/db_connector.rb" />
       <change beforePath="$PROJECT_DIR$/lib/sql_strings.rb" afterPath="$PROJECT_DIR$/lib/sql_strings.rb" />
       <change beforePath="$PROJECT_DIR$/public/style.css" afterPath="$PROJECT_DIR$/public/style.css" />
       <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
@@ -762,14 +755,7 @@
       <workItem from="1523398230395" duration="66847000" />
       <workItem from="1523884409546" duration="68075000" />
       <workItem from="1524146738581" duration="57816000" />
-      <workItem from="1524486055677" duration="33965000" />
-    </task>
-    <task id="LOCAL-00010" summary="Method authenticate user - happy case.">
-      <created>1523983057340</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1523983057340</updated>
+      <workItem from="1524486055677" duration="34027000" />
     </task>
     <task id="LOCAL-00011" summary="Sign out form.">
       <created>1524003584175</created>
@@ -1107,7 +1093,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524570368806</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Trying out 'pg_tester'">
+      <created>1524660533886</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1524660533887</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1143,7 +1136,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482323000" />
+    <option name="totallyTimeSpent" value="482385000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1211,7 +1204,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrected the line separator" />
     <MESSAGE value="More robust tests" />
     <MESSAGE value="Test for  displaying BMs for a specific user only." />
     <MESSAGE value="DRYed out login helper method" />
@@ -1236,7 +1228,8 @@
     <MESSAGE value="App secured with session secret." />
     <MESSAGE value="Deleted secure session key from config.ru" />
     <MESSAGE value="Styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling" />
+    <MESSAGE value="Trying out 'pg_tester'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying out 'pg_tester'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

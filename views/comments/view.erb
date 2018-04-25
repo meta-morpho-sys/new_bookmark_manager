@@ -6,20 +6,19 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" />
   <link rel="shortcut icon" type="image/png" href="/favicon-32x32.png" />
-
   <title>Comments view</title>
 </head>
 
 <body>
 
-<table>
-  <tr>
-    <td>
-      <h3>Bookmark:  <%= @bookmark.title %>
-      <%= @bookmark.url if @bookmark.title.nil? %>
-    </h3>
-    </td>
-  </tr>
+  <table>
+    <tr>
+      <td>
+        <h3>Bookmark:  <%= @bookmark.title %>
+          <%= @bookmark.url if @bookmark.title.nil? %>
+        </h3>
+      </td>
+    </tr>
 </table>
 
 
@@ -34,8 +33,8 @@
 
   </div>
 
-<table>
-    <% else %>
+  <table>
+<% else %>
 
   <tr>
     <th><h3>Your comments:</h3></th>
@@ -50,7 +49,7 @@
   <% end %>
 </table>
 
-<footer>
+  <footer>
   <a href="/user/<%= @user.id %>/bookmarks"><%= MsgStrings::BACK_LINK %></a>
 </footer>
 

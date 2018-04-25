@@ -36,7 +36,7 @@ class SQLStrings
                                             RETURNING
                                                 id, content'
 
-  INSERT_USERS_EML_PSWD_RETURN = 'INSERT INTO users (email, password)
+  INSERT_USERS_EML_PSWD_RETURN = 'INSERT INTO users (email, password_hash)
                                                 VALUES ($1, $2)
                                             RETURNING
                                                 id, email'

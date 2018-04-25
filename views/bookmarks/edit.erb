@@ -7,15 +7,10 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" />
   <link rel="shortcut icon" type="image/png" href="/favicon-32x32.png" />
-
   <title>Edit bookmark</title>
-
 </head>
 
-
-
 <div class="intro">
-
   <form action="/bookmarks/<%= @bookmark.id %>/update" method="post">
     <input type="hidden" name="_method" value="PATCH">
     <label>New URL</label>
@@ -24,11 +19,10 @@
     <input type="text" name="new_title" title="new_title" size="50" value="<%= @bookmark.title %>">
     <input id="button" title="confirm the edit" type="submit" value="Confirm the edit">
   </form>
+</div>
 
   <footer>
     <a href="/user/<%= @user.id %>/bookmarks"><%= MsgStrings::BACK_LINK %></a>
   </footer>
-
-</div>
 
 </html>
