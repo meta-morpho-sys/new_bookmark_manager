@@ -57,7 +57,7 @@ namespace :db do
     db_names = %w[new_bookmark_manager new_bookmark_manager_test]
 
     db_names.each do |db_name|
-      connection = PG.connect(dbname: db_name)
+      connection = PG.connect
       connection.exec("DROP DATABASE #{db_name}")
     end
   end
