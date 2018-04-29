@@ -35,8 +35,6 @@ GEM
     parser (2.5.1.0)
       ast (~> 2.4.0)
     pg (0.21.0)
-    pg_tester (0.1.0)
-      pg (~> 0.18, >= 0.18.2)
     powerpack (0.1.1)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -110,9 +108,9 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   capybara
+  coderay
   launchy
   pg
-  pg_tester
   pry
   rake
   rspec

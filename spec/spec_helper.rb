@@ -4,7 +4,6 @@ ENV['RACK_ENV'] = 'test'
 
 require 'capybara'
 require 'capybara/rspec'
-require 'pg_tester'
 require 'rspec'
 require 'selenium-webdriver'
 require 'simplecov'

@@ -3,7 +3,7 @@
 require 'pg_tester'
 require './models/postgres_manager'
 
-describe PostgresqlManager do
+xdescribe PostgresqlManager do
   describe '.create' do
     psql = PgTester.new(
       database: 'new_bookmark_manager_test2',

@@ -4,7 +4,7 @@ require 'pg_tester'
 require './models/user'
 
 
-describe User do
+xdescribe User do
   psql = PgTester.new(
     database: 'new_bookmark_manager_test2',
     user: 'yuliya'

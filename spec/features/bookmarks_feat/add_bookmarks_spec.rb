@@ -24,7 +24,6 @@ feature 'Adding bookmarks' do
     end
   end
 
-
   scenario 'only valid urls can be added' do
     fill_in 'url', with: 'not a real bookmark'
     fill_in 'title', with: 'not a real bookmark'
