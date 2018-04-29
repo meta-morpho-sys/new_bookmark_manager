@@ -35,8 +35,8 @@ namespace :db do
 
     db_names.each do |db_name|
       create_if_needed(db_name)
-      puts 'Creating tables...'
       connection = PG.connect(dbname: db_name)
+      puts 'Creating tables...'
       sql_constants.each do |const|
         connection.exec(const)
       end
