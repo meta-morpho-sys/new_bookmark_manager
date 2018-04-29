@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class SQLStrings
+module SQLStrings
   CREATE_TABLE_BOOKMARKS = 'CREATE TABLE IF NOT EXISTS bookmarks (
                               id SERIAL PRIMARY KEY,
                               url VARCHAR(1000) NOT NULL,
