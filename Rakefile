@@ -24,7 +24,6 @@ namespace :db do
     include SQLStrings
 
     puts "Looking for existing databases...\n\n"
-
     db_names = %w[new_bookmark_manager new_bookmark_manager_test]
     sql_constants = [
       CREATE_TABLE_USERS,
@@ -36,10 +35,12 @@ namespace :db do
 
     db_names.each do |db_name|
       create_if_needed(db_name)
+      puts 'Creating tables...'
       connection = PG.connect(dbname: db_name)
       sql_constants.each do |const|
         connection.exec(const)
       end
+      puts "Tasks completed.\n\n"
     end
   end
 
