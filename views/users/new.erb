@@ -24,12 +24,18 @@
 <h2>Sign up</h2>
 <div class="intro">
   <form action="/users" method="post">
-    <label>Email</label>
-    <input type="email" name="email" required size="50" title="email" autofocus>
-    <label>Password</label>
-    <input id="pswdInput" type="password" name="password" required size="50" title="password">
-    <input class="view_psw" type="button" onclick="showPswd()">
-    <input type="submit" title="submit" value="Sign me up!">
+    <div class="form">
+        <label for="email" class="title">Email</label>
+        <input type="email" name="email" required size="40" title="email" autofocus>
+    </div>
+    <div class="form">
+        <input class="view_psw" type="button" onclick="showPswd()">
+        <label for="password" class="title">Password</label>
+        <input id="pswdInput" type="password" name="password" required size="40" title="password">
+    </div>
+    <div class="button">
+          <input type="submit" title="submit" value="Sign me up!">
+    </div>
   </form>
 </div>
 <div class="intro">

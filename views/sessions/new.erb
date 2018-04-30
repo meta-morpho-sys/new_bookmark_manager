@@ -27,12 +27,18 @@
 <h2>Sign in</h2>
 <div class="intro">
   <form action="/sessions" method="post">
-    <label>Email</label>
-    <input type="email" name="email" required size="50" title="email" autofocus autocomplete="on">
-    <label>Password</label>
-    <input id="pswdInput" type="password" name="password" required size="50" title="password">
-    <input class="view_psw" type="button" onclick="showPswd()">
+    <div class="form">
+      <label for="email" class="title">Email</label>
+      <input type="email" name="email" required size="40" title="email" autofocus>
+    </div>
+    <div class="form">
+      <input class="view_psw" type="button" onclick="showPswd()">
+      <label for="password" class="title">Password</label>
+      <input id="pswdInput" type="password" name="password" required size="40" title="password">
+    </div>
+    <div class="button">
     <input id="button" type="submit" title="submit" value="Sign me in">
+    </div>
   </form>
 </div>
 
