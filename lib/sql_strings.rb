@@ -82,12 +82,4 @@ module SQLStrings
                                 url = $2
                             WHERE
                                 id = $1'
-
-  DELETE_DUPL_ROWS = 'DELETE
-                      FROM
-                          bookmarks_tags a
-                              USING bookmarks_tags b
-                      WHERE
-                          a.bt_id > b.bt_id
-                          AND a.tg_id = b.tg_id;'
 end
