@@ -17,8 +17,8 @@ class BookmarkTag
   end
 
   def self.exists?(bm_id, tg_id)
-    res = DbConnector.query("SELECT count(*) FROM bookmarks_tags WHERE bm_id = #{bm_id} AND tg_id = #{tg_id}")
+    res = DbConnector.query_params(SQLStrings::COUNT_BKMARK_TAG_PAIR,
+                                   [bm_id, tg_id])
     p res[0]['count'] == '1'
-    # result.map { |bt| BookmarkTag.new(bt['bt_id']) } == '1'
   end
 end

@@ -32,6 +32,13 @@ module SQLStrings
   TRUNCATE_TABLES = 'TRUNCATE users, comments, tags, bookmarks_tags, bookmarks'
 
 
+  COUNT_BKMARK_TAG_PAIR = 'SELECT
+                              count(*)
+                          FROM
+                              bookmarks_tags
+                          WHERE
+                              bm_id = $1
+                              AND tg_id = $2'
   INSERT_TAGS_CONTENT = 'INSERT INTO tags (content)
                                                 VALUES ($1)
                                             RETURNING
@@ -56,6 +63,7 @@ module SQLStrings
                                                 VALUES ($1, $2)
                                             RETURNING
                                                 id, text'
+
 
   SELECT_JOIN_TAG_ID = 'SELECT
                           tags.id, content
