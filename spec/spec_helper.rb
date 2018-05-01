@@ -2,14 +2,11 @@
 
 ENV['RACK_ENV'] = 'test'
 
-require 'capybara'
-require 'capybara/rspec'
-require 'rspec'
-require 'selenium-webdriver'
-require 'simplecov'
-require 'simplecov-console'
+Bundler.require(:default, ENV['RACK_ENV'].to_sym)
 require 'features/web_helpers'
-require 'rake'
+
+# require our Sinatra app file
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 Rake.application.load_rakefile
 
@@ -22,9 +19,6 @@ end
 RSpec.configure do |config|
   config.order = :random
 end
-
-# require our Sinatra app file
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 # Setting up driver to communicate with HTML forms with  RESTful routes.
 Capybara.register_driver :rack_test do |app|

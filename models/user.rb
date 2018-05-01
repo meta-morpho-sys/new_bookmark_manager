@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require 'bcrypt'
-
-# Interacts with the  DB to persist user data
+# Interacts with the  DB to persist user data; uses the BCRYPT gem
+# for authentication
 class User
   attr_reader :id, :email
 
