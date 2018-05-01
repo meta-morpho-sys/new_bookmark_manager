@@ -15,7 +15,8 @@ module SQLStrings
   CREATE_TABLE_BOOKMARK_TAGS = 'CREATE TABLE IF NOT EXISTS bookmarks_tags (
                               bt_id SERIAL PRIMARY KEY,
                               bm_id int REFERENCES bookmarks (id) ON DELETE CASCADE,
-                              tg_id int REFERENCES tags (id) ON DELETE CASCADE
+                              tg_id int REFERENCES tags (id) ON DELETE CASCADE,
+                              CONSTRAINT unique_tag UNIQUE(bm_id, tg_id)
                               )'
   CREATE_TABLE_TAGS = 'CREATE TABLE IF NOT EXISTS tags (
                               id SERIAL PRIMARY KEY,
@@ -81,4 +82,12 @@ module SQLStrings
                                 url = $2
                             WHERE
                                 id = $1'
+
+  DELETE_DUPL_ROWS = 'DELETE
+                      FROM
+                          bookmarks_tags a
+                              USING bookmarks_tags b
+                      WHERE
+                          a.bt_id > b.bt_id
+                          AND a.tg_id = b.tg_id;'
 end
