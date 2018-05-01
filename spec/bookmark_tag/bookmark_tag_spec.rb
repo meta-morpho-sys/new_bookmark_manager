@@ -17,4 +17,14 @@ describe BookmarkTag do
       expect(bm_tag2).not_to be_nil
     end
   end
+
+  describe '#exists?' do
+    example "we don't want the same tag to be assigned twice to the same bm" do
+      user = User.create('test@example', 'password123')
+      bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy', user.id)
+      tag = Tag.create('Health and Well-being')
+      BookmarkTag.create(bm.id, tag.id)
+      expect(BookmarkTag.exists?(bm.id, tag.id)).to eq true
+    end
+  end
 end
