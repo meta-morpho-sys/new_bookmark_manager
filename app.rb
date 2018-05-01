@@ -142,12 +142,16 @@ class BookmarkManager < Sinatra::Base
     begin
       user = User.find(session[:user_id])
       tag = Tag.create(params[:content])
-      BookmarkTag.create(params[:id], tag.id)
+      BookmarkTag.create(params[:bm_id], tag.id)
       flash[:notice] = MsgStrings::TAG_CREATED.call(params[:content])
     rescue PG::UniqueViolation
       fetched_tag = Tag.fetch_existing_tag(params[:content])
-      BookmarkTag.create(params[:id], fetched_tag.id)
-      flash[:notice] = MsgStrings::TAG_ASSIGNED.call(params[:content])
+      if BookmarkTag.exists?(params[:bm_id], fetched_tag.id)
+        flash[:notice] = 'This tag has been already assigned'
+      else
+        BookmarkTag.create(params[:bm_id], fetched_tag.id)
+        flash[:notice] = MsgStrings::TAG_ASSIGNED.call(params[:content])
+      end
     end
     redirect "/user/#{user.id}/bookmarks"
   end
