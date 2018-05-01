@@ -3,6 +3,7 @@
 require './lib/db_connector'
 require_relative 'db_helpers'
 require './lib/sql_strings'
+require 'pg'
 
 task default: :help
 
@@ -60,6 +61,7 @@ namespace :db do
       connection = PG.connect
       connection.exec("DROP DATABASE #{db_name}")
     end
+    puts '*** Databases destroyed successfully ***.'
   end
 end
 
