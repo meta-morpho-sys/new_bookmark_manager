@@ -24,7 +24,7 @@
 
   <div class="intro">
     <form action="/bookmarks/tags/new" method="post">
-      <input type="hidden" name="id" value="<%= @bookmark.id %>">
+      <input type="hidden" name="bm_id" value="<%= @bookmark.id %>">
       <textarea name="content" rows="5" cols="50" placeholder="Tag" autofocus autocomplete="on"></textarea>
       <input id="button" type="submit" title="submit" value="Submit">
     </form>
