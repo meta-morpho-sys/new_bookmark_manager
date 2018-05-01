@@ -24,7 +24,7 @@ class Tag
   def self.create(content)
     result = DbConnector.query_params(
       SQLStrings::INSERT_TAGS_CONTENT,
-      [content]
+      [content.capitalize]
     )
     wrap(result[0])
   end

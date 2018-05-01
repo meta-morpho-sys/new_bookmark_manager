@@ -8,6 +8,11 @@ describe Tag do
     it 'adds a new tag to the bookmark' do
       expect(tag.id).not_to be_nil
     end
+
+    it "evens out user's input" do
+      consistent_tag = Tag.create('fUn')
+      expect(consistent_tag.content).to eq 'Fun'
+    end
   end
 
   describe '.fetch_existing_tag' do
