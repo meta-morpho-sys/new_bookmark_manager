@@ -19,6 +19,6 @@ class BookmarkTag
   def self.exists?(bm_id, tg_id)
     res = DbConnector.query_params(SQLStrings::COUNT_BKMARK_TAG_PAIR,
                                    [bm_id, tg_id])
-    p res[0]['count'] == '1'
+    res[0]['count'] == '1'
   end
 end

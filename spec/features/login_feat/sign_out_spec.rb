@@ -12,7 +12,7 @@ feature 'Destroying a session' do
     click_button 'Sign me in'
 
     click_button 'Sign out'
-    expect(current_path).to eq '/'
+    expect(current_path).to eq '/login/home'
 
     expect(page).not_to have_content 'Welcome, test@example.com'
     expect(page).to have_content 'You successfully signed out'

@@ -8,7 +8,7 @@ feature 'Creating a new session' do
     visit '/'
     click_link 'Sign in'
 
-    expect(current_path).to eq '/sessions/new'
+    expect(current_path).to eq '/login'
 
     fill_in('email', with: 'test@example.com')
     fill_in('password', with: 'password123')

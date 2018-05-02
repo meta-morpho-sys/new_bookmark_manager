@@ -36,7 +36,7 @@ describe Tag do
     it 'finds a specific tag' do
       found_tag = Tag.find(tag.id)
       expect(found_tag.id).to eq tag.id
-      expect(found_tag.content).to eq 'Health and Well-being'
+      expect(found_tag.content).to eq 'Health and well-being'
     end
   end
 
