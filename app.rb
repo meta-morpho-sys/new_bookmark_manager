@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-# require 'sinatra/base'
-# require 'sinatra/flash'
-# require 'uri'
 require './models/user'
 require './models/bookmark'
 require './models/comment'
@@ -17,23 +14,33 @@ class BookmarkManager < Sinatra::Base
   set :session_secret, ENV.fetch('SESSION_SECRET') { SecureRandom.hex(20) }
   register Sinatra::Flash
 
+  before do
+    if request.path_info.split('/')[1] != 'login' && session[:user_id].nil?
+      redirect '/login/home'
+    end
+  end
+
   get '/' do
+    redirect '/login/home'
+  end
+
+  get '/login/home' do
     erb :home
   end
 
-  # <editor-fold desc="Sessions">
-  get '/sessions/new' do
+  # <editor-fold desc="Login and sessions">
+  get '/login' do
     erb :'sessions/new'
   end
 
-  post '/sessions' do
+  post '/login' do
     user = User.authenticate(params[:email], params[:password])
     if user
       session[:user_id] = user.id
       redirect "/user/#{user.id}/bookmarks"
     else
       flash[:notice] = 'You must have entered a wrong email or password!'
-      redirect '/sessions/new'
+      redirect '/login'
     end
   end
 
@@ -46,19 +53,18 @@ class BookmarkManager < Sinatra::Base
   # </editor-fold>
 
   # <editor-fold desc="Users">
-  get '/users/new' do
+  get '/login/users/new' do
     erb :'users/new'
   end
 
-  post '/users' do
+  post '/login/users' do
     begin
       user = User.create(params[:email], params[:password])
       session[:user_id] = user.id
     rescue PG::UniqueViolation
       flash[:notice] = MsgStrings::DUPLICATE_ADDRESS
-      redirect '/users/new'
+      redirect '/login/users/new'
     end
-
     redirect "/user/#{user.id}/bookmarks"
   end
   # </editor-fold>
