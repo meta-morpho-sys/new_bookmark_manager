@@ -1,11 +1,21 @@
 # Bookmark Manager
 
-##### App developed during [Makers Academy](https://www.makersacademy.com/) course for the purpose of studying of the Sinatra framework, Databases and ORM.
+##### App developed during [Makers Academy](https://www.makersacademy.com/) course for the purpose of studying the Sinatra framework, Databases and ORM. The focus on this project was build from scratch an ORM tool with the aid of SQL and Ruby to store data in a database, convert it into objects and use it within the app.
 
-With this is an app you can store and display all links that you want to keep within easy reach. 
-
-Add as many bookmarks as you wish, update them, leave comments and assign tags, 
+With app you can store and display all links that you want to keep within easy reach. 
+You can as many bookmarks as you wish, update them, leave comments and assign tags, 
  and when you no longer need your bookmarks, you can easily remove them.
+
+### Technologies used
+App:
+- [Sinatra](https://github.com/sinatra/sinatra) - Quick tool for creating web applications
+- [PG](https://deveiate.org/code/pg/) - The Ruby PostgreSQL Driver
+- [BCrypt](https://rubygems.org/gems/bcrypt/versions/3.1.11) - Security algorithm for hashing passwords
+- [Rake](https://github.com/ruby/rake) - task management and build automation tool
+
+Testing:
+- [RSpec](https://github.com/rspec/rspec) - Behaviour Driven Development for Ruby
+- [Capybara](https://github.com/teamcapybara/capybara/blob/3.0_stable/README.md) - Simulator of how a user interacts with the app.
 
 
 ### Prerequisites
