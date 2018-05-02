@@ -21,10 +21,10 @@ class Tag
     result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
   end
 
-  def self.create(content)
+  def self.create(content, user_id)
     result = DbConnector.query_params(
       SQLStrings::INSERT_TAGS_CONTENT,
-      [content.capitalize]
+      [content.capitalize, user_id]
     )
     wrap(result[0])
   end

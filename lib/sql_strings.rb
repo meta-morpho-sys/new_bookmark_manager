@@ -4,7 +4,7 @@ module SQLStrings
   CREATE_TABLE_BOOKMARKS = 'CREATE TABLE IF NOT EXISTS bookmarks (
                               id SERIAL PRIMARY KEY,
                               url VARCHAR(1000) NOT NULL,
-                              title VARCHAR(100) NOT NULL UNIQUE,
+                              title VARCHAR(100) NOT NULL,
                               user_id int REFERENCES users (id) ON DELETE CASCADE
                               )'
   CREATE_TABLE_USERS = 'CREATE TABLE IF NOT EXISTS users (
@@ -20,7 +20,8 @@ module SQLStrings
                               )'
   CREATE_TABLE_TAGS = 'CREATE TABLE IF NOT EXISTS tags (
                               id SERIAL PRIMARY KEY,
-                              content VARCHAR(250) NOT NULL UNIQUE
+                              content VARCHAR(250) NOT NULL UNIQUE,
+                              user_id int REFERENCES users (id) ON DELETE CASCADE
                               )'
   CREATE_TABLE_COMMENTS = 'CREATE TABLE IF NOT EXISTS comments (
                               id SERIAL PRIMARY KEY,
@@ -39,10 +40,10 @@ module SQLStrings
                           WHERE
                               bm_id = $1
                               AND tg_id = $2'
-  INSERT_TAGS_CONTENT = 'INSERT INTO tags (content)
-                                                VALUES ($1)
+  INSERT_TAGS_CONTENT = 'INSERT INTO tags (content, user_id )
+                                                VALUES ($1, $2)
                                             RETURNING
-                                                id, content'
+                                                id, content, user_id'
 
   INSERT_USERS_EML_PSWD_RETURN = 'INSERT INTO users (email, password_hash)
                                                 VALUES ($1, $2)

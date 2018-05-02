@@ -17,18 +17,25 @@ feature 'Viewing bookmarks' do
   end
 
 
-  scenario 'a user can see the bookmarks filtered by tag' do
+  scenario 'a user can see only his bookmarks when filtered by tag' do
     user = User.create('test@example', 'password123')
+    another_user = User.create('another_user@example', 'password123')
+
     bm = Bookmark.create('https://www.netflix.com', 'Netflix', user.id)
+    another_bm = Bookmark.create('https://www.odeon.com', 'Odeon', another_user.id)
+
     tag = Tag.create 'Movies and fun'
     BookmarkTag.create(bm.id, tag.id)
+    BookmarkTag.create(another_bm.id, tag.id)
+
     login user
 
     within "#bookmark-#{bm.id}" do
       click_link 'Movies and fun'
     end
 
-    expect(current_path).to eq "/tags/#{tag.id}/bookmarks"
+    # expect(current_path).to eq "/tags/#{tag.id}/bookmarks"
+    expect(page).not_to have_content 'Odeon'
     expect(page).to have_content 'Netflix'
   end
 end
