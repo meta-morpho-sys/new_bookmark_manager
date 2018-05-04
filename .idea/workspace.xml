@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0e8f0963-a0e2-46f0-9dcb-850a09ab85d9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lib/sql_strings.rb" afterPath="$PROJECT_DIR$/lib/sql_strings.rb" />
-      <change beforePath="$PROJECT_DIR$/models/tag.rb" afterPath="$PROJECT_DIR$/models/tag.rb" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" afterPath="$PROJECT_DIR$/public/style.css" />
-      <change beforePath="$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb" afterPath="$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/tag/tag_spec.rb" afterPath="$PROJECT_DIR$/spec/tag/tag_spec.rb" />
+      <change beforePath="$PROJECT_DIR$/lib/msg_str.rb" afterPath="$PROJECT_DIR$/lib/msg_str.rb" />
+      <change beforePath="$PROJECT_DIR$/spec/features/bookmarks_feat/deleting_a_bookmark_spec.rb" afterPath="$PROJECT_DIR$/spec/features/bookmarks_feat/deleting_a_bookmark_spec.rb" />
+      <change beforePath="$PROJECT_DIR$/views/bookmarks/edit.erb" afterPath="$PROJECT_DIR$/views/bookmarks/edit.erb" />
+      <change beforePath="$PROJECT_DIR$/views/comments/new.erb" afterPath="$PROJECT_DIR$/views/comments/new.erb" />
+      <change beforePath="$PROJECT_DIR$/views/comments/view.erb" afterPath="$PROJECT_DIR$/views/comments/view.erb" />
+      <change beforePath="$PROJECT_DIR$/views/tags/bookmarks/index.erb" afterPath="$PROJECT_DIR$/views/tags/bookmarks/index.erb" />
+      <change beforePath="$PROJECT_DIR$/views/tags/new.erb" afterPath="$PROJECT_DIR$/views/tags/new.erb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +33,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@User_find__new_bookmark_manager.coverage" NAME="User.find: new_bookmark_manager Coverage Results" MODIFIED="1523889475123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_links__new_bookmark_manager.coverage" NAME="Viewing links: new_bookmark_manager Coverage Results" MODIFIED="1522515821219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_views__new_bookmark_manager.coverage" NAME="All specs in views: new_bookmark_manager Coverage Results" MODIFIED="1523965468849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/views" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@BookmarkTag__new_bookmark_manager.coverage" NAME="BookmarkTag: new_bookmark_manager Coverage Results" MODIFIED="1525176711441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@BookmarkTag__new_bookmark_manager.coverage" NAME="BookmarkTag: new_bookmark_manager Coverage Results" MODIFIED="1525300005222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@unique_tags.coverage" NAME="unique_tags Coverage Results" MODIFIED="1524327714441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec/features/tags_feat" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@comment.coverage" NAME="comment Coverage Results" MODIFIED="1523131887834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_tag__new_bookmark_manager.coverage" NAME="All specs in tag: new_bookmark_manager Coverage Results" MODIFIED="1525206027418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -61,6 +63,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__add_tags_spec___new_bookmark_manager.coverage" NAME="Run spec 'add_tags_spec': new_bookmark_manager Coverage Results" MODIFIED="1524327705235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_bookmarks_feat__new_bookmark_manager.coverage" NAME="All specs in bookmarks_feat: new_bookmark_manager Coverage Results" MODIFIED="1524500284995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@msg.coverage" NAME="msg Coverage Results" MODIFIED="1524401972423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@BookmarkTag_exists__we_don_t_want_the_same_tag_to_be_assigned_twice_to_the_same_bm__new_bookmark_manager.coverage" NAME="BookmarkTag#exists? we don't want the same tag to be assigned twice to the same bm: new_bookmark_manager Coverage Results" MODIFIED="1525299964025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_update__new_bookmark_manager.coverage" NAME="Link.update: new_bookmark_manager Coverage Results" MODIFIED="1522854592564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_delete__new_bookmark_manager.coverage" NAME="Bookmark.delete: new_bookmark_manager Coverage Results" MODIFIED="1523314287815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Tag_get_existing_tag_fetches_the_tag_if_it_already_exists_in_the_DB__new_bookmark_manager.coverage" NAME="Tag.get_existing_tag fetches the tag if it already exists in the DB: new_bookmark_manager Coverage Results" MODIFIED="1524332543187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -86,13 +89,13 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Tags_are_unique_the_same_tag_can_be_assigned_only_once_to_the_same_bm__new_bookmark_manager.coverage" NAME="Tags are unique the same tag can be assigned only once to the same bm: new_bookmark_manager Coverage Results" MODIFIED="1525180159721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Tag_____new_bookmark_manager.coverage" NAME="Tag#==: new_bookmark_manager Coverage Results" MODIFIED="1524230219737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_bookmarks_A_user_can_see_bookmarks__new_bookmark_manager.coverage" NAME="Viewing bookmarks A user can see bookmarks: new_bookmark_manager Coverage Results" MODIFIED="1524145405180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager.coverage" NAME="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager Coverage Results" MODIFIED="1525277327989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_bookmarks__new_bookmark_manager.coverage" NAME="Viewing bookmarks: new_bookmark_manager Coverage Results" MODIFIED="1524147010001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager.coverage" NAME="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager Coverage Results" MODIFIED="1525303483480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_bookmarks__new_bookmark_manager.coverage" NAME="Viewing bookmarks: new_bookmark_manager Coverage Results" MODIFIED="1525299703625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__deleting_a_bookmark_spec___new_bookmark_manager.coverage" NAME="Run spec 'deleting_a_bookmark_spec': new_bookmark_manager Coverage Results" MODIFIED="1523635065464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@All_features_in_spec__new_bookmark_manager.coverage" NAME="All features in spec: new_bookmark_manager Coverage Results" MODIFIED="1523888556323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@User_create_encrypts_user_s_password__new_bookmark_manager.coverage" NAME="User.create encrypts user's password: new_bookmark_manager Coverage Results" MODIFIED="1524080070332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_update_returns_previously_submitted_url_if_no_new_url_is_provided__new_bookmark_manager.coverage" NAME="Link.update returns previously submitted url if no new url is provided: new_bookmark_manager Coverage Results" MODIFIED="1522846362782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@Tag__new_bookmark_manager.coverage" NAME="Tag: new_bookmark_manager Coverage Results" MODIFIED="1525279238839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@Tag__new_bookmark_manager.coverage" NAME="Tag: new_bookmark_manager Coverage Results" MODIFIED="1525279473592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_delete_deletes_a_bookmark__new_bookmark_manager.coverage" NAME="Bookmark.delete deletes a bookmark: new_bookmark_manager Coverage Results" MODIFIED="1523314367439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Viewing_comments_A_user_can_see_comments_to_a_bookmark__new_bookmark_manager.coverage" NAME="Viewing comments A user can see comments to a bookmark: new_bookmark_manager Coverage Results" MODIFIED="1524486934030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__add_links_spec___new_bookmark_manager.coverage" NAME="Run spec 'add_links_spec': new_bookmark_manager Coverage Results" MODIFIED="1522440367087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -121,8 +124,8 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Deleting_links__new_bookmark_manager.coverage" NAME="Deleting links: new_bookmark_manager Coverage Results" MODIFIED="1522315322815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Creating_a_new_session_a_user_can_t_sign_in_if_then_password_is_incorrect__new_bookmark_manager.coverage" NAME="Creating a new session a user can't sign in if then password is incorrect: new_bookmark_manager Coverage Results" MODIFIED="1523984753804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Link_find__new_bookmark_manager.coverage" NAME="Link.find: new_bookmark_manager Coverage Results" MODIFIED="1522875604954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@BookmarkTag_create_creates_a_new_join_between_links_and_tags__new_bookmark_manager.coverage" NAME="BookmarkTag.create creates a new join between links and tags: new_bookmark_manager Coverage Results" MODIFIED="1525174530923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Tag_find__new_bookmark_manager.coverage" NAME="Tag.find: new_bookmark_manager Coverage Results" MODIFIED="1525207606833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@BookmarkTag_create_creates_a_new_join_between_links_and_tags__new_bookmark_manager.coverage" NAME="BookmarkTag.create creates a new join between links and tags: new_bookmark_manager Coverage Results" MODIFIED="1525299922414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@test_database_setup.coverage" NAME="test_database_setup Coverage Results" MODIFIED="1522006112196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_update_does_not_update_a_bookmark_if_it_is_not_valid__new_bookmark_manager.coverage" NAME="Bookmark.update does not update a bookmark if it is not valid: new_bookmark_manager Coverage Results" MODIFIED="1523314478236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@User_create__new_bookmark_manager.coverage" NAME="User.create: new_bookmark_manager Coverage Results" MODIFIED="1523887392470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -158,7 +161,7 @@
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__user_spec___new_bookmark_manager.coverage" NAME="Run spec 'user_spec': new_bookmark_manager Coverage Results" MODIFIED="1524139376703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@BookmarkTag_exists___new_bookmark_manager.coverage" NAME="BookmarkTag#exists?: new_bookmark_manager Coverage Results" MODIFIED="1525180093087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Run_spec__registration_spec___new_bookmark_manager.coverage" NAME="Run spec 'registration_spec': new_bookmark_manager Coverage Results" MODIFIED="1524139478387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
-    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1525221758832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
+    <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_new_bookmark_manager__new_bookmark_manager.coverage" NAME="All specs in new_bookmark_manager: new_bookmark_manager Coverage Results" MODIFIED="1525303488525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@All_specs_in_login_feat__new_bookmark_manager.coverage" NAME="All specs in login_feat: new_bookmark_manager Coverage Results" MODIFIED="1525002197781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Bookmark_update_returns_previously_submitted_url_if_no_new_url_is_provided__new_bookmark_manager.coverage" NAME="Bookmark.update returns previously submitted url if no new url is provided: new_bookmark_manager Coverage Results" MODIFIED="1523314560906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
     <SUITE FILE_PATH="coverage/new_bookmark_manager@Tag_create__evens_out_user_s_input___new_bookmark_manager.coverage" NAME="Tag.create 'evens out user's input': new_bookmark_manager Coverage Results" MODIFIED="1525212983947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="new_bookmark_manager" />
@@ -180,62 +183,7 @@
     <favorites_list name="new_bookmark_manager" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="149" column="39" lean-forward="false" selection-start-line="149" selection-start-column="39" selection-end-line="149" selection-end-column="39" />
-              <folding>
-                <element signature="e#627#668#0" expanded="false" />
-                <element signature="e#1158#1186#0" expanded="false" />
-                <element signature="e#3012#3043#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tag_spec.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/tag/tag_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tag.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/tag.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql_strings.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/sql_strings.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_bookmarks_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -252,8 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }</find>
-      <find>back</find>
       <find>su</find>
       <find>@bookmark</find>
       <find>border-radius</find>
@@ -282,6 +228,8 @@
       <find>'/users/new</find>
       <find>/sessions/new</find>
       <find>/</find>
+      <find>sessions/new</find>
+      <find>@user</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -300,8 +248,8 @@
       <replace>required</replace>
       <replace>href=&quot;/bookmarks&quot;&gt;Back to bookmarks!</replace>
       <replace>wrap</replace>
-      <replace>/login</replace>
       <replace>/login/home</replace>
+      <replace>/login</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/views/comments</dir>
@@ -316,12 +264,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/msg.rb" />
-        <option value="$PROJECT_DIR$/spec/features/bookmarks_feat/deleting_a_bookmark_spec.rb" />
         <option value="$PROJECT_DIR$/lib/message_strings.rb" />
         <option value="$PROJECT_DIR$/lib/msg_with_enum.rb" />
         <option value="$PROJECT_DIR$/views/comments/view.erb" />
-        <option value="$PROJECT_DIR$/views/tags/bookmarks/index.erb" />
         <option value="$PROJECT_DIR$/views/comments/new.erb" />
         <option value="$PROJECT_DIR$/models/postgres_manager.rb" />
         <option value="$PROJECT_DIR$/spec/postgresql_manager_spec.rb" />
@@ -336,21 +281,14 @@
         <option value="$PROJECT_DIR$/db_connection_setup.rb" />
         <option value="$PROJECT_DIR$/misc/postgresql_manager_spec.rb" />
         <option value="$PROJECT_DIR$/misc/user_db_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/msg_strings.rb" />
         <option value="$PROJECT_DIR$/views/bookmarks/edit.erb" />
-        <option value="$PROJECT_DIR$/views/bookmarks/index.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/models/user.rb" />
         <option value="$PROJECT_DIR$/lib/db_connector.rb" />
         <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/models/bookmark.rb" />
-        <option value="$PROJECT_DIR$/views/tags/new.erb" />
         <option value="$PROJECT_DIR$/db_helpers.rb" />
-        <option value="$PROJECT_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/login_feat/autentication_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/tags_feat/unique_tags_spec.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/views/sessions/new.erb" />
         <option value="$PROJECT_DIR$/app2.rb" />
@@ -360,13 +298,23 @@
         <option value="$PROJECT_DIR$/spec/features/login_feat/sign_out_spec.rb" />
         <option value="$PROJECT_DIR$/models/bookmark_tag.rb" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/spec/features/users_feat/user_sees_bmks_per_tag.rb" />
-        <option value="$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb" />
         <option value="$PROJECT_DIR$/lib/sql_strings.rb" />
         <option value="$PROJECT_DIR$/models/tag.rb" />
         <option value="$PROJECT_DIR$/spec/tag/tag_spec.rb" />
+        <option value="$PROJECT_DIR$/models/bookmark.rb" />
+        <option value="$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/msg_strings.rb" />
+        <option value="$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb" />
+        <option value="$PROJECT_DIR$/views/bookmarks/index.erb" />
+        <option value="$PROJECT_DIR$/spec/features/tags_feat/add_tags_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/tags_feat/unique_tags_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/views/tags/new.erb" />
+        <option value="$PROJECT_DIR$/views/tags/bookmarks/index.erb" />
       </list>
     </option>
   </component>
@@ -552,13 +500,6 @@
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="bookmarks_feat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="tags_feat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -573,6 +514,29 @@
               <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
               <item name="tag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_bookmark_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_bookmark_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -615,39 +579,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Tag: new_bookmark_manager">
-    <configuration name="All specs in features: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="new_bookmark_manager" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec/features" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-    </configuration>
+  <component name="RunManager" selected="RSpec.All specs in new_bookmark_manager: new_bookmark_manager">
     <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
@@ -680,7 +612,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
     </configuration>
-    <configuration name="Tag: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="BookmarkTag: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -699,10 +631,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/tag/tag_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Tag" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="BookmarkTag" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -712,7 +644,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
     </configuration>
-    <configuration name="User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="BookmarkTag.create creates a new join between links and tags: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="new_bookmark_manager" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -730,11 +662,43 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/users_feat/user_adds_bookmarks_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User adds a bookmark a user can't see other user's bookmarks" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="BookmarkTag.create creates a new join between links and tags" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+    </configuration>
+    <configuration name="BookmarkTag#exists? we don't want the same tag to be assigned twice to the same bm: new_bookmark_manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="new_bookmark_manager" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="BookmarkTag#exists? we don't want the same tag to be assigned twice to the same bm" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -799,18 +763,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.All specs in features: new_bookmark_manager" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Tag: new_bookmark_manager" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.BookmarkTag.create creates a new join between links and tags: new_bookmark_manager" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.BookmarkTag#exists? we don't want the same tag to be assigned twice to the same bm: new_bookmark_manager" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.BookmarkTag: new_bookmark_manager" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Tag: new_bookmark_manager" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
         <item index="1" class="java.lang.String" itemvalue="RSpec.Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.All specs in new_bookmark_manager: new_bookmark_manager" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.All specs in features: new_bookmark_manager" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.User adds a bookmark a user can't see other user's bookmarks: new_bookmark_manager" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.BookmarkTag: new_bookmark_manager" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.BookmarkTag#exists? we don't want the same tag to be assigned twice to the same bm: new_bookmark_manager" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.BookmarkTag.create creates a new join between links and tags: new_bookmark_manager" />
       </list>
     </recent_temporary>
   </component>
@@ -837,35 +801,7 @@
       <workItem from="1523398230395" duration="66847000" />
       <workItem from="1523884409546" duration="68075000" />
       <workItem from="1524146738581" duration="57816000" />
-      <workItem from="1524486055677" duration="128462000" />
-    </task>
-    <task id="LOCAL-00034" summary="DRYed out login helper method">
-      <created>1524233594373</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1524233594373</updated>
-    </task>
-    <task id="LOCAL-00035" summary="User can see only his book marks">
-      <created>1524235185849</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1524235185849</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Favicon">
-      <created>1524265122293</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1524265122293</updated>
-    </task>
-    <task id="LOCAL-00037" summary="BMs are viewed per user">
-      <created>1524265215583</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1524265215583</updated>
+      <workItem from="1524486055677" duration="147534000" />
     </task>
     <task id="LOCAL-00038" summary="Handled PG exception on unique email address">
       <created>1524266465717</created>
@@ -1182,43 +1118,71 @@
       <option name="project" value="LOCAL" />
       <updated>1525275357321</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Feature - Tags show BMKS only for specific user.">
+      <created>1525279348268</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1525279348268</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Deleted redundant test">
+      <created>1525469239013</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1525469239013</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Refactoring - before block">
+      <created>1525469273308</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1525469273309</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Tags have user id">
+      <created>1525469706066</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1525469706066</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.05.02 at 01h 39m 34s.xml">
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.05.03 at 00h 15m 22s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.05.02 at 01h 41m 11s.xml">
+    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.05.03 at 00h 24m 56s.xml">
       <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.05.02 at 01h 42m 02s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 17m 18s.xml">
+      <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_new_bookmark_manager__new_bookmark_manager - 2018.05.02 at 01h 42m 47s.xml">
-      <configuration name="All specs in new_bookmark_manager: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 19m 04s.xml">
+      <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Tag__new_bookmark_manager - 2018.05.02 at 17h 32m 42s.xml">
-      <configuration name="Tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 19m 43s.xml">
+      <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Tag__new_bookmark_manager - 2018.05.02 at 17h 33m 08s.xml">
-      <configuration name="Tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 22m 29s.xml">
+      <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Tag__new_bookmark_manager - 2018.05.02 at 17h 34m 44s.xml">
-      <configuration name="Tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 22m 48s.xml">
+      <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Tag__new_bookmark_manager - 2018.05.02 at 17h 40m 15s.xml">
-      <configuration name="Tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 23m 08s.xml">
+      <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Tag__new_bookmark_manager - 2018.05.02 at 17h 40m 41s.xml">
-      <configuration name="Tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 23m 27s.xml">
+      <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.02 at 17h 08m 50s.xml">
+    <history-entry file="Viewing_bookmarks_a_user_can_see_only_his_bookmarks_when_filtered_by_tag__new_bookmark_manager - 2018.05.03 at 00h 24m 45s.xml">
       <configuration name="Viewing bookmarks a user can see only his bookmarks when filtered by tag: new_bookmark_manager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576820000" />
+    <option name="totallyTimeSpent" value="595892000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1237,12 +1201,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32694763" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31111112" sideWeight="0.50906" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26819924" sideWeight="0.4914163" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52618134" sideWeight="0.49093997" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29501915" sideWeight="0.49093997" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.48569384" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26466382" sideWeight="0.49042144" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3090129" sideWeight="0.49042144" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32592592" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1596829" sideWeight="0.49553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13733906" sideWeight="0.5095785" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39591315" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1286,10 +1250,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Centralising the messages strings." />
-    <MESSAGE value="App secured with session secret." />
-    <MESSAGE value="Deleted secure session key from config.ru" />
-    <MESSAGE value="Trying out 'pg_tester'" />
     <MESSAGE value="Styling" />
     <MESSAGE value="Fixed a bug." />
     <MESSAGE value="Tidying up." />
@@ -1311,95 +1271,19 @@
     <MESSAGE value="Checking the validity of the user's session before executing the route." />
     <MESSAGE value="Tests adapted for the validation of the user's session." />
     <MESSAGE value="Final update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final update" />
+    <MESSAGE value="Feature - Tags show BMKS only for specific user." />
+    <MESSAGE value="Deleted redundant test" />
+    <MESSAGE value="Refactoring - before block" />
+    <MESSAGE value="Tags have user id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tags have user id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="66" />
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/support/db.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/user_db_specc.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/postgresql_manager_specc.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_connection_setup.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs24/object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="347" column="8" lean-forward="false" selection-start-line="347" selection-start-column="8" selection-end-line="347" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/bcrypt-3.1.11/lib/bcrypt/password.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/pg-0.21.0/lib/pg.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/bookmarks/edit.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/comments/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/launchy-2.4.3/lib/launchy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-291">
@@ -1440,58 +1324,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/msg_strings.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/tags/bookmarks/index.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/bookmarks/index.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-411">
-          <caret line="37" column="15" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/tags_feat/add_tags_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/sinatra-2.0.1/lib/sinatra/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="1041" column="0" lean-forward="false" selection-start-line="1041" selection-start-column="0" selection-end-line="1041" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1512,34 +1348,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/login_feat/autentication_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/bookmark.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/tags_feat/unique_tags_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1576,34 +1388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/sessions/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1659,54 +1447,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/web_helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="149" column="39" lean-forward="false" selection-start-line="149" selection-start-column="39" selection-end-line="149" selection-end-column="39" />
-          <folding>
-            <element signature="e#627#668#0" expanded="false" />
-            <element signature="e#1158#1186#0" expanded="false" />
-            <element signature="e#3012#3043#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/tags/new.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1719,18 +1463,233 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/tag.rb">
+    <entry file="file://$PROJECT_DIR$/spec/bookmark_tag/bookmark_tag_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="22">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/bookmark/bookmark_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="89" column="44" lean-forward="false" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/tag/tag_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="900">
+          <caret line="60" column="7" lean-forward="false" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/add_bookmarks_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/bookmark.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/mustermann-1.0.2/lib/mustermann/ast/validation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/mustermann-1.0.2/lib/mustermann/ast/translator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/ruby/2.4.1_1/lib/ruby/2.4.0/delegate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/ruby/gems/2.4.0/gems/sinatra-2.0.1/lib/sinatra/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21920">
+          <caret line="1627" column="0" lean-forward="false" selection-start-line="1627" selection-start-column="0" selection-end-line="1627" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/web_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/bookmarks_feat/view_bookmarks_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/user/user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/tag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="43" column="67" lean-forward="false" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/tags_feat/unique_tags_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="6" lean-forward="false" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/tags_feat/add_tags_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/bookmarks/edit.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/comments/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/comments/view.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tags/new.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/bookmarks/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="152" column="17" lean-forward="false" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+          <folding>
+            <element signature="e#2654#2685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tags/bookmarks/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/New Bookmark Manager Transition Diagram">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/New Bookmark Manager Transition Diagram.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/msg_str.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class MsgStrings
+class MsgStr
 
   BACK_LINK = 'Back to Bookmarks'
   BACK_SIGN_UP = 'Back to Sign up'
