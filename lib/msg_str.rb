@@ -6,7 +6,6 @@ class MsgStrings
   BACK_SIGN_UP = 'Back to Sign up'
   BKMARK_DELETED = ->(bm_id) { "Bookmark #{bm_id} was successfully deleted." }
   DUPLICATE_ADDRESS = 'This address is already used, choose another.'
-  DUPLICATE_TITLE = 'That title is already taken, choose another.'
   GENERIC_DB_ERROR = 'Something went wrong with the database. \
                         This sometimes happens, please try again.'
   SIGN_OUT = 'You successfully signed out'
