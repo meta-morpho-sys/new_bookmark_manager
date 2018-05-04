@@ -24,7 +24,8 @@ feature 'Viewing bookmarks' do
     bm = Bookmark.create('https://www.netflix.com', 'Netflix', user.id)
     another_bm = Bookmark.create('https://www.odeon.com', 'Odeon', another_user.id)
 
-    tag = Tag.create 'Movies and fun'
+    tag = Tag.create 'Movies and fun', user.id
+
     BookmarkTag.create(bm.id, tag.id)
     BookmarkTag.create(another_bm.id, tag.id)
 
@@ -34,7 +35,7 @@ feature 'Viewing bookmarks' do
       click_link 'Movies and fun'
     end
 
-    # expect(current_path).to eq "/tags/#{tag.id}/bookmarks"
+    expect(current_path).to eq "/tags/#{tag.id}/bookmarks"
     expect(page).not_to have_content 'Odeon'
     expect(page).to have_content 'Netflix'
   end

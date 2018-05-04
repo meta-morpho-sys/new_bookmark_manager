@@ -86,8 +86,8 @@ describe Bookmark do
 
   describe '#tags' do
     it 'returns all the tags associated with that particular BM ID' do
-      tag1 = Tag.create'Business'
-      tag2 = Tag.create 'Personal'
+      tag1 = Tag.create'Business', @user.id
+      tag2 = Tag.create 'Personal', @user.id
       BookmarkTag.create(bm.id, tag1.id)
       BookmarkTag.create(bm.id, tag2.id)
 

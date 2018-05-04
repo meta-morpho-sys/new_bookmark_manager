@@ -29,7 +29,7 @@ class Bookmark
 
   def tags
     result = DbConnector.query_params(SQLStrings::SELECT_JOIN_TAG_ID, [id])
-    result.map { |tag| Tag.new(tag['id'], tag['content']) }
+    result.map { |tag| Tag.new(tag['id'], tag['content'], tag['user_id']) }
   end
 
   def self.all

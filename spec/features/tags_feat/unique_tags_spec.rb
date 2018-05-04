@@ -13,7 +13,7 @@ feature 'Tags are unique' do
     expect(page).to have_content "'Fun' tag successfully assigned"
   end
 
-  scenario 'the same tag can be assigned only once to the same bm' do
+  scenario 'the same tag id can be assigned only once to the same bm' do
     user = User.create('test@example', 'password123')
     bm1 = Bookmark.create('https://www.netflix.com', 'Neflix', user.id)
 

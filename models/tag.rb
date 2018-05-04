@@ -4,9 +4,10 @@
 class Tag
   attr_reader :id, :content
 
-  def initialize(id, content)
+  def initialize(id, content, user_id)
     @id = id
     @content = content
+    @user_id = user_id
   end
 
   def ==(other)
@@ -45,6 +46,6 @@ class Tag
   end
 
   def self.wrap(tag)
-    Tag.new(tag['id'], tag['content'])
+    Tag.new(tag['id'], tag['content'], tag['user_id'])
   end
 end
