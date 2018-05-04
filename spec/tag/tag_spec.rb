@@ -5,9 +5,16 @@ require_relative '../../models/tag'
 describe Tag do
   subject(:user) { User.create('test_tag@example', 'password123') }
   subject(:tag) { Tag.create('Health and Well-being', user.id) }
+
   describe '.create' do
     it 'adds a new tag to the bookmark' do
       expect(tag.id).not_to be_nil
+    end
+
+    it 'is assigned to a specific user' do
+      another_user = User.create('another_test_tag@example', 'password123')
+      expect(tag.user_id).to eq user.id
+      expect(tag.user_id).not_to eq another_user.id
     end
 
     it "evens out user's input" do
@@ -19,7 +26,7 @@ describe Tag do
   describe '.fetch_existing_tag' do
     it 'fetches the tag if it already exists in the DB' do
       tag1 = Tag.create('Health and Well-being', user.id)
-      fetched_tag = Tag.fetch_existing_tag('Health and Well-being')
+      fetched_tag = Tag.fetch_existing_tag('Health and well-being')
       expect(fetched_tag.id).to eq tag1.id
     end
 

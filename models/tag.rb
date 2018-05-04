@@ -2,7 +2,7 @@
 
 # Creates and stores tags in the database
 class Tag
-  attr_reader :id, :content
+  attr_reader :id, :content, :user_id
 
   def initialize(id, content, user_id)
     @id = id
