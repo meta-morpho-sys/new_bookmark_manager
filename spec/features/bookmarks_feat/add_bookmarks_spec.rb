@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './lib/msg_strings'
+require './lib/msg_str'
 
 feature 'Adding bookmarks' do
   before(:each) do
@@ -13,15 +13,6 @@ feature 'Adding bookmarks' do
       fill_in_and_add
       expect(page).to have_content 'Test title'
     end
-
-    scenario 'title duplications are not allowed' do
-      user = User.create('test2@example.com', 'password123')
-      login(user)
-
-      fill_in_and_add
-      fill_in_and_add
-      expect(page).to have_content MsgStrings::DUPLICATE_TITLE
-    end
   end
 
   scenario 'only valid urls can be added' do
@@ -30,6 +21,6 @@ feature 'Adding bookmarks' do
     click_button 'Add'
 
     expect(page).not_to have_content 'not a real bookmark'
-    expect(page).to have_content MsgStrings::VALID_URL
+    expect(page).to have_content MsgStr::VALID_URL
   end
 end
