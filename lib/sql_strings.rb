@@ -39,11 +39,6 @@ module SQLStrings
                           WHERE
                               bm_id = $1
                               AND tg_id = $2'
-  # INSERT_TAGS_CONTENT_RETURN = 'INSERT INTO tags (content, user_id )
-  #                                               VALUES ($1, $2)
-  #                                           RETURNING
-  #                                               id, content, user_id'
-  #
   INSERT_TAGS_CONTENT_RETURN = 'INSERT INTO tags (content )
                                                 VALUES ($1)
                                             RETURNING

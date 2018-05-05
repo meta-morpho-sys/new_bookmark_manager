@@ -6,7 +6,6 @@ describe BookmarkTag do
   describe '.create' do
     it 'creates a new join between links and tags' do
       user = User.create('test@example', 'password123')
-      # user2 = User.create('test2@example', 'password123')
       bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy', user.id)
       bm2 = Bookmark.create('https://www.great_dane.com/', 'Great Dane', user.id)
       tag = Tag.create('Health and Well-being')

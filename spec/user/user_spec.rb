@@ -84,7 +84,8 @@ describe User do
 
       expect(user.bookmarks_per_tag(tag.content)).to include bm1, bm2
       expect(user.bookmarks_per_tag(tag.content)).not_to include bm3
-
+      expect(user2.bookmarks_per_tag(tag.content)).to include bm3
+      expect(user2.bookmarks_per_tag(tag.content)).not_to include bm1, bm2
     end
   end
 end

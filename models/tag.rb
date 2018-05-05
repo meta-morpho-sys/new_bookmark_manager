@@ -2,12 +2,11 @@
 
 # Creates and stores tags in the database
 class Tag
-  attr_reader :id, :content, :user_id
+  attr_reader :id, :content
 
-  def initialize(id, content, user_id)
+  def initialize(id, content)
     @id = id
     @content = content
-    @user_id = user_id
   end
 
   def ==(other)
@@ -46,6 +45,6 @@ class Tag
   end
 
   def self.wrap(tag)
-    Tag.new(tag['id'], tag['content'], tag['user_id'])
+    Tag.new(tag['id'], tag['content'])
   end
 end

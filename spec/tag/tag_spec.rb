@@ -64,8 +64,8 @@ describe Tag do
 
   describe '#==' do
     example 'two Tags are equal if their IDs match' do
-      tag1 = Tag.new(1, 'Business', 3)
-      tag2 = Tag.new(1, 'Business', 3)
+      tag1 = Tag.new(1, 'Business')
+      tag2 = Tag.new(1, 'Business')
       expect(tag1).to eq tag2
     end
   end
