@@ -66,4 +66,18 @@ describe User do
       expect(user2.bookmarks).not_to include bm1
     end
   end
+
+  describe '#bookmarks_per_tag' do
+    it 'returns all the BMs associated with that particular tag content' do
+      user = User.create('unit@test1.com', 'pswd123')
+      bm1 = Bookmark.create('https://odeon.com', 'Cinema', user.id)
+      bm2 = Bookmark.create('https://netflix.com', 'Netflix', user.id)
+
+      tag = Tag.create('Fun', user.id)
+      BookmarkTag.create(bm1.id, tag.id)
+      BookmarkTag.create(bm2.id, tag.id)
+
+      expect(user.bookmarks_per_tag(tag.content)).to include bm1, bm2
+    end
+  end
 end
