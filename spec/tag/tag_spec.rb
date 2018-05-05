@@ -4,34 +4,28 @@ require_relative '../../models/tag'
 
 describe Tag do
   subject(:user) { User.create('test_tag@example', 'password123') }
-  subject(:tag) { Tag.create('Health and Well-being', user.id) }
+  subject(:tag) { Tag.create('Health and Well-being') }
 
   describe '.create' do
     it 'adds a new tag to the bookmark' do
       expect(tag.id).not_to be_nil
     end
 
-    it 'is assigned to a specific user' do
-      another_user = User.create('another_test_tag@example', 'password123')
-      expect(tag.user_id).to eq user.id
-      expect(tag.user_id).not_to eq another_user.id
-    end
-
     it "evens out user's input" do
-      consistent_tag = Tag.create('fUn', user.id)
+      consistent_tag = Tag.create('fUn')
       expect(consistent_tag.content).to eq 'Fun'
     end
   end
 
   describe '.fetch_existing_tag' do
     it 'fetches the tag if it already exists in the DB' do
-      tag1 = Tag.create('Health and Well-being', user.id)
+      tag1 = Tag.create('Health and Well-being')
       fetched_tag = Tag.fetch_existing_tag('Health and well-being')
       expect(fetched_tag.id).to eq tag1.id
     end
 
     it 'fetches the tag even if partial name is given' do
-      tag1 = Tag.create('Health and Well-being', user.id)
+      tag1 = Tag.create('Health and Well-being')
       fetched_tag = Tag.fetch_existing_tag('Health ')
       fetched_tag2 = Tag.fetch_existing_tag('-being')
 
@@ -55,8 +49,8 @@ describe Tag do
       bm1 = Bookmark.create('https://www.netflix.com', 'Netflix', user1.id)
       bm2 = Bookmark.create('https://www.odeon.com', 'Odeon', user1.id)
       bm3 = Bookmark.create('https://www.cora.com', 'Cora', user2.id)
-      tag1 = Tag.create'Cinema', user1.id
-      tag2 = Tag.create'Magic', user2.id
+      tag1 = Tag.create'Cinema'
+      tag2 = Tag.create'Magic'
       BookmarkTag.create(bm1.id, tag1.id)
       BookmarkTag.create(bm2.id, tag1.id)
       BookmarkTag.create(bm3.id, tag2.id)

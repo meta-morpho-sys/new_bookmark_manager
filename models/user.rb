@@ -58,10 +58,10 @@ class User
                                           FROM
                                               tags AS t, bookmarks AS bk, bookmarks_tags AS bt
                                           WHERE
-                                          t.user_id=$1
-                                          AND bt.bm_id=bk.id
-                                          AND bt.tg_id=t.id
-                                          OR t.content=$2", [id, content])
+                                              bk.user_id=$1
+                                              AND bt.bm_id=bk.id
+                                              AND bt.tg_id=t.id
+                                              AND t.content=$2", [id, content])
     result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
   end
 end

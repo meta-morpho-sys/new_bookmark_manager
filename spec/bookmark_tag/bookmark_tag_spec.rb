@@ -9,7 +9,7 @@ describe BookmarkTag do
       # user2 = User.create('test2@example', 'password123')
       bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy', user.id)
       bm2 = Bookmark.create('https://www.great_dane.com/', 'Great Dane', user.id)
-      tag = Tag.create('Health and Well-being', user.id)
+      tag = Tag.create('Health and Well-being')
       bm_tag1 = BookmarkTag.create(bm.id, tag.id)
       bm_tag2 = BookmarkTag.create(bm2.id, tag.id)
 
@@ -22,7 +22,7 @@ describe BookmarkTag do
     example "we don't want the same tag to be assigned twice to the same bm" do
       user = User.create('test@example', 'password123')
       bm = Bookmark.create('https://www.borrowmydoggy.com/', 'Doggy', user.id)
-      tag = Tag.create('Health and Well-being', user.id)
+      tag = Tag.create('Health and Well-being')
       BookmarkTag.create(bm.id, tag.id)
       expect(BookmarkTag.exists?(bm.id, tag.id)).to eq true
     end

@@ -133,7 +133,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks/tags/new' do
     begin
-      tag = Tag.create(params[:content], session[:user_id])
+      tag = Tag.create(params[:content])
       BookmarkTag.create(params[:bm_id], tag.id)
       flash[:notice] = MsgStr::TAG_CREATED.call(params[:content])
     rescue PG::UniqueViolation
@@ -149,7 +149,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/tags/:id/bookmarks' do
-    @bookmarks = Tag.find(params[:id]).bookmarks
+    fetched_tag = Tag.fetch_existing_tag(params[:content])
+    @bookmarks = @user.bookmarks_per_tag(fetched_tag.content)
     erb :'tags/bookmarks/index'
   end
   # </editor-fold>

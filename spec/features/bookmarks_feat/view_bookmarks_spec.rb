@@ -24,7 +24,7 @@ feature 'Viewing bookmarks' do
     bm = Bookmark.create('https://www.netflix.com', 'Netflix', user.id)
     another_bm = Bookmark.create('https://www.odeon.com', 'Odeon', another_user.id)
 
-    tag = Tag.create 'Movies and fun', user.id
+    tag = Tag.create 'Movies and fun'
 
     BookmarkTag.create(bm.id, tag.id)
     BookmarkTag.create(another_bm.id, tag.id)

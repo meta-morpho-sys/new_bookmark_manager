@@ -70,14 +70,21 @@ describe User do
   describe '#bookmarks_per_tag' do
     it 'returns all the BMs associated with that particular tag content' do
       user = User.create('unit@test1.com', 'pswd123')
+      user2 = User.create('unit@test2.com', 'pswd456')
+
       bm1 = Bookmark.create('https://odeon.com', 'Cinema', user.id)
       bm2 = Bookmark.create('https://netflix.com', 'Netflix', user.id)
+      bm3 = Bookmark.create('https://youtube.com', 'Youtube', user2.id)
 
-      tag = Tag.create('Fun', user.id)
+      tag = Tag.create('Fun')
+
       BookmarkTag.create(bm1.id, tag.id)
       BookmarkTag.create(bm2.id, tag.id)
+      BookmarkTag.create(bm3.id, tag.id)
 
       expect(user.bookmarks_per_tag(tag.content)).to include bm1, bm2
+      expect(user.bookmarks_per_tag(tag.content)).not_to include bm3
+
     end
   end
 end
