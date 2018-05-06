@@ -82,10 +82,10 @@ describe User do
       BookmarkTag.create(bm2.id, tag.id)
       BookmarkTag.create(bm3.id, tag.id)
 
-      expect(user.bookmarks_per_tag(tag.content)).to include bm1, bm2
-      expect(user.bookmarks_per_tag(tag.content)).not_to include bm3
-      expect(user2.bookmarks_per_tag(tag.content)).to include bm3
-      expect(user2.bookmarks_per_tag(tag.content)).not_to include bm1, bm2
+      expect(user.bookmarks_per_tag(tag.id)).to include bm1, bm2
+      expect(user.bookmarks_per_tag(tag.id)).not_to include bm3
+      expect(user2.bookmarks_per_tag(tag.id)).to include bm3
+      expect(user2.bookmarks_per_tag(tag.id)).not_to include bm1, bm2
     end
   end
 end

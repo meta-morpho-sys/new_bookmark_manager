@@ -52,7 +52,7 @@ class User
     result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
   end
 
-  def bookmarks_per_tag(content)
+  def bookmarks_per_tag(tag_id)
     result = DbConnector.query_params("SELECT
                                               bk.id, bk.url, bk.title
                                           FROM
@@ -61,7 +61,7 @@ class User
                                               bk.user_id=$1
                                               AND bt.bm_id=bk.id
                                               AND bt.tg_id=t.id
-                                              AND t.content=$2", [id, content])
+                                              AND t.id=$2", [id, tag_id])
     result.map { |bm| Bookmark.new(bm['id'], bm['url'], bm['title']) }
   end
 end
