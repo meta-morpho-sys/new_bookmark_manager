@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 feature 'Creating a tag for a bookmark' do
-  scenario 'anyone can tag a bm' do
+  scenario 'a user can tag a bm' do
     user = User.create('test@example', 'password123')
     bm = Bookmark.create('https://www.netflix.com', 'Neflix', user.id)
     login user

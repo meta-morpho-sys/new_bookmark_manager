@@ -149,8 +149,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/tags/:id/bookmarks' do
-    found_tag = Tag.find(params[:id])
-    @bookmarks = @user.bookmarks_per_tag(found_tag.content)
+    @bookmarks = @user.bookmarks_per_tag(params[:id])
     erb :'tags/bookmarks/index'
   end
   # </editor-fold>
