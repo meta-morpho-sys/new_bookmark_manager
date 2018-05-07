@@ -4,4 +4,4 @@ You are allowed to:
 1. Remove rake task
 2. Add existing rake tasks
 To add existing rake tasks automatically delete this file and reload the project.
---><RakeGroup description="" fullCmd="" taksId="rake"><RakeTask description="" fullCmd="create_databases" taksId="create_databases" /><RakeTask description="" fullCmd="teardown" taksId="teardown" /><RakeTask description="" fullCmd="test_database_setup" taksId="test_database_setup" /></RakeGroup></Settings>
+--><RakeGroup description="" fullCmd="" taksId="rake"><RakeGroup description="" fullCmd="" taksId="db"><RakeTask description="Creates test and development databases and their relative tables" fullCmd="db:create" taksId="create" /><RakeTask description="Drops all existing databases" fullCmd="db:teardown" taksId="teardown" /><RakeTask description="Creates the test database and erases the old data before every test run" fullCmd="db:test_db_setup" taksId="test_db_setup" /></RakeGroup><RakeTask description="Displays all existing tasks with description" fullCmd="help" taksId="help" /><RakeTask description="" fullCmd="default" taksId="default" /></RakeGroup></Settings>
