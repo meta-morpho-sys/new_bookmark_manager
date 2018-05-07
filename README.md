@@ -33,6 +33,9 @@ The PostgreSQL database management system should be installed on your system.
  $ rake create_databases
  $ rspec
  ```
+#####  also 
+you can run `$ rake `
+  to display all existing tasks for the database.
 
 This will give you the application, and set up two databases: `new_bookmark_manager` for the development environment, 
 and `new_bookmark_manager_test` for the test environment.

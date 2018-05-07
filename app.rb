@@ -5,7 +5,7 @@ require './models/bookmark'
 require './models/comment'
 require './models/tag'
 require './models/bookmark_tag'
-require './db_connection_setup.rb'
+require './db/db_connection_setup.rb'
 require './lib/msg_str'
 
 # Controller

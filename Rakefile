@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require './lib/db_connector'
-require_relative 'db_helpers'
+require_relative 'db/db_helpers'
 require './lib/sql_strings'
 require 'pg'
 
