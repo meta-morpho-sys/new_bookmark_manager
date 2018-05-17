@@ -72,6 +72,7 @@ GEM
     selenium-webdriver (3.11.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+    sequel (5.7.1)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -88,6 +89,7 @@ GEM
       tilt (~> 2.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
+    sqlite3 (1.3.13)
     templater (1.0.0)
       diff-lcs (>= 1.1.2)
       extlib (>= 0.9.5)
@@ -111,10 +113,12 @@ DEPENDENCIES
   rspec-sinatra
   rubocop
   selenium-webdriver
+  sequel
   simplecov
   simplecov-console
   sinatra
   sinatra-flash
+  sqlite3
 
 RUBY VERSION
    ruby 2.4.1p111

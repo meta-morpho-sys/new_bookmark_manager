@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 feature 'Registration' do
 
   scenario 'a user can sign up' do
