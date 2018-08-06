@@ -1,9 +1,9 @@
 # Bookmark Manager
 
-##### App developed during [Makers Academy](https://www.makersacademy.com/) course for the purpose of studying the Sinatra framework, Databases and ORM. The focus on this project was build from scratch an ORM tool with the aid of SQL and Ruby to store data in a database, convert it into objects and use it within the app.
+##### App developed during [Makers Academy](https://www.makersacademy.com/) course for the purpose of studying the Sinatra framework, Databases and ORM. The focus on this project was on building from scratch an ORM tool with the aid of SQL and Ruby to store data in a database, convert it into objects and use it within the app.
 
-With app you can store and display all links that you want to keep within easy reach. 
-You can as many bookmarks as you wish, update them, leave comments and assign tags, 
+With this app you can store and display all links that you want to keep within easy reach. 
+You can make as many bookmarks as you wish, update them, leave comments and assign tags, 
  and when you no longer need your bookmarks, you can easily remove them.
 
 ### Technologies used
@@ -48,5 +48,5 @@ From the command line `cd` into the app's directory and type the `rackup` comman
 Specify your session secret key as the environmental variable SESSION_SECRET.
 If you don't specify this, the app will generate it's own 20 character SecureRandom secret.
 
- 
+ ##### 
  
